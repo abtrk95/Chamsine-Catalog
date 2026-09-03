@@ -1,0 +1,60 @@
+name: Apply cart UX upgrade
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/apply-cart-upgrade.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apply-cart-ux-upgrade
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rebuild and apply tested patch
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git hash-object index.html)" = "4155b20eb7cb6d12fcbc0dc5b9ba2b162e5ca1a8"
+          cat scripts/cart-upgrade/part-* \
+            | base64 --decode \
+            | xz --decompress \
+            > /tmp/cart-upgrade.patch
+          git apply --check /tmp/cart-upgrade.patch
+          git apply /tmp/cart-upgrade.patch
+          test "$(git hash-object index.html)" = "9b21a97db9b683bfbc93a6d6e04738f67b6f1ac8"
+
+      - name: Validate result
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(grep -c 'id=\"floating-cart\"' index.html || true)" -eq 0
+          test "$(grep -c 'data-cart-step-panel=\"' index.html)" -eq 2
+          grep -q 'function setCartStep(step, shouldFocus)' index.html
+          grep -q 'https://abtrk95.github.io/Chamsine-Catalog/' index.html
+
+      - name: Commit upgrade and remove temporary installer
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf scripts/cart-upgrade
+          rm -f .github/workflows/apply-cart-upgrade.yml
+          rmdir scripts 2>/dev/null || true
+          rmdir .github/workflows 2>/dev/null || true
+          rmdir .github 2>/dev/null || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Improve cart review and sharing flow"
+          git push origin HEAD:main

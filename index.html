@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover">
 <meta name="theme-color" content="#0f5a45">
 <meta name="description" content="كتالوج شمسين العربي — اختر المنتجات وأرسل قائمة الطلب عبر واتساب.">
+<link rel="canonical" href="https://abtrk95.github.io/Chamsine-Catalog/">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:type" content="website">
+<meta property="og:title" content="كتالوج شمسين">
+<meta property="og:description" content="اختر المنتجات، راجع السلة، ثم انسخ الطلب أو أرسله عبر واتساب.">
+<meta property="og:url" content="https://abtrk95.github.io/Chamsine-Catalog/">
+<meta property="og:image" content="https://abtrk95.github.io/Chamsine-Catalog/images/ch111.jpg">
+<meta property="og:image:alt" content="منتجات شمسين">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="format-detection" content="telephone=no">
 <title>كتالوج شمسين</title>
 <script>
@@ -30,6 +39,7 @@ button:disabled{opacity:.48;cursor:not-allowed}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
 [hidden]{display:none!important}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 .shell{width:min(1380px,calc(100% - 28px));margin-inline:auto}
 .topbar{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);border-bottom:1px solid rgba(15,90,69,.12);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
 .topbar-inner{height:68px;display:flex;align-items:center;justify-content:space-between;gap:12px}
@@ -81,41 +91,70 @@ img{display:block;max-width:100%}
 .load-wrap{display:flex;justify-content:center;padding:24px 0 34px}
 .load-more{min-height:46px;padding:0 22px;border-radius:13px;background:#fff;border:1px solid var(--green);color:var(--green);font-weight:850}
 .empty{text-align:center;padding:35px 15px;background:#fff;border:1px dashed #c9d7d0;border-radius:16px;color:var(--muted)}
-.footer{padding:25px 0 90px;text-align:center;color:var(--muted);font-size:.82rem}
-.floating-cart{position:fixed;z-index:28;left:14px;bottom:max(14px,env(safe-area-inset-bottom));min-height:50px;padding:0 15px;border-radius:15px;background:var(--green);color:#fff;box-shadow:0 12px 28px rgba(15,65,51,.3);display:flex;align-items:center;gap:8px;font-weight:900}
-.layer{position:fixed;inset:0;z-index:70;display:flex}
-.layer-backdrop{position:absolute;inset:0;background:rgba(4,18,14,.62)}
-.drawer{position:relative;margin-right:auto;width:min(520px,100%);height:100%;height:100dvh;background:#fff;display:flex;flex-direction:column;box-shadow:20px 0 55px rgba(0,0,0,.25)}
-.modal-card{position:relative;margin:auto;width:min(880px,calc(100% - 24px));max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);overflow:auto;border-radius:21px;background:#fff;box-shadow:0 24px 70px rgba(0,0,0,.3)}
-.layer-header{min-height:66px;padding:0 17px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px}
-.layer-header h2{margin:0;font-size:1.18rem}
-.icon-button{width:43px;height:43px;border-radius:12px;background:#edf3f0;color:var(--green);font-size:1.25rem}
-.cart-scroll{flex:1;overflow:auto;padding:14px 16px 20px;-webkit-overflow-scrolling:touch}
-.cart-empty{padding:38px 14px;text-align:center;color:var(--muted)}
-.cart-item{display:grid;grid-template-columns:70px minmax(0,1fr);gap:11px;padding:11px 0;border-bottom:1px solid var(--line)}
-.cart-thumb{width:70px;height:70px;object-fit:contain;border:1px solid var(--line);border-radius:11px;background:#fff}
-.cart-item-title{margin:0;font-size:.9rem;line-height:1.45}
-.cart-item-meta{margin:3px 0;color:var(--muted);font-size:.72rem}
-.cart-item-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px}
+.footer{padding:25px 0 34px;text-align:center;color:var(--muted);font-size:.82rem}
+.layer{position:fixed;inset:0;z-index:1000;display:flex;isolation:isolate}
+.layer-backdrop{position:absolute;inset:0;z-index:0;padding:0;background:rgba(4,18,14,.68);cursor:default}
+.drawer{position:relative;z-index:1;margin-right:auto;width:min(560px,100%);height:100vh;height:100dvh;max-height:100%;overflow:hidden;background:#fff;display:flex;flex-direction:column;box-shadow:20px 0 55px rgba(0,0,0,.28);overscroll-behavior:contain}
+.modal-card{position:relative;z-index:1;margin:auto;width:min(880px,calc(100% - 24px));max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);overflow:auto;border-radius:21px;background:#fff;box-shadow:0 24px 70px rgba(0,0,0,.3)}
+.layer-header{flex:0 0 auto;min-height:68px;padding:9px 17px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff}
+.drawer-heading{min-width:0}
+.drawer-eyebrow{display:block;margin-bottom:2px;color:var(--muted);font-size:.7rem;font-weight:800}
+.layer-header h2{margin:0;font-size:1.18rem;line-height:1.35}
+.icon-button{flex:0 0 auto;width:43px;height:43px;border-radius:12px;background:#edf3f0;color:var(--green);font-size:1.25rem}
+.cart-stepper{flex:0 0 auto;display:grid;grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);align-items:center;gap:6px;padding:11px 16px;border-bottom:1px solid var(--line);background:#fbfcfb}
+.cart-step-tab{min-height:44px;padding:6px 9px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:7px;font-size:.8rem;font-weight:850;text-align:center}
+.cart-step-tab[aria-current="step"]{border-color:rgba(15,90,69,.34);background:#edf6f2;color:var(--green)}
+.cart-step-tab:disabled{opacity:.52}
+.step-number{flex:0 0 auto;width:25px;height:25px;border-radius:999px;background:#e7eeea;color:#52615b;display:grid;place-items:center;font-size:.73rem;font-weight:950}
+.cart-step-tab[aria-current="step"] .step-number{background:var(--green);color:#fff}
+.cart-step-connector{height:2px;border-radius:999px;background:var(--line)}
+.cart-step-panel{display:flex;flex:1;min-height:0;flex-direction:column;background:#fff}
+.cart-scroll{flex:1;min-height:0;overflow-y:auto;padding:14px 16px 20px;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;scrollbar-gutter:stable}
+.cart-items-list{display:grid;gap:10px}
+.cart-empty{min-height:100%;padding:42px 18px;display:grid;place-items:center;align-content:center;gap:8px;text-align:center;color:var(--muted)}
+.cart-empty-icon{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;background:#edf4f1;font-size:1.55rem}
+.cart-empty strong{color:var(--ink);font-size:1rem}
+.cart-empty p{max-width:290px;margin:0 0 6px;line-height:1.65;font-size:.82rem}
+.cart-empty .action-secondary{width:auto;min-width:150px;padding-inline:18px}
+.cart-item{display:grid;grid-template-columns:78px minmax(0,1fr);gap:12px;padding:11px;border:1px solid var(--line);border-radius:15px;background:#fff;box-shadow:0 5px 16px rgba(15,65,51,.045)}
+.cart-thumb{width:78px;height:78px;object-fit:contain;border:1px solid var(--line);border-radius:12px;background:#fff}
+.cart-item-content{min-width:0}
+.cart-item-title{margin:0;font-size:.9rem;line-height:1.5}
+.cart-item-meta{margin:3px 0 0;color:var(--muted);font-size:.7rem;line-height:1.5}
+.cart-item-variant{display:inline-flex;margin-top:5px;padding:3px 7px;border-radius:999px;background:#f1f5f3;color:#4d5a55;font-size:.68rem}
+.cart-item-prices{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px;font-size:.73rem}
+.cart-unit-price{color:var(--muted)}
+.cart-line-price{color:var(--green);font-size:.84rem;direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+.cart-item-controls{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:9px}
 .qty{display:flex;align-items:center;border:1px solid var(--line);border-radius:10px;overflow:hidden;direction:ltr}
-.qty button{width:35px;height:34px;background:#f4f7f5;color:var(--green);font-size:1.05rem}
-.qty span{min-width:34px;text-align:center;font-weight:850}
-.remove{background:transparent;color:var(--danger);font-size:.75rem;text-decoration:underline}
-.cart-form{padding:13px 16px;border-top:1px solid var(--line);background:#fbfcfb}
+.qty button{width:39px;height:38px;background:#f4f7f5;color:var(--green);font-size:1.08rem;font-weight:900}
+.qty button:hover{background:#e9f1ed}
+.qty span{min-width:36px;text-align:center;font-weight:850}
+.remove{min-height:38px;padding:0 10px;border-radius:10px;background:#fff1f1;color:var(--danger);font-size:.75rem;font-weight:800;text-decoration:none}
+.cart-step-footer{flex:0 0 auto;padding:13px 16px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:#fff;box-shadow:0 -8px 22px rgba(15,65,51,.055)}
+.summary-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:7px;font-size:.85rem}
+.summary-row.total{margin-bottom:0;font-size:1.05rem;font-weight:950;color:var(--green)}
+.summary-row.total strong{direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+.summary-note{margin:9px 0 0;color:#85631e;font-size:.75rem;line-height:1.55}
+.cart-footer-actions{display:grid;grid-template-columns:minmax(112px,.72fr) minmax(0,1.45fr);gap:8px;margin-top:12px}
+.checkout-scroll{background:#fbfcfb}
+.checkout-intro{margin-bottom:12px}
+.checkout-intro h3{margin:0 0 5px;font-size:1rem}
+.checkout-intro p{margin:0;color:var(--muted);font-size:.78rem;line-height:1.65}
+.checkout-summary{margin-bottom:14px;padding:13px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.cart-form{padding:0;background:transparent}
 .field-label{display:block;margin:0 0 5px;color:#4f5d57;font-size:.76rem;font-weight:800}
-.field-input{min-height:42px;padding:0 11px;margin-bottom:9px}
-.field-textarea{min-height:66px;padding:9px 11px;resize:vertical}
-.order-preview-wrap{margin-top:10px}
-.order-preview{min-height:130px;padding:9px 11px;resize:vertical;direction:rtl;line-height:1.6;font-size:.75rem;background:#fff}
-.cart-summary{padding:13px 16px calc(15px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:#fff}
-.summary-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}
-.summary-row.total{font-size:1.05rem;font-weight:950;color:var(--green)}
-.summary-note{margin:0 0 9px;color:#85631e;font-size:.75rem;line-height:1.55}
-.cart-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.action-primary,.action-whatsapp,.action-secondary{min-height:44px;border-radius:11px;font-weight:850;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 10px}
+.field-input{min-height:44px;padding:0 11px;margin-bottom:10px}
+.field-textarea{min-height:78px;padding:9px 11px;resize:vertical}
+.order-preview-wrap{margin-top:12px}
+.order-preview{min-height:180px;padding:10px 11px;resize:vertical;direction:rtl;line-height:1.65;font-size:.75rem;background:#fff}
+.cart-actions{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+.action-primary,.action-whatsapp,.action-secondary{min-height:46px;border-radius:11px;font-weight:850;display:flex;align-items:center;justify-content:center;gap:6px;text-align:center;padding:0 11px}
 .action-primary{background:var(--green);color:#fff}
 .action-whatsapp{background:#1f9d59;color:#fff}
 .action-secondary{background:#edf3f0;color:var(--green)}
+.action-whatsapp[aria-disabled="true"]{pointer-events:none;opacity:.48}
+.clear-cart-button{background:#fff2f2;color:var(--danger)}
 .cart-actions .wide{grid-column:1/-1}
 .product-modal-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.85fr)}
 .modal-image-wrap{padding:22px;display:grid;place-items:center;border-inline-end:1px solid var(--line)}
@@ -130,7 +169,7 @@ img{display:block;max-width:100%}
 .modal-actions{margin-top:auto;display:grid;gap:8px}
 .toast{position:fixed;z-index:100;left:50%;bottom:calc(75px + env(safe-area-inset-bottom));transform:translate(-50%,18px);max-width:calc(100% - 28px);padding:11px 15px;border-radius:12px;background:#15241f;color:#fff;opacity:0;pointer-events:none;transition:.2s;box-shadow:0 10px 28px rgba(0,0,0,.25);text-align:center;font-size:.83rem}
 .toast.show{opacity:1;transform:translate(-50%,0)}
-body.modal-open{overflow:hidden}
+body.modal-open{position:fixed;inset-inline:0;width:100%;overflow:hidden}
 :focus-visible{outline:3px solid rgba(228,183,77,.58);outline-offset:2px}
 @media(max-width:720px){
  .shell{width:min(100% - 20px,1380px)}
@@ -149,23 +188,32 @@ body.modal-open{overflow:hidden}
  .add-button{width:100%;min-height:42px}
  .price{font-size:.9rem}
  .drawer{width:100%}
- .cart-actions{grid-template-columns:1fr}
- .cart-actions .wide{grid-column:auto}
+ .layer-header{min-height:62px;padding:7px 12px}
+ .cart-stepper{padding:9px 11px}
+ .cart-step-tab{min-height:42px;padding-inline:6px;font-size:.75rem}
+ .cart-scroll{padding:11px 11px 16px}
+ .cart-item{grid-template-columns:68px minmax(0,1fr);gap:9px;padding:9px}
+ .cart-thumb{width:68px;height:68px}
+ .cart-item-title{font-size:.84rem}
+ .cart-step-footer{padding-inline:11px}
+ .cart-footer-actions{grid-template-columns:minmax(105px,.75fr) minmax(0,1.45fr)}
+ .cart-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .cart-actions .wide{grid-column:1/-1}
  .product-modal-grid{grid-template-columns:1fr}
  .modal-image-wrap{max-height:43vh;border-inline-end:0;border-bottom:1px solid var(--line);padding:12px}
  .modal-image{max-height:39vh}
  .modal-info{padding:14px}
 }
-@media(max-width:350px){.product-grid{grid-template-columns:1fr}}
+@media(max-width:350px){.product-grid{grid-template-columns:1fr}.cart-footer-actions,.cart-actions{grid-template-columns:1fr}.cart-actions .wide{grid-column:auto}.cart-item{grid-template-columns:60px minmax(0,1fr)}.cart-thumb{width:60px;height:60px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
-@media print{.topbar,.hero,.controls-card,.floating-cart,.load-wrap,.footer,.layer,.add-button,.variant-select,.variant-label,.notice{display:none!important}.product-card{break-inside:avoid;box-shadow:none}.product-grid{grid-template-columns:repeat(3,1fr)}}
+@media print{.topbar,.hero,.controls-card,.load-wrap,.footer,.layer,.add-button,.variant-select,.variant-label,.notice{display:none!important}.product-card{break-inside:avoid;box-shadow:none}.product-grid{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
 <header class="topbar">
   <div class="shell topbar-inner">
     <div class="brand"><div class="brand-mark" aria-hidden="true">ش</div><div class="brand-copy"><strong>كتالوج شمسين</strong><small>اختر المنتجات وانسخ الطلب بسهولة</small></div></div>
-    <button id="cart-trigger" class="cart-trigger" type="button" aria-haspopup="dialog"><span aria-hidden="true">🛒</span><span>السلة</span><span id="cart-count" class="cart-trigger-count">0</span></button>
+    <button id="cart-trigger" class="cart-trigger" type="button" aria-haspopup="dialog" aria-controls="cart-layer" aria-expanded="false"><span aria-hidden="true">🛒</span><span>السلة</span><span id="cart-count" class="cart-trigger-count" aria-live="polite" aria-atomic="true">0</span></button>
   </div>
 </header>
 
@@ -181,7 +229,7 @@ body.modal-open{overflow:hidden}
   <div class="shell"><div id="compat-notice" class="notice error" hidden>تعذر تشغيل وظائف السلة في هذا العارض. افتح الملف مباشرة في Safari أو Chrome، أو استخدم النسخة المخصصة للنشر على الويب.</div><div id="file-notice" class="notice" hidden>أنت تفتح نسخة محلية. على الهاتف استخدم «فتح في Safari/Chrome» بدل معاينة الملف داخل واتساب أو تطبيق الملفات. أفضل مشاركة تكون عبر رابط ويب.</div></div>
 
   <section class="shell controls-card" aria-label="البحث والتصفية">
-    <div class="controls-row"><div class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><label class="sr-only" for="search-input"></label><input id="search-input" type="search" placeholder="ابحث باسم المنتج أو الرمز…" autocomplete="off"></div><select id="sort-select" class="sort-select" aria-label="ترتيب المنتجات"><option value="default">الترتيب الافتراضي</option><option value="name">الاسم: أ–ي</option><option value="price-asc">السعر: الأقل أولًا</option><option value="price-desc">السعر: الأعلى أولًا</option></select></div>
+    <div class="controls-row"><div class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><label class="sr-only" for="search-input">البحث في المنتجات</label><input id="search-input" type="search" placeholder="ابحث باسم المنتج أو الرمز…" autocomplete="off"></div><select id="sort-select" class="sort-select" aria-label="ترتيب المنتجات"><option value="default">الترتيب الافتراضي</option><option value="name">الاسم: أ–ي</option><option value="price-asc">السعر: الأقل أولًا</option><option value="price-desc">السعر: الأعلى أولًا</option></select></div>
     <div id="categories" class="categories" aria-label="الأقسام"></div>
   </section>
 
@@ -3729,24 +3777,66 @@ body.modal-open{overflow:hidden}
 </main>
 
 <footer class="footer"><div class="shell">الأسعار بالكرونة الدنماركية. المنتجات المكتوب عليها «السعر عند الطلب» لا تدخل في الإجمالي المحسوب.</div></footer>
-<button id="floating-cart" class="floating-cart" type="button" aria-haspopup="dialog"><span aria-hidden="true">🛒</span><span>السلة</span><span id="floating-cart-count" class="cart-trigger-count">0</span></button>
-
 <div id="cart-layer" class="layer" hidden aria-hidden="true">
-  <button class="layer-backdrop" type="button" data-close-layer="cart-layer" aria-label="إغلاق السلة"></button>
-  <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
-    <header class="layer-header"><h2 id="cart-title">سلة الطلب</h2><button class="icon-button" type="button" data-close-layer="cart-layer" aria-label="إغلاق">×</button></header>
-    <div id="cart-scroll" class="cart-scroll"><div id="cart-empty" class="cart-empty">السلة فارغة. أضف بعض المنتجات للبدء.</div><div id="cart-items"></div></div>
-    <div class="cart-form">
-      <label class="field-label" for="customer-name">الاسم — اختياري</label><input id="customer-name" class="field-input" type="text" autocomplete="name" placeholder="اسم صاحب الطلب">
-      <label class="field-label" for="order-notes">ملاحظات — اختيارية</label><textarea id="order-notes" class="field-textarea" placeholder="مثال: التواصل قبل التسليم"></textarea>
-      <div class="order-preview-wrap"><label class="field-label" for="order-preview">معاينة النص القابل للنسخ</label><textarea id="order-preview" class="order-preview" readonly></textarea></div>
+  <button class="layer-backdrop" type="button" tabindex="-1" data-close-layer="cart-layer" aria-label="إغلاق السلة"></button>
+  <aside id="cart-drawer" class="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" tabindex="-1">
+    <header class="layer-header">
+      <div class="drawer-heading"><span class="drawer-eyebrow">خطوتان لإكمال الطلب</span><h2 id="cart-title">سلة الطلب</h2></div>
+      <button class="icon-button" type="button" data-close-layer="cart-layer" aria-label="إغلاق السلة">×</button>
+    </header>
+
+    <div class="cart-stepper" aria-label="خطوات إكمال الطلب">
+      <button id="cart-step-items-tab" class="cart-step-tab" type="button" data-cart-step-target="items" aria-controls="cart-step-items" aria-current="step"><span class="step-number">1</span><span>مراجعة السلة</span></button>
+      <span class="cart-step-connector" aria-hidden="true"></span>
+      <button id="cart-step-share-tab" class="cart-step-tab" type="button" data-cart-step-target="share" aria-controls="cart-step-share" disabled><span class="step-number">2</span><span>إرسال الطلب</span></button>
     </div>
-    <div class="cart-summary">
-      <div class="summary-row"><span>عدد القطع</span><strong id="summary-units">0</strong></div>
-      <div class="summary-row total"><span id="total-label">الإجمالي</span><strong id="summary-total"><bdi>0 kr</bdi></strong></div>
-      <p id="pending-note" class="summary-note" hidden></p>
-      <div class="cart-actions"><button id="copy-order" class="action-primary" type="button" disabled>نسخ الطلب</button><a id="whatsapp-order" class="action-whatsapp" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">إرسال عبر واتساب</a><button id="share-order" class="action-secondary wide" type="button" hidden>مشاركة</button><button id="clear-cart" class="action-secondary wide" type="button" disabled>إفراغ السلة</button></div>
-    </div>
+
+    <section id="cart-step-items" class="cart-step-panel" data-cart-step-panel="items" aria-labelledby="cart-step-items-tab">
+      <div id="cart-scroll" class="cart-scroll">
+        <div id="cart-empty" class="cart-empty">
+          <span class="cart-empty-icon" aria-hidden="true">🛒</span>
+          <strong>سلة الطلب فارغة</strong>
+          <p>أضف المنتجات التي تريدها، ثم ارجع إلى السلة لمراجعة الكميات.</p>
+          <button class="action-secondary" type="button" data-close-layer="cart-layer">متابعة التسوق</button>
+        </div>
+        <div id="cart-items" class="cart-items-list" aria-live="polite"></div>
+      </div>
+      <footer class="cart-step-footer">
+        <div class="summary-row"><span>عدد القطع</span><strong id="summary-units">0</strong></div>
+        <div class="summary-row total"><span id="total-label">الإجمالي</span><strong id="summary-total"><bdi>0 kr</bdi></strong></div>
+        <p id="pending-note" class="summary-note" hidden></p>
+        <div class="cart-footer-actions">
+          <button id="clear-cart" class="action-secondary clear-cart-button" type="button" disabled>إفراغ السلة</button>
+          <button id="cart-next" class="action-primary" type="button" disabled>متابعة لإرسال الطلب <span aria-hidden="true">←</span></button>
+        </div>
+      </footer>
+    </section>
+
+    <section id="cart-step-share" class="cart-step-panel" data-cart-step-panel="share" aria-labelledby="cart-step-share-tab" hidden>
+      <div id="checkout-scroll" class="cart-scroll checkout-scroll">
+        <div class="checkout-intro"><h3 id="checkout-title" tabindex="-1">جهّز الطلب للمشاركة</h3><p>أضف الاسم أو الملاحظات عند الحاجة، ثم اختر طريقة إرسال الطلب.</p></div>
+        <div class="checkout-summary" aria-label="ملخص الطلب">
+          <div class="summary-row"><span>عدد القطع</span><strong id="checkout-units">0</strong></div>
+          <div class="summary-row total"><span id="checkout-total-label">الإجمالي</span><strong id="checkout-total"><bdi>0 kr</bdi></strong></div>
+          <p id="checkout-pending-note" class="summary-note" hidden></p>
+        </div>
+        <div class="cart-form">
+          <label class="field-label" for="customer-name">الاسم — اختياري</label>
+          <input id="customer-name" class="field-input" type="text" autocomplete="name" maxlength="100" placeholder="اسم صاحب الطلب">
+          <label class="field-label" for="order-notes">ملاحظات — اختيارية</label>
+          <textarea id="order-notes" class="field-textarea" maxlength="500" rows="3" placeholder="مثال: التواصل قبل التسليم"></textarea>
+          <div class="order-preview-wrap"><label class="field-label" for="order-preview">معاينة نص الطلب</label><textarea id="order-preview" class="order-preview" readonly spellcheck="false" aria-describedby="order-preview-help"></textarea><span id="order-preview-help" class="sr-only">هذا النص سيُنسخ أو يُرسل عند اختيار إحدى طرق المشاركة.</span></div>
+        </div>
+      </div>
+      <footer class="cart-step-footer">
+        <div class="cart-actions">
+          <button id="copy-order" class="action-primary" type="button" disabled><span aria-hidden="true">⧉</span> نسخ الطلب</button>
+          <a id="whatsapp-order" class="action-whatsapp" aria-disabled="true"><span aria-hidden="true">◉</span> إرسال عبر واتساب</a>
+          <button id="share-order" class="action-secondary" type="button" hidden disabled><span aria-hidden="true">↗</span> مشاركة</button>
+          <button id="cart-back" class="action-secondary wide" type="button"><span aria-hidden="true">→</span> العودة إلى السلة</button>
+        </div>
+      </footer>
+    </section>
   </aside>
 </div>
 
@@ -3762,70 +3852,796 @@ body.modal-open{overflow:hidden}
 <script>
 var PRODUCTS=[{"id":"533","sku":"CH111","title":"كعك أمارين بالسمسم 300 غ","categoryId":"bakery","category":"المخبوزات","price":12.5,"options":[],"note":"","order":0,"search":"كعك امارين بالسمسم 300 غ chamsine ka ak sesambrødstænger 300 gr xx ch111 المخبوزات"},{"id":"535","sku":"CH117","title":"حلبة شمسين","categoryId":"nuts-seeds","category":"البذور والمكسرات","price":15.0,"options":[],"note":"","order":1,"search":"حلبه شمسين chamsine bukkehornsfrø ch117 البذور والمكسرات"},{"id":"537","sku":"P058","title":"خلطة مقرمشات شمسين 400 غ","categoryId":"nuts-seeds","category":"البذور والمكسرات","price":12.0,"options":[],"note":"","order":2,"search":"خلطه مقرمشات شمسين 400 غ chamsine cracker mix p058 البذور والمكسرات"},{"id":"539","sku":"CH135","title":"مكسرات مشكلة إكسترا أمارين 250 غ","categoryId":"nuts-seeds","category":"البذور والمكسرات","price":15.0,"options":[],"note":"","order":3,"search":"مكسرات مشكله اكسترا امارين 250 غ chamsine ekstra blandede nødder 250 gr ch135 البذور والمكسرات"},{"id":"541","sku":"CH212","title":"بزر يقطين شمسين 300 غ","categoryId":"nuts-seeds","category":"البذور والمكسرات","price":15.0,"options":[],"note":"","order":4,"search":"بزر يقطين شمسين 300 غ chamsine græskarkerner 300 gr ch212 البذور والمكسرات"},{"id":"543","sku":"CH213","title":"فول مجروش شمسين 300 غ","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":15.0,"options":[],"note":"","order":5,"search":"فول مجروش شمسين 300 غ chamsine hvide græskarkerner 800 gr ch213 الحبوب والبقوليات"},{"id":"545","sku":"CH260","title":"بزر شمام أمارين 300 غ","categoryId":"nuts-seeds","category":"البذور والمكسرات","price":15.0,"options":[],"note":"","order":6,"search":"بزر شمام امارين 300 غ chamsine melonfrø 300 ch260 البذور والمكسرات"},{"id":"549","sku":"CH256","title":"حبة البركة شمسين","categoryId":"nuts-seeds","category":"البذور والمكسرات","price":15.0,"options":[],"note":"","order":7,"search":"حبه البركه شمسين chamsine nigellafrø sorte kommen ch256 البذور والمكسرات"},{"id":"551","sku":"CH325","title":"بزر دوار الشمس شمسين 250 غ","categoryId":"nuts-seeds","category":"البذور والمكسرات","price":9.0,"options":[],"note":"","order":8,"search":"بزر دوار الشمس شمسين 250 غ chamsine solsikkefrø 250 ch325 البذور والمكسرات"},{"id":"553","sku":"CH037","title":"بزر بطيخ أسود أمارين 300 غ","categoryId":"nuts-seeds","category":"البذور والمكسرات","price":15.0,"options":[],"note":"","order":9,"search":"بزر بطيخ اسود امارين 300 غ chamsine sorte vandmelonfrø 300 gr ch037 البذور والمكسرات"},{"id":"555","sku":"CH217","title":"بزر شمام سوبر أمارين 300 غ","categoryId":"nuts-seeds","category":"البذور والمكسرات","price":11.0,"options":[],"note":"","order":10,"search":"بزر شمام سوبر امارين 300 غ chamsine super melonfrø 300 gr ch217 البذور والمكسرات"},{"id":"557","sku":"P102","title":"بزر أحمر إكسترا 300 غ","categoryId":"nuts-seeds","category":"البذور والمكسرات","price":16.0,"options":[],"note":"","order":11,"search":"بزر احمر اكسترا 300 غ ekstra røde kerner 300 g p102 البذور والمكسرات"},{"id":"571","sku":"P010","title":"قهوة تورابيكا بريميوم 3 في 1 – 20×25 غ","categoryId":"coffee-drinks","category":"القهوة والمشروبات","price":33.0,"options":[],"note":"عبوة تحتوي على 20 ظرفًا.","order":12,"search":"قهوه تورابيكا بريميوم 3 في 1 20 25 غ cappuccino coffee 20x25g p010 القهوه والمشروبات"},{"id":"577","sku":"CH329","title":"كابتشينو تورابيكا 20×25 غ","categoryId":"coffee-drinks","category":"القهوة والمشروبات","price":40.0,"options":[],"note":"عبوة تحتوي على 20 ظرفًا.","order":13,"search":"كابتشينو تورابيكا 20 25 غ torabika cappuccino 20x25g ch329 القهوه والمشروبات"},{"id":"579","sku":"CH004","title":"كابتشينو تورابيكا بدون سكر مضاف 20×12.5 غ","categoryId":"coffee-drinks","category":"القهوة والمشروبات","price":40.0,"options":[],"note":"عبوة تحتوي على 20 ظرفًا.","order":14,"search":"كابتشينو تورابيكا بدون سكر مضاف 20 12 5 غ torabika cappuccino uden tilsat sukker 20x12 5 ch004 القهوه والمشروبات"},{"id":"585","sku":"CH364","title":"ماكياتو تورابيكا – إسبريسو وحليب","categoryId":"coffee-drinks","category":"القهوة والمشروبات","price":40.0,"options":[],"note":"","order":15,"search":"ماكياتو تورابيكا اسبريسو وحليب torabika macchiato espresso og mælk xx ch364 القهوه والمشروبات"},{"id":"591","sku":"P092","title":"معمول عباس بالتمر مغلف 32 غ","categoryId":"desserts","category":"الحلويات والكيك","price":15.0,"options":[],"note":"","order":16,"search":"معمول عباس بالتمر مغلف 32 غ abbas maamoul indpakket 32 g p092 الحلويات والكيك"},{"id":"595","sku":"CH339","title":"برازق أمارين بالسمسم","categoryId":"desserts","category":"الحلويات والكيك","price":37.5,"options":[],"note":"","order":17,"search":"برازق امارين بالسمسم chamsine amarin barazek sma kager ch339 الحلويات والكيك"},{"id":"597","sku":"CH040","title":"تشكيلة بسكويت أمارين","categoryId":"desserts","category":"الحلويات والكيك","price":40.0,"options":[],"note":"","order":18,"search":"تشكيله بسكويت امارين chamsine amarin blandede sma kager ch040 الحلويات والكيك"},{"id":"599","sku":"CH275","title":"حلويات عربية مشكلة أمارين 350 غ","categoryId":"desserts","category":"الحلويات والكيك","price":null,"options":[],"note":"","order":19,"search":"حلويات عربيه مشكله امارين 350 غ chamsine amarin blandede søde sager baklava 350 gr ch275 الحلويات والكيك"},{"id":"605","sku":"CH197","title":"معمول أمارين بالتمر – علبة","categoryId":"desserts","category":"الحلويات والكيك","price":15.0,"options":[],"note":"","order":20,"search":"معمول امارين بالتمر علبه chamsine amarin maamoul med dadler æske ch197 الحلويات والكيك"},{"id":"607","sku":"CH176","title":"معمول أمارين – صينية","categoryId":"desserts","category":"الحلويات والكيك","price":32.0,"options":[],"note":"","order":21,"search":"معمول امارين صينيه chamsine amarin maamoul bakke ch176 الحلويات والكيك"},{"id":"609","sku":"CH206","title":"جيلي شمسين بنكهة الأناناس 80 غ","categoryId":"desserts","category":"الحلويات والكيك","price":4.0,"options":[],"note":"","order":22,"search":"جيلي شمسين بنكهه الاناناس 80 غ chamsine ananasgele ch206 الحلويات والكيك"},{"id":"613","sku":"CH172","title":"جيلي شمسين بنكهة التوت الأزرق 80 غ","categoryId":"desserts","category":"الحلويات والكيك","price":4.0,"options":[],"note":"","order":23,"search":"جيلي شمسين بنكهه التوت الازرق 80 غ chamsine bla bærgele ch172 الحلويات والكيك"},{"id":"615","sku":"CH065","title":"جيلي شمسين بنكهة الكوكتيل 80 غ","categoryId":"desserts","category":"الحلويات والكيك","price":4.0,"options":[],"note":"","order":24,"search":"جيلي شمسين بنكهه الكوكتيل 80 غ chamsine cocktailgele ch065 الحلويات والكيك"},{"id":"617","sku":"CH351","title":"مسحوق كاسترد شمسين بنكهة الشوكولاتة 300 غ","categoryId":"desserts","category":"الحلويات والكيك","price":16.0,"options":[],"note":"","order":25,"search":"مسحوق كاسترد شمسين بنكهه الشوكولاته 300 غ chamsine custardpulver med chokoladesmag ch351 الحلويات والكيك"},{"id":"619","sku":"CH221","title":"مسحوق كاسترد شمسين بنكهة الفراولة 300 غ","categoryId":"desserts","category":"الحلويات والكيك","price":15.0,"options":[],"note":"","order":26,"search":"مسحوق كاسترد شمسين بنكهه الفراوله 300 غ chamsine custardpulver med jordbærsmag ch221 الحلويات والكيك"},{"id":"621","sku":"CH302","title":"مسحوق كاسترد شمسين بنكهة الفانيليا 300 غ","categoryId":"desserts","category":"الحلويات والكيك","price":15.0,"options":[],"note":"","order":27,"search":"مسحوق كاسترد شمسين بنكهه الفانيليا 300 غ chamsine custardpulver med vaniljesmag ch302 الحلويات والكيك"},{"id":"623","sku":"CH168","title":"جيلي شمسين بنكهة الخوخ 80 غ","categoryId":"desserts","category":"الحلويات والكيك","price":4.0,"options":[],"note":"","order":28,"search":"جيلي شمسين بنكهه الخوخ 80 غ chamsine ferskengele ch168 الحلويات والكيك"},{"id":"625","sku":"CH270","title":"سكر بودرة شمسين 400 غ","categoryId":"desserts","category":"الحلويات والكيك","price":11.0,"options":[],"note":"","order":29,"search":"سكر بودره شمسين 400 غ chamsine flormelis ch270 الحلويات والكيك"},{"id":"627","sku":"CH007","title":"جيلي شمسين بالفراولة والموز 80 غ","categoryId":"desserts","category":"الحلويات والكيك","price":4.0,"options":[],"note":"","order":30,"search":"جيلي شمسين بالفراوله والموز 80 غ chamsine gele med jordbær og banansmag ch007 الحلويات والكيك"},{"id":"629","sku":"CH243","title":"غريبة أمارين بالفستق 500 غ","categoryId":"desserts","category":"الحلويات والكيك","price":40.0,"options":[],"note":"","order":31,"search":"غريبه امارين بالفستق 500 غ chamsine ghraybeh sma kager med pistacie ch243 الحلويات والكيك"},{"id":"631","sku":"CH044","title":"جيلي شمسين بنكهة الفراولة 80 غ","categoryId":"desserts","category":"الحلويات والكيك","price":4.0,"options":[],"note":"","order":32,"search":"جيلي شمسين بنكهه الفراوله 80 غ chamsine jordbærgele ch044 الحلويات والكيك"},{"id":"633","sku":"CH124","title":"جيلي شمسين بنكهة الكرز 80 غ","categoryId":"desserts","category":"الحلويات والكيك","price":4.0,"options":[],"note":"","order":33,"search":"جيلي شمسين بنكهه الكرز 80 غ chamsine kirsebærgele ch124 الحلويات والكيك"},{"id":"657","sku":"CH118","title":"برازق أمارين بالسمسم 500 غ","categoryId":"desserts","category":"الحلويات والكيك","price":null,"options":[],"note":"","order":34,"search":"برازق امارين بالسمسم 500 غ chamsine sesamsma kager barazek ch118 الحلويات والكيك"},{"id":"659","sku":"P037","title":"كريم شانتيه – شوكولاتة أو فراولة أو فانيليا","categoryId":"desserts","category":"الحلويات والكيك","price":10.0,"options":["شوكولاتة","فراولة","فانيليا"],"note":"","order":35,"search":"كريم شانتيه شوكولاته او فراوله او فانيليا chantillycreme chokolade jordbær og vanilje p037 الحلويات والكيك شوكولاته فراوله فانيليا"},{"id":"661","sku":"P027","title":"جيلي كلوب – 12 حبة × 70 غ","categoryId":"desserts","category":"الحلويات والكيك","price":15.0,"options":[],"note":"العبوة تحتوي على 12 حبة، وزن الحبة 70 غ.","order":36,"search":"جيلي كلوب 12 حبه 70 غ club gele 12 stk 70 g pr stk p027 الحلويات والكيك"},{"id":"663","sku":"CH156","title":"بسكويت كوفي جوي بالقهوة","categoryId":"desserts","category":"الحلويات والكيك","price":null,"options":[],"note":"","order":37,"search":"بسكويت كوفي جوي بالقهوه coffee joy instant kaffekiks ch156 الحلويات والكيك"},{"id":"669","sku":"P085","title":"جيلي شمسين – نكهات متنوعة 80 غ","categoryId":"desserts","category":"الحلويات والكيك","price":4.0,"options":["فراولة","جوافة","كوكتيل","خوخ","أناناس","خوخ بري"],"note":"","order":38,"search":"جيلي شمسين نكهات متنوعه 80 غ gele p085 الحلويات والكيك فراوله جوافه كوكتيل خوخ اناناس خوخ بري"},{"id":"671","sku":"P018","title":"حلاوة طحينية بالفستق 350 غ","categoryId":"desserts","category":"الحلويات والكيك","price":20.0,"options":[],"note":"","order":39,"search":"حلاوه طحينيه بالفستق 350 غ halva 350 g med pistacie p018 الحلويات والكيك"},{"id":"673","sku":"P039","title":"حلاوة طحينية بالفستق 700 غ","categoryId":"desserts","category":"الحلويات والكيك","price":50.0,"options":[],"note":"","order":40,"search":"حلاوه طحينيه بالفستق 700 غ halva 700 g med pistacie p039 الحلويات والكيك"},{"id":"675","sku":"P069","title":"قشطلية شمسين 400 غ","categoryId":"desserts","category":"الحلويات والكيك","price":15.0,"options":[],"note":"","order":41,"search":"قشطليه شمسين 400 غ kashtalieh 400 g 24 p069 الحلويات والكيك"},{"id":"677","sku":"CH210","title":"بسكويت دانس كاكاو محشو بكريمة الكاكاو","categoryId":"desserts","category":"الحلويات والكيك","price":null,"options":[],"note":"","order":42,"search":"بسكويت دانس كاكاو محشو بكريمه الكاكاو khafif dance cocoa kakaocremekiks ch210 الحلويات والكيك"},{"id":"679","sku":"P066","title":"كرات تمر لولي لولو محشوة بالطحينة","categoryId":"desserts","category":"الحلويات والكيك","price":35.0,"options":[],"note":"كرات تمر محشوة بالطحينة.","order":43,"search":"كرات تمر لولي لولو محشوه بالطحينه loly lolo p066 الحلويات والكيك"},{"id":"681","sku":"P008","title":"معمول بالتمر 40 غ","categoryId":"desserts","category":"الحلويات والكيك","price":50.0,"options":[],"note":"","order":44,"search":"معمول بالتمر 40 غ maamoul med dadler 40 g p008 الحلويات والكيك"},{"id":"683","sku":"P056","title":"نشا الذرة شمسين 200 غ","categoryId":"desserts","category":"الحلويات والكيك","price":7.0,"options":[],"note":"","order":45,"search":"نشا الذره شمسين 200 غ majsstivelse 200 g 24 p056 الحلويات والكيك"},{"id":"685","sku":"P094","title":"بيتي فور أمارين بالشوكولاتة 610 غ","categoryId":"desserts","category":"الحلويات والكيك","price":37.0,"options":[],"note":"","order":46,"search":"بيتي فور امارين بالشوكولاته 610 غ petit four med chokolade p094 الحلويات والكيك"},{"id":"689","sku":"P082","title":"خليط لقمة القاضي شمسين 400 غ","categoryId":"desserts","category":"الحلويات والكيك","price":15.0,"options":[],"note":"","order":47,"search":"خليط لقمه القاضي شمسين 400 غ shamsin luqmat al qadi mix 400 g p082 الحلويات والكيك"},{"id":"691","sku":"P098","title":"خليط الصفوف شمسين 500 غ","categoryId":"desserts","category":"الحلويات والكيك","price":15.0,"options":[],"note":"","order":48,"search":"خليط الصفوف شمسين 500 غ shamsin sfouf blanding 500 g p098 الحلويات والكيك"},{"id":"693","sku":"CH363","title":"حمص بالطحينة الربيع","categoryId":"canned","category":"المعلبات","price":5.75,"options":[],"note":"","order":49,"search":"حمص بالطحينه الربيع al rabih hummus med tahin kartoner ch363 المعلبات"},{"id":"695","sku":"CH193","title":"متبل باذنجان بالطحينة أمارين – علبة","categoryId":"canned","category":"المعلبات","price":8.0,"options":[],"note":"","order":50,"search":"متبل باذنجان بالطحينه امارين علبه chamsine aubergine med tahin mutabbal pa da se ch193 المعلبات"},{"id":"699","sku":"CH230","title":"فول مدمس شمسين 450 غ","categoryId":"canned","category":"المعلبات","price":4.0,"options":[],"note":"","order":51,"search":"فول مدمس شمسين 450 غ chamsine ful medames pa da se ch230 المعلبات"},{"id":"701","sku":"CH300","title":"فليفلة خضراء محشية شمسين 400 غ","categoryId":"canned","category":"المعلبات","price":15.0,"options":[],"note":"","order":52,"search":"فليفله خضراء محشيه شمسين 400 غ chamsine fyldte grønne peberfrugter pa da se ch300 المعلبات"},{"id":"703","sku":"CH214","title":"ورق عنب محشي أمارين – مرطبان","categoryId":"canned","category":"المعلبات","price":20.0,"options":[],"note":"","order":53,"search":"ورق عنب محشي امارين مرطبان chamsine fyldte vinblade i glas ch214 المعلبات"},{"id":"705","sku":"CH343","title":"ورق عنب محشي شمسين 400 غ","categoryId":"canned","category":"المعلبات","price":15.0,"options":[],"note":"","order":54,"search":"ورق عنب محشي شمسين 400 غ chamsine fyldte vinblade pa da se ch343 المعلبات"},{"id":"707","sku":"CH170","title":"حمص بالطحينة شمسين – علبة","categoryId":"canned","category":"المعلبات","price":8.0,"options":[],"note":"","order":55,"search":"حمص بالطحينه شمسين علبه chamsine hummus med tahin pa da se ch170 المعلبات"},{"id":"709","sku":"CH202","title":"فاصولياء مطبوخة مع الحمص شمسين 400 غ","categoryId":"canned","category":"المعلبات","price":null,"options":[],"note":"","order":56,"search":"فاصولياء مطبوخه مع الحمص شمسين 400 غ chamsine kogte bønner med kikærter pa da se ch202 المعلبات"},{"id":"711","sku":"CH104","title":"مسبحة بالطحينة أمارين – علبة","categoryId":"canned","category":"المعلبات","price":null,"options":[],"note":"","order":57,"search":"مسبحه بالطحينه امارين علبه chamsine mousabbaha med tahin pa da se ch104 المعلبات"},{"id":"713","sku":"CH312","title":"خيار مخلل شرائح شمسين – علبة","categoryId":"canned","category":"المعلبات","price":40.0,"options":[],"note":"","order":58,"search":"خيار مخلل شرايح شمسين علبه chamsine skiveska rne syltede agurker pa da se ch312 المعلبات"},{"id":"719","sku":"CH289","title":"معجون طماطم شمسين 800 غ","categoryId":"canned","category":"المعلبات","price":12.0,"options":[],"note":"","order":59,"search":"معجون طماطم شمسين 800 غ chamsine tomatpure pa da se ch289 المعلبات"},{"id":"721","sku":"P029","title":"ملفوف محشي 400 غ","categoryId":"canned","category":"المعلبات","price":15.0,"options":[],"note":"","order":60,"search":"ملفوف محشي 400 غ fyldte ka lblade 400 g 24 p029 المعلبات"},{"id":"723","sku":"P068","title":"بصل محشي 400 غ","categoryId":"canned","category":"المعلبات","price":15.0,"options":[],"note":"","order":61,"search":"بصل محشي 400 غ fyldte løg 400 g 24 p068 المعلبات"},{"id":"725","sku":"P023","title":"طماطم محشية 400 غ","categoryId":"canned","category":"المعلبات","price":15.0,"options":[],"note":"","order":62,"search":"طماطم محشيه 400 غ fyldte tomater 400 g 24 p023 المعلبات"},{"id":"727","sku":"P034","title":"ورق عنب محشي بالهالابينو 400 غ","categoryId":"canned","category":"المعلبات","price":15.0,"options":[],"note":"","order":63,"search":"ورق عنب محشي بالهالابينو 400 غ fyldte vinblade med jalapen o 400 g p034 المعلبات"},{"id":"729","sku":"P074","title":"حمص مسلوق شمسين 800 غ","categoryId":"canned","category":"المعلبات","price":11.0,"options":[],"note":"","order":64,"search":"حمص مسلوق شمسين 800 غ kogte kikærter da se 800 g p074 المعلبات"},{"id":"731","sku":"P100","title":"تونة أمارين – حارة أو عادية","categoryId":"canned","category":"المعلبات","price":9.5,"options":["حارة","عادية"],"note":"","order":65,"search":"تونه امارين حاره او عاديه tun stærk og mild p100 المعلبات حاره عاديه"},{"id":"735","sku":"CH039","title":"فول مقشور شمسين","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":null,"options":[],"note":"","order":66,"search":"فول مقشور شمسين chamsine afskallede hestebønner xx ch039 الحبوب والبقوليات"},{"id":"737","sku":"CH144","title":"برغل بني ناعم شمسين","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":10.0,"options":[],"note":"","order":67,"search":"برغل بني ناعم شمسين chamsine brun fin bulgur ch144 الحبوب والبقوليات"},{"id":"739","sku":"CH038","title":"سميد ناعم شمسين","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":null,"options":[],"note":"","order":68,"search":"سميد ناعم شمسين chamsine fin semulje ch038 الحبوب والبقوليات"},{"id":"741","sku":"CH123","title":"سميد خشن شمسين 1 كغ","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":12.5,"options":[],"note":"","order":69,"search":"سميد خشن شمسين 1 كغ chamsine grov semulje ch123 الحبوب والبقوليات"},{"id":"743","sku":"CH215","title":"عدس أخضر حب شمسين","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":18.0,"options":[],"note":"","order":70,"search":"عدس اخضر حب شمسين chamsine grønne hele linser ch215 الحبوب والبقوليات"},{"id":"745","sku":"CH251","title":"برغل أصفر شمسين","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":10.0,"options":[],"note":"","order":71,"search":"برغل اصفر شمسين chamsine gul bulgur ch251 الحبوب والبقوليات"},{"id":"747","sku":"CH328","title":"برغل أصفر ناعم شمسين","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":10.0,"options":[],"note":"","order":72,"search":"برغل اصفر ناعم شمسين chamsine gul bulgur semulje ch328 الحبوب والبقوليات"},{"id":"751","sku":"CH022","title":"عدس بني حب شمسين","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":18.0,"options":[],"note":"","order":73,"search":"عدس بني حب شمسين chamsine hele brune linser ch022 الحبوب والبقوليات"},{"id":"753","sku":"CH114","title":"فاصولياء بيضاء شمسين","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":null,"options":[],"note":"","order":74,"search":"فاصولياء بيضاء شمسين chamsine hvide bønner ch114 الحبوب والبقوليات"},{"id":"755","sku":"CH047","title":"فاصولياء بيضاء جامبو شمسين 900 غ","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":22.0,"options":[],"note":"","order":75,"search":"فاصولياء بيضاء جامبو شمسين 900 غ chamsine jumbo hvide bønner ch047 الحبوب والبقوليات"},{"id":"757","sku":"CH315","title":"حمص حب شمسين","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":18.0,"options":[],"note":"","order":76,"search":"حمص حب شمسين chamsine kikærter ch315 الحبوب والبقوليات"},{"id":"761","sku":"CH357","title":"سميد وسط شمسين 1 كغ","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":12.5,"options":[],"note":"","order":77,"search":"سميد وسط شمسين 1 كغ chamsine medium semulje ch357 الحبوب والبقوليات"},{"id":"763","sku":"CH106","title":"سميد متوسط الخشونة شمسين 1 كغ","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":12.5,"options":[],"note":"","order":78,"search":"سميد متوسط الخشونه شمسين 1 كغ chamsine medium grov semulje ch106 الحبوب والبقوليات"},{"id":"765","sku":"CH048","title":"مغربية شمسين (كسكس لؤلؤي)","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":15.0,"options":[],"note":"","order":79,"search":"مغربيه شمسين كسكس لولوي chamsine perlecouscous moghrabieh ch048 الحبوب والبقوليات"},{"id":"767","sku":"CH160","title":"ذرة فشار شمسين","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":12.0,"options":[],"note":"","order":80,"search":"ذره فشار شمسين chamsine popcornmajs ch160 الحبوب والبقوليات"},{"id":"769","sku":"CH354","title":"طحين أرز شمسين 400 غ","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":null,"options":[],"note":"","order":81,"search":"طحين ارز شمسين 400 غ chamsine rismel rispulver ch354 الحبوب والبقوليات"},{"id":"771","sku":"CH295","title":"فريكة خضراء محمصة شمسين 1 كغ","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":32.0,"options":[],"note":"","order":82,"search":"فريكه خضراء محمصه شمسين 1 كغ chamsine ristet grøn hvede freekeh 800 gr ch295 الحبوب والبقوليات"},{"id":"779","sku":"CH314","title":"فول يابس شمسين 800 غ","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":18.0,"options":[],"note":"","order":83,"search":"فول يابس شمسين 800 غ chamsine tørrede hestebønner 800 gr ch314 الحبوب والبقوليات"},{"id":"783","sku":"P061","title":"أرز غول بهار 4.5 كغ","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":65.0,"options":[],"note":"","order":84,"search":"ارز غول بهار 4 5 كغ gul bahar ris 4 5 kg p061 الحبوب والبقوليات"},{"id":"787","sku":"CH032","title":"أرز بسمتي كاليمار 1 كغ","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":14.0,"options":[],"note":"","order":85,"search":"ارز بسمتي كاليمار 1 كغ kalemar the rice basmatiris 1000 gr ch032 الحبوب والبقوليات"},{"id":"791","sku":"CH360","title":"أرز لورو كامولينو متوسط الحبة 5 كغ","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":75.0,"options":[],"note":"","order":86,"search":"ارز لورو كامولينو متوسط الحبه 5 كغ louro camolino mellemkornede ris 5 kl ch360 الحبوب والبقوليات"},{"id":"795","sku":"P084","title":"سميد شمسين – خشن أو وسط أو ناعم 400 غ","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":12.5,"options":["ناعم","وسط","خشن"],"note":"","order":87,"search":"سميد شمسين خشن او وسط او ناعم 400 غ semulje grov mellem og fin 400 gr p084 الحبوب والبقوليات ناعم وسط خشن"},{"id":"799","sku":"P002","title":"أرز بسمتي شمسين 5 كغ","categoryId":"grains-legumes","category":"الحبوب والبقوليات","price":75.0,"options":[],"note":"","order":88,"search":"ارز بسمتي شمسين 5 كغ shamsin ris 5 kg p002 الحبوب والبقوليات"},{"id":"801","sku":"P024","title":"بهارات مشكلة شمسين – عبوة 300 غ","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"قد يختلف السعر حسب نوع البهار.","order":89,"search":"بهارات مشكله شمسين عبوه 300 غ blandede krydderier alle typer plastglas 300 g p024 البهارات والتوابل"},{"id":"809","sku":"CH154","title":"ملح الليمون شمسين – عبوة كبيرة","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":90,"search":"ملح الليمون شمسين عبوه كبيره chamsine citronsyre stor beholder ch154 البهارات والتوابل"},{"id":"811","sku":"CH126","title":"خلطة كريسبي للدجاج – عادية 400 غ","categoryId":"spices","category":"البهارات والتوابل","price":10.0,"options":[],"note":"","order":91,"search":"خلطه كريسبي للدجاج عاديه 400 غ chamsine crispy mild paneringsmix til kylling ch126 البهارات والتوابل"},{"id":"813","sku":"CH041","title":"خلطة كريسبي للدجاج – حارة 400 غ","categoryId":"spices","category":"البهارات والتوابل","price":10.0,"options":[],"note":"","order":92,"search":"خلطه كريسبي للدجاج حاره 400 غ chamsine crispy stærk paneringsmix til kylling ch041 البهارات والتوابل"},{"id":"815","sku":"CH034","title":"بهارات فلافل شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":93,"search":"بهارات فلافل شمسين chamsine falafelkrydderi ch034 البهارات والتوابل"},{"id":"823","sku":"CH036","title":"فلفل أسود مجروش شمسين","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":[],"note":"","order":94,"search":"فلفل اسود مجروش شمسين chamsine groft sort peber ch036 البهارات والتوابل"},{"id":"825","sku":"CH269","title":"زعتر أخضر إكسترا شمسين 400 غ","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":95,"search":"زعتر اخضر اكسترا شمسين 400 غ chamsine grøn timian ekstra za atar 400 gr ch269 البهارات والتوابل"},{"id":"827","sku":"CH025","title":"كركم مطحون شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":96,"search":"كركم مطحون شمسين chamsine gurkemejepulver ch025 البهارات والتوابل"},{"id":"831","sku":"CH188","title":"فلفل أبيض مطحون شمسين","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":[],"note":"","order":97,"search":"فلفل ابيض مطحون شمسين chamsine hvid peber ch188 البهارات والتوابل"},{"id":"833","sku":"CH280","title":"فلفل أبيض مطحون شمسين – عبوة كبيرة","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":[],"note":"","order":98,"search":"فلفل ابيض مطحون شمسين عبوه كبيره chamsine hvid peber stor beholder ch280 البهارات والتوابل"},{"id":"837","sku":"CH130","title":"ثوم بودرة شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":99,"search":"ثوم بودره شمسين chamsine hvidløgspulver ch130 البهارات والتوابل"},{"id":"843","sku":"CH163","title":"زنجبيل مطحون شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":100,"search":"زنجبيل مطحون شمسين chamsine ingefærpulver ch163 البهارات والتوابل"},{"id":"849","sku":"CH208","title":"بهارات كبسة شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":101,"search":"بهارات كبسه شمسين chamsine kabseh krydderi ch208 البهارات والتوابل"},{"id":"861","sku":"CH008","title":"بهارات طاووق شمسين – عبوة صغيرة","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":102,"search":"بهارات طاووق شمسين عبوه صغيره chamsine kyllingekrydderi ch008 البهارات والتوابل"},{"id":"863","sku":"CH148","title":"بهارات طاووق شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":103,"search":"بهارات طاووق شمسين chamsine kyllingekrydderi ch148 البهارات والتوابل"},{"id":"867","sku":"CH309","title":"بصل بودرة شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":104,"search":"بصل بودره شمسين chamsine løgpulver ch309 البهارات والتوابل"},{"id":"869","sku":"CH100","title":"بهار ماجي شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":105,"search":"بهار ماجي شمسين chamsine maggy krydderipulver ch100 البهارات والتوابل"},{"id":"871","sku":"CH292","title":"بهارات مندي شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":106,"search":"بهارات مندي شمسين chamsine mandi krydderi ch292 البهارات والتوابل"},{"id":"877","sku":"CH158","title":"كاري حلو شمسين – عبوة كبيرة","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":107,"search":"كاري حلو شمسين عبوه كبيره chamsine mild sød karry stor beholder ch158 البهارات والتوابل"},{"id":"879","sku":"CH298","title":"بهارات المغربية شمسين","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":[],"note":"","order":108,"search":"بهارات المغربيه شمسين chamsine moghrabieh krydderi ch298 البهارات والتوابل"},{"id":"887","sku":"CH185","title":"بابريكا شمسين – عبوة كبيرة","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":109,"search":"بابريكا شمسين عبوه كبيره chamsine paprikapulver stor beholder ch185 البهارات والتوابل"},{"id":"889","sku":"CH290","title":"زعتر أحمر شمسين 400 غ","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":110,"search":"زعتر احمر شمسين 400 غ chamsine rød timian za atarblanding 400 gr ch290 البهارات والتوابل"},{"id":"893","sku":"CH068","title":"فلفل أحمر حار مطحون شمسين","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":[],"note":"","order":111,"search":"فلفل احمر حار مطحون شمسين chamsine rødt chilipulver ch068 البهارات والتوابل"},{"id":"899","sku":"CH062","title":"بهارات شاورما دجاج شمسين – عبوة كبيرة","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":112,"search":"بهارات شاورما دجاج شمسين عبوه كبيره chamsine shawarma kyllingekrydderi stor beholder ch062 البهارات والتوابل"},{"id":"903","sku":"CH078","title":"بهارات شاورما لحم شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":113,"search":"بهارات شاورما لحم شمسين chamsine shawarma kødkrydderi ch078 البهارات والتوابل"},{"id":"911","sku":"CH235","title":"قرفة ناعمة شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":114,"search":"قرفه ناعمه شمسين chamsine stødt kanel ch235 البهارات والتوابل"},{"id":"913","sku":"CH161","title":"كزبرة مطحونة شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":115,"search":"كزبره مطحونه شمسين chamsine stødt koriander ch161 البهارات والتوابل"},{"id":"917","sku":"CH162","title":"محلب ناعم شمسين","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":[],"note":"","order":116,"search":"محلب ناعم شمسين chamsine stødt mahaleb ch162 البهارات والتوابل"},{"id":"919","sku":"CH195","title":"قرنفل مطحون شمسين 150 غ","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":117,"search":"قرنفل مطحون شمسين 150 غ chamsine stødt nellike ch195 البهارات والتوابل"},{"id":"923","sku":"CH090","title":"فلفل أسود مطحون شمسين","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":[],"note":"","order":118,"search":"فلفل اسود مطحون شمسين chamsine stødt sort peber ch090 البهارات والتوابل"},{"id":"925","sku":"CH346","title":"فلفل أسود مطحون شمسين – عبوة كبيرة","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":[],"note":"","order":119,"search":"فلفل اسود مطحون شمسين عبوه كبيره chamsine stødt sort peber stor beholder ch346 البهارات والتوابل"},{"id":"929","sku":"CH060","title":"كمون مطحون شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":120,"search":"كمون مطحون شمسين chamsine stødt spidskommen ch060 البهارات والتوابل"},{"id":"931","sku":"CH012","title":"سماق مطحون شمسين","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":121,"search":"سماق مطحون شمسين chamsine stødt sumak ch012 البهارات والتوابل"},{"id":"939","sku":"CH196","title":"سبع بهارات شمسين","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":[],"note":"","order":122,"search":"سبع بهارات شمسين chamsine syv krydderiblanding ch196 البهارات والتوابل"},{"id":"945","sku":"CH262","title":"بهارات طاووق أبيض شمسين – عبوة كبيرة","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":[],"note":"","order":123,"search":"بهارات طاووق ابيض شمسين عبوه كبيره chamsine taouk krydderi hvid stor beholder ch262 البهارات والتوابل"},{"id":"947","sku":"CH220","title":"بهارات طاووق أحمر حار شمسين – عبوة كبيرة","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":[],"note":"","order":124,"search":"بهارات طاووق احمر حار شمسين عبوه كبيره chamsine taouk krydderi rød stærk stor beholder ch220 البهارات والتوابل"},{"id":"949","sku":"CH305","title":"بهارات طاووق شمسين – عبوة كبيرة","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":[],"note":"","order":125,"search":"بهارات طاووق شمسين عبوه كبيره chamsine taouk krydderi stor beholder ch305 البهارات والتوابل"},{"id":"951","sku":"CH194","title":"زعتر بدبس الرمان شمسين 400 غ","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":126,"search":"زعتر بدبس الرمان شمسين 400 غ chamsine timian med granatæblemelasse za atar 400 gr ch194 البهارات والتوابل"},{"id":"953","sku":"CH361","title":"كاري ديلا 150 غ","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":127,"search":"كاري ديلا 150 غ dilla karrypulver ch361 البهارات والتوابل"},{"id":"955","sku":"CH308","title":"كاري حار ديلا 150 غ","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":[],"note":"","order":128,"search":"كاري حار ديلا 150 غ dilla stærkt karrypulver ch308 البهارات والتوابل"},{"id":"957","sku":"P030","title":"خلطة فلافل شامية إكسترا مع قالب 400 غ","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":[],"note":"","order":129,"search":"خلطه فلافل شاميه اكسترا مع قالب 400 غ ekstra syrisk falafel med plastform 400 gr p030 البهارات والتوابل"},{"id":"963","sku":"P075","title":"فلفل أسود – حب أو مجروش أو ناعم 150 غ","categoryId":"spices","category":"البهارات والتوابل","price":18.0,"options":["حب","مجروش","ناعم"],"note":"","order":130,"search":"فلفل اسود حب او مجروش او ناعم 150 غ sort peber hel grov og fin plastboks 150 g 24 p075 البهارات والتوابل حب مجروش ناعم"},{"id":"965","sku":"P077","title":"تشكيلة بهارات 200 غ – سبع بهارات وشاورما لحم ودجاج","categoryId":"spices","category":"البهارات والتوابل","price":15.0,"options":["سبع بهارات","شاورما لحم","شاورما دجاج"],"note":"","order":131,"search":"تشكيله بهارات 200 غ سبع بهارات وشاورما لحم ودجاج syv krydderier shawarma krydderi til kød og kylling 200 g 24 p077 البهارات والتوابل سبع بهارات شاورما لحم شاورما دجاج"},{"id":"971","sku":"CH268","title":"فحم جوز هند كوكو شمسين 3 كغ – 27 قطعة","categoryId":"charcoal","category":"الفحم","price":80.0,"options":[],"note":"","order":132,"search":"فحم جوز هند كوكو شمسين 3 كغ 27 قطعه coco chamsine kokoskul 3 kl ch268 الفحم"},{"id":"973","sku":"P111","title":"فحم جوز هند فاخر 1 كغ","categoryId":"charcoal","category":"الفحم","price":27.0,"options":[],"note":"السعر للعبوة المدرجة بوزن 1 كغ.","order":133,"search":"فحم جوز هند فاخر 1 كغ premium trækul 1 kg p111 الفحم"},{"id":"975","sku":"CH317","title":"مربى الباذنجان شمسين 800 غ","categoryId":"jam-dates","category":"المربيات والتمور","price":27.0,"options":[],"note":"","order":134,"search":"مربي الباذنجان شمسين 800 غ chamsine auberginemarmelade 800 gr ch317 المربيات والتمور"},{"id":"977","sku":"CH150","title":"مربى التوت الأسود شمسين 900 غ","categoryId":"jam-dates","category":"المربيات والتمور","price":23.0,"options":[],"note":"","order":135,"search":"مربي التوت الاسود شمسين 900 غ chamsine brombær morbærblomstpa læg 900 gr ch150 المربيات والتمور"},{"id":"979","sku":"CH093","title":"عجينة تمر شمسين 900 غ","categoryId":"jam-dates","category":"المربيات والتمور","price":16.0,"options":[],"note":"","order":136,"search":"عجينه تمر شمسين 900 غ chamsine daddelmasse 900 gr ch093 المربيات والتمور"},{"id":"981","sku":"CH147","title":"تمر شمسين – علبة 400 غ","categoryId":"jam-dates","category":"المربيات والتمور","price":15.0,"options":[],"note":"","order":137,"search":"تمر شمسين علبه 400 غ chamsine dadler i æske 400 gr ch147 المربيات والتمور"},{"id":"983","sku":"CH284","title":"مربى التين والجوز شمسين 800 غ","categoryId":"jam-dates","category":"المربيات والتمور","price":30.0,"options":[],"note":"","order":138,"search":"مربي التين والجوز شمسين 800 غ chamsine figen og nøddepa læg 800 gr ch284 المربيات والتمور"},{"id":"985","sku":"CH069","title":"تمر خضري فاخر شمسين","categoryId":"jam-dates","category":"المربيات والتمور","price":null,"options":[],"note":"","order":139,"search":"تمر خضري فاخر شمسين chamsine luksus khudari dadler ch069 المربيات والتمور"},{"id":"987","sku":"CH264","title":"مربى الورد شمسين 900 غ","categoryId":"jam-dates","category":"المربيات والتمور","price":23.0,"options":[],"note":"","order":140,"search":"مربي الورد شمسين 900 غ chamsine rosenmarmelade 900 gr ch264 المربيات والتمور"},{"id":"989","sku":"CH169","title":"تمر هندي إكسترا تشاتورا 400 غ","categoryId":"jam-dates","category":"المربيات والتمور","price":10.0,"options":[],"note":"","order":141,"search":"تمر هندي اكسترا تشاتورا 400 غ crystal chattra extra tamarindblok 400 gr ch169 المربيات والتمور"},{"id":"991","sku":"P055","title":"مربى تين حب كامل شمسين 800 غ","categoryId":"jam-dates","category":"المربيات والتمور","price":30.0,"options":[],"note":"","order":142,"search":"مربي تين حب كامل شمسين 800 غ hele figner i marmelade 800 g p055 المربيات والتمور"},{"id":"993","sku":"P112","title":"مربى الفراولة – عبوة بلاستيك 1.5 كغ","categoryId":"jam-dates","category":"المربيات والتمور","price":45.0,"options":[],"note":"","order":143,"search":"مربي الفراوله عبوه بلاستيك 1 5 كغ jordbærmarmelade i plastbøtte 1 5 kg p112 المربيات والتمور"},{"id":"995","sku":"P110","title":"مربى الكرز أو المشمش – عبوة 1.5 كغ","categoryId":"jam-dates","category":"المربيات والتمور","price":45.0,"options":["كرز","مشمش"],"note":"","order":144,"search":"مربي الكرز او المشمش عبوه 1 5 كغ kirsebærmarmelade 1 5 kg og abrikosmarmelade 1 5 kg p110 المربيات والتمور كرز مشمش"},{"id":"997","sku":"P045","title":"مربى التوت – عبوة بلاستيك 1.5 كغ","categoryId":"jam-dates","category":"المربيات والتمور","price":45.0,"options":[],"note":"","order":145,"search":"مربي التوت عبوه بلاستيك 1 5 كغ morbærmarmelade i plastbøtte 1 5 kg p045 المربيات والتمور"},{"id":"999","sku":"P041","title":"مربى التوت – عبوة بلاستيك 900 غ","categoryId":"jam-dates","category":"المربيات والتمور","price":25.0,"options":[],"note":"","order":146,"search":"مربي التوت عبوه بلاستيك 900 غ morbærmarmelade i plastbøtte 900 g p041 المربيات والتمور"},{"id":"1001","sku":"P026","title":"مربى التين المهروس – عبوة بلاستيك 1.5 كغ","categoryId":"jam-dates","category":"المربيات والتمور","price":45.0,"options":[],"note":"","order":147,"search":"مربي التين المهروس عبوه بلاستيك 1 5 كغ moset figenmarmelade i plastbøtte 1 5 kg p026 المربيات والتمور"},{"id":"1003","sku":"P071","title":"مربى الورد – عبوة بلاستيك 1.5 كغ","categoryId":"jam-dates","category":"المربيات والتمور","price":45.0,"options":[],"note":"","order":148,"search":"مربي الورد عبوه بلاستيك 1 5 كغ rosenmarmelade i plastbøtte 1 5 kg p071 المربيات والتمور"},{"id":"1005","sku":"P093","title":"زيت زيتون بكر ممتاز شمسين 1 لتر","categoryId":"oils","category":"الزيوت","price":55.0,"options":[],"note":"","order":149,"search":"زيت زيتون بكر ممتاز شمسين 1 لتر ekstra jomfruolivenolie 1 liter p093 الزيوت"},{"id":"1007","sku":"P064","title":"زيت زيتون بكر ممتاز شمسين 3 لتر","categoryId":"oils","category":"الزيوت","price":145.0,"options":[],"note":"","order":150,"search":"زيت زيتون بكر ممتاز شمسين 3 لتر ekstra jomfruolivenolie 3 liter p064 الزيوت"},{"id":"1009","sku":"P032","title":"زيتون حلبي محشي بالليمون السوري 660 غ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":25.0,"options":[],"note":"","order":151,"search":"زيتون حلبي محشي بالليمون السوري 660 غ aleppo oliven med syrisk citron 660 g p032 المخللات والزيتون"},{"id":"1011","sku":"P088","title":"أرضي شوكي شمسين 1 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":25.0,"options":[],"note":"","order":152,"search":"ارضي شوكي شمسين 1 كغ artiskok 1000 g p088 المخللات والزيتون"},{"id":"1013","sku":"P067","title":"أرضي شوكي شمسين 2.75 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":65.0,"options":[],"note":"","order":153,"search":"ارضي شوكي شمسين 2 75 كغ artiskok 2750 g p067 المخللات والزيتون"},{"id":"1017","sku":"CH070","title":"أرضي شوكي شمسين 660 غ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":20.0,"options":[],"note":"","order":154,"search":"ارضي شوكي شمسين 660 غ chamsine artiskokker i glas 660 gr ch070 المخللات والزيتون"},{"id":"1019","sku":"CH244","title":"مخلل مشكل أمارين 1 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":18.0,"options":[],"note":"","order":155,"search":"مخلل مشكل امارين 1 كغ chamsine blandede pickles1000 gr ch244 المخللات والزيتون"},{"id":"1021","sku":"CH082","title":"مخلل مشكل شمسين 2.6 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":25.0,"options":[],"note":"","order":156,"search":"مخلل مشكل شمسين 2 6 كغ chamsine blandede pickles stort glas 2600 gr ch082 المخللات والزيتون"},{"id":"1025","sku":"CH242","title":"فليفلة محشية مخللة شمسين 2.75 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":138.0,"options":[],"note":"","order":157,"search":"فليفله محشيه مخلله شمسين 2 75 كغ chamsine blandede syltede chilipebre 2750 gr ch242 المخللات والزيتون"},{"id":"1027","sku":"CH276","title":"باذنجان مشوي شمسين – مرطبان","categoryId":"pickles-olives","category":"المخللات والزيتون","price":null,"options":[],"note":"","order":158,"search":"باذنجان مشوي شمسين مرطبان chamsine grillede auberginer i glas ch276 المخللات والزيتون"},{"id":"1029","sku":"CH099","title":"زيتون أخضر شمسين 2.5 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":null,"options":[],"note":"","order":159,"search":"زيتون اخضر شمسين 2 5 كغ chamsine grønne oliven xx ch099 المخللات والزيتون"},{"id":"1031","sku":"CH311","title":"زيتون أخضر حلبي بالنواة شمسين 2.8 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":null,"options":[],"note":"","order":160,"search":"زيتون اخضر حلبي بالنواه شمسين 2 8 كغ chamsine grønne oliven xx ch311 المخللات والزيتون"},{"id":"1033","sku":"CH013","title":"زيتون أخضر شمسين في محلول ملحي 1 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":25.0,"options":[],"note":"","order":161,"search":"زيتون اخضر شمسين في محلول ملحي 1 كغ chamsine grønne oliven i saltlage 1000 gr ch013 المخللات والزيتون"},{"id":"1035","sku":"CH236","title":"زيتون أخضر سلقيني شمسين 660 غ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":20.0,"options":[],"note":"","order":162,"search":"زيتون اخضر سلقيني شمسين 660 غ chamsine grønne oliven salkini stil 660 gr ch236 المخللات والزيتون"},{"id":"1037","sku":"CH057","title":"ترمس شمسين في محلول ملحي 650 غ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":12.0,"options":[],"note":"","order":163,"search":"ترمس شمسين في محلول ملحي 650 غ chamsine lupinbønner i saltlage 660 gr ch057 المخللات والزيتون"},{"id":"1039","sku":"CH257","title":"مكدوس أمارين بالزيت 670 غ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":32.0,"options":[],"note":"","order":164,"search":"مكدوس امارين بالزيت 670 غ chamsine makdous fyldt aubergine i olie 660 gr ch257 المخللات والزيتون"},{"id":"1041","sku":"CH307","title":"مكدوس أمارين بالزيت 600 غ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":52.0,"options":[],"note":"","order":165,"search":"مكدوس امارين بالزيت 600 غ chamsine makdous fyldt aubergine i olie 1000 gr ch307 المخللات والزيتون"},{"id":"1043","sku":"CH321","title":"مكدوس أمارين بالزيت 2.8 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":100.0,"options":[],"note":"","order":166,"search":"مكدوس امارين بالزيت 2 8 كغ chamsine makdous fyldt aubergine stort plastglas 2600 gr ch321 المخللات والزيتون"},{"id":"1045","sku":"CH200","title":"هالابينو مخلل شرائح شمسين 660 غ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":15.0,"options":[],"note":"","order":167,"search":"هالابينو مخلل شرايح شمسين 660 غ chamsine skiveska ret syltet jalapen o 660 gr ch200 المخللات والزيتون"},{"id":"1049","sku":"CH133","title":"خيار مخلل شمسين 660 غ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":15.0,"options":[],"note":"","order":168,"search":"خيار مخلل شمسين 660 غ chamsine syltede agurker 660 gr ch133 المخللات والزيتون"},{"id":"1051","sku":"CH246","title":"خيار مخلل شمسين 2.8 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":45.0,"options":[],"note":"","order":169,"search":"خيار مخلل شمسين 2 8 كغ chamsine syltede agurker 2800 gr ch246 المخللات والزيتون"},{"id":"1053","sku":"CH016","title":"فليفلة خضراء مخللة شمسين 660 غ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":15.0,"options":[],"note":"","order":170,"search":"فليفله خضراء مخلله شمسين 660 غ chamsine syltede grønne peberfrugter 660 gr ch016 المخللات والزيتون"},{"id":"1061","sku":"CH091","title":"لفت مخلل أمارين 2.6 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":35.0,"options":[],"note":"","order":171,"search":"لفت مخلل امارين 2 6 كغ chamsine syltede majroer stort plastglas 2600 gr ch091 المخللات والزيتون"},{"id":"1063","sku":"CH183","title":"ورق عنب شمسين في محلول ملحي 2.8 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":60.0,"options":[],"note":"","order":172,"search":"ورق عنب شمسين في محلول ملحي 2 8 كغ chamsine vinblade i saltlage 2800 gr ch183 المخللات والزيتون"},{"id":"1065","sku":"P101","title":"زيتون أسود إكسترا شمسين 1 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":40.0,"options":[],"note":"","order":173,"search":"زيتون اسود اكسترا شمسين 1 كغ ekstra sorte oliven 1000 g p101 المخللات والزيتون"},{"id":"1067","sku":"P035","title":"باذنجان مشوي شمسين 1 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":20.0,"options":[],"note":"","order":174,"search":"باذنجان مشوي شمسين 1 كغ grillet aubergine 1000 g p035 المخللات والزيتون"},{"id":"1069","sku":"P091","title":"باذنجان مشوي شمسين 2.8 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":65.0,"options":[],"note":"","order":175,"search":"باذنجان مشوي شمسين 2 8 كغ grillet aubergine 2800 g p091 المخللات والزيتون"},{"id":"1071","sku":"P060","title":"فليفلة حورانية مخللة 1 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":15.0,"options":[],"note":"","order":176,"search":"فليفله حورانيه مخلله 1 كغ haurani peber 1 kg 1000 p060 المخللات والزيتون"},{"id":"1073","sku":"P015","title":"فليفلة مكسيكية مخللة 1 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":17.0,"options":[],"note":"","order":177,"search":"فليفله مكسيكيه مخلله 1 كغ mexicansk peber 1 kg p015 المخللات والزيتون"},{"id":"1075","sku":"P059","title":"زيتون سلقيني أصلي 3 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":65.0,"options":[],"note":"","order":178,"search":"زيتون سلقيني اصلي 3 كغ originale selevini oliven 3 kg p059 المخللات والزيتون"},{"id":"1079","sku":"P025","title":"لفت مخلل شمسين 1 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":20.0,"options":[],"note":"","order":179,"search":"لفت مخلل شمسين 1 كغ syltede majroer 1000 g p025 المخللات والزيتون"},{"id":"1081","sku":"P040","title":"لفت مخلل شمسين 2.8 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":45.0,"options":[],"note":"","order":180,"search":"لفت مخلل شمسين 2 8 كغ syltede majroer 2800 g p040 المخللات والزيتون"},{"id":"1083","sku":"P028","title":"لفت مخلل شمسين 660 غ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":15.0,"options":[],"note":"","order":181,"search":"لفت مخلل شمسين 660 غ syltede majroer 660 g p028 المخللات والزيتون"},{"id":"1085","sku":"P080","title":"خيار مخلل سوري شمسين 1 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":18.0,"options":[],"note":"","order":182,"search":"خيار مخلل سوري شمسين 1 كغ syriske syltede agurker 1 kg 12 p080 المخللات والزيتون"},{"id":"1087","sku":"P096","title":"ورق عنب شمسين 1 كغ","categoryId":"pickles-olives","category":"المخللات والزيتون","price":27.0,"options":[],"note":"","order":183,"search":"ورق عنب شمسين 1 كغ vinblade 1000 g p096 المخللات والزيتون"},{"id":"1089","sku":"CH204","title":"بديل عصير الليمون شمسين 1 لتر","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":10.0,"options":[],"note":"","order":184,"search":"بديل عصير الليمون شمسين 1 لتر chamsine citronsafterstatning 1 l ch204 الصلصات والدبس"},{"id":"1091","sku":"CH138","title":"دبس تمر شمسين 400 غ","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":20.0,"options":[],"note":"","order":185,"search":"دبس تمر شمسين 400 غ chamsine daddelsirup 400 gr ch138 الصلصات والدبس"},{"id":"1093","sku":"CH155","title":"دبس تمر أمارين 400 غ","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":20.0,"options":[],"note":"","order":186,"search":"دبس تمر امارين 400 غ chamsine daddelsirup 400 gr ch155 الصلصات والدبس"},{"id":"1095","sku":"CH105","title":"دبس رمان شمسين 750 غ","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":35.0,"options":[],"note":"","order":187,"search":"دبس رمان شمسين 750 غ chamsine granatæblemelasse 750 gr ch105 الصلصات والدبس"},{"id":"1101","sku":"CH359","title":"ماء ورد شمسين 250 مل","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":8.0,"options":[],"note":"","order":188,"search":"ماء ورد شمسين 250 مل chamsine rosenvand 250 m m ch359 الصلصات والدبس"},{"id":"1103","sku":"CH086","title":"معجون فليفلة حمراء شمسين 660 غ","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":18.0,"options":[],"note":"","order":189,"search":"معجون فليفله حمراء شمسين 660 غ chamsine rød peberpasta 660 gr ch086 الصلصات والدبس"},{"id":"1105","sku":"CH143","title":"معجون فليفلة حمراء أمارين 660 غ","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":18.0,"options":[],"note":"","order":190,"search":"معجون فليفله حمراء امارين 660 غ chamsine rød peberpasta i glas 660 gr ch143 الصلصات والدبس"},{"id":"1107","sku":"CH365","title":"معجون فليفلة حارة شمسين 1 كغ","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":20.0,"options":[],"note":"","order":191,"search":"معجون فليفله حاره شمسين 1 كغ chamsine rød peberpasta i glas 1000 gr ch365 الصلصات والدبس"},{"id":"1109","sku":"CH237","title":"خل تفاح شمسين 1 لتر","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":20.0,"options":[],"note":"","order":192,"search":"خل تفاح شمسين 1 لتر chamsine æbleeddike 1l ch237 الصلصات والدبس"},{"id":"1111","sku":"P106","title":"دبس تمر شمسين 400 غ","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":20.0,"options":[],"note":"","order":193,"search":"دبس تمر شمسين 400 غ dadelsirup 400 g p106 الصلصات والدبس"},{"id":"1113","sku":"P089","title":"دبس رمان يمامة 300 مل","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":20.0,"options":[],"note":"","order":194,"search":"دبس رمان يمامه 300 مل granatæblesirup 300 ml p089 الصلصات والدبس"},{"id":"1115","sku":"P070","title":"دبس رمان شمسين 700 مل","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":18.0,"options":[],"note":"","order":195,"search":"دبس رمان شمسين 700 مل granatæblesirup 250 m p070 الصلصات والدبس"},{"id":"1117","sku":"P004","title":"دبس فليفلة حار أو عادي 1 كغ","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":20.0,"options":["حار","عادي"],"note":"","order":196,"search":"دبس فليفله حار او عادي 1 كغ peberpasta stærk mild glas 1000 g p004 الصلصات والدبس حار عادي"},{"id":"1119","sku":"CH055","title":"بديل عصير الليمون يمامة 1 لتر","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":10.0,"options":[],"note":"","order":197,"search":"بديل عصير الليمون يمامه 1 لتر yamama citronsafterstatning 1 l ch055 الصلصات والدبس"},{"id":"1121","sku":"CH053","title":"دبس رمان يمامة 750 مل","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":38.0,"options":[],"note":"","order":198,"search":"دبس رمان يمامه 750 مل yamama granatæblemelasse 750 g ch053 الصلصات والدبس"},{"id":"1123","sku":"CH171","title":"دبس رمان يمامة 2.055 كغ","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":75.0,"options":[],"note":"","order":199,"search":"دبس رمان يمامه 2 055 كغ yamama granatæblemelasse stor dunk 2055 g ch171 الصلصات والدبس"},{"id":"1125","sku":"CH297","title":"خل أبيض يمامة 1 لتر","categoryId":"sauces-syrups","category":"الصلصات والدبس","price":10.0,"options":[],"note":"","order":200,"search":"خل ابيض يمامه 1 لتر yamama hvid eddike 1 l ch297 الصلصات والدبس"},{"id":"1127","sku":"CH316","title":"حلوى جيلاتينية طرية شمسين – 30 قطعة","categoryId":"snacks","category":"السكاكر والتسالي","price":25.0,"options":[],"note":"","order":201,"search":"حلوي جيلاتينيه طريه شمسين 30 قطعه chamsine bløde vingummier 30 stk ch316 السكاكر والتسالي"},{"id":"1129","sku":"CH014","title":"خلطة مقرمشات شمسين 350 غ","categoryId":"snacks","category":"السكاكر والتسالي","price":null,"options":[],"note":"","order":202,"search":"خلطه مقرمشات شمسين 350 غ chamsine crackerblanding 350 g ch014 السكاكر والتسالي"},{"id":"1131","sku":"CH059","title":"سناك ذرة صغير شمسين – نكهات مشكلة","categoryId":"snacks","category":"السكاكر والتسالي","price":null,"options":["ذرة حلوة","بيتزا","حار وليمون","كاتشب","نودلز","جبنة"],"note":"","order":203,"search":"سناك ذره صغير شمسين نكهات مشكله chamsine mini majssnacks assorterede smage ch059 السكاكر والتسالي ذره حلوه بيتزا حار وليمون كاتشب نودلز جبنه"},{"id":"1139","sku":"P054","title":"مكسرات مشكلة إكسترا 250 غ","categoryId":"nuts-seeds","category":"البذور والمكسرات","price":16.0,"options":[],"note":"","order":204,"search":"مكسرات مشكله اكسترا 250 غ ekstra snackblanding 250 g p054 البذور والمكسرات"},{"id":"1149","sku":"CH203","title":"سمسم شمسين","categoryId":"tahini-sesame","category":"الطحينة والسمسم","price":10.0,"options":[],"note":"","order":205,"search":"سمسم شمسين chamsine sesamfrø ch203 الطحينه والسمسم"},{"id":"1151","sku":"CH073","title":"طحينة إكسترا شمسين 400 غ","categoryId":"tahini-sesame","category":"الطحينة والسمسم","price":18.0,"options":[],"note":"","order":206,"search":"طحينه اكسترا شمسين 400 غ chamsine tahin 400g ch073 الطحينه والسمسم"},{"id":"1153","sku":"CH096","title":"متبل باذنجان بالطحينة أمارين – عبوة كبيرة","categoryId":"canned","category":"المعلبات","price":null,"options":[],"note":"","order":207,"search":"متبل باذنجان بالطحينه امارين عبوه كبيره chamsine tahin xx ch096 المعلبات"},{"id":"1159","sku":"P012","title":"طحينة إكسترا من سمسم سوداني صافي 18 كغ","categoryId":"tahini-sesame","category":"الطحينة والسمسم","price":675.0,"options":[],"note":"","order":208,"search":"طحينه اكسترا من سمسم سوداني صافي 18 كغ tahin 18 kg ren sudanesisk sesam p012 الطحينه والسمسم"},{"id":"1161","sku":"P033","title":"طحينة إكسترا من سمسم سوداني صافي 2 كغ","categoryId":"tahini-sesame","category":"الطحينة والسمسم","price":68.0,"options":[],"note":"","order":209,"search":"طحينه اكسترا من سمسم سوداني صافي 2 كغ tahin 2 kg ren sudanesisk sesam p033 الطحينه والسمسم"},{"id":"1163","sku":"P043","title":"طحينة إكسترا من سمسم سوداني صافي 800 غ","categoryId":"tahini-sesame","category":"الطحينة والسمسم","price":30.0,"options":[],"note":"","order":210,"search":"طحينه اكسترا من سمسم سوداني صافي 800 غ tahin ren sudanesisk sesam 800 g p043 الطحينه والسمسم"},{"id":"1165","sku":"CH113","title":"زهورات شمسين","categoryId":"herbs-dried","category":"الأعشاب والمواد المجففة","price":15.0,"options":[],"note":"","order":211,"search":"زهورات شمسين chamsine blandet urtete ch113 الاعشاب والمواد المجففه"},{"id":"1167","sku":"CH234","title":"زهورات مشكلة أمارين","categoryId":"herbs-dried","category":"الأعشاب والمواد المجففة","price":15.0,"options":[],"note":"","order":212,"search":"زهورات مشكله امارين chamsine blandet urtete tørrede blomster ch234 الاعشاب والمواد المجففه"},{"id":"1169","sku":"CH098","title":"بابونج أمارين","categoryId":"herbs-dried","category":"الأعشاب والمواد المجففة","price":15.0,"options":[],"note":"","order":213,"search":"بابونج امارين chamsine kamille ch098 الاعشاب والمواد المجففه"},{"id":"1171","sku":"CH087","title":"باذنجان مجفف أمارين","categoryId":"herbs-dried","category":"الأعشاب والمواد المجففة","price":17.0,"options":[],"note":"","order":214,"search":"باذنجان مجفف امارين chamsine tørrede auberginer ch087 الاعشاب والمواد المجففه"},{"id":"1173","sku":"CH250","title":"ريحان مجفف شمسين","categoryId":"herbs-dried","category":"الأعشاب والمواد المجففة","price":15.0,"options":[],"note":"","order":215,"search":"ريحان مجفف شمسين chamsine tørret basilikum ch250 الاعشاب والمواد المجففه"},{"id":"1175","sku":"CH027","title":"مليسة مجففة أمارين","categoryId":"herbs-dried","category":"الأعشاب والمواد المجففة","price":15.0,"options":[],"note":"","order":216,"search":"مليسه مجففه امارين chamsine tørret citronmelisse ch027 الاعشاب والمواد المجففه"},{"id":"1177","sku":"CH128","title":"مردقوش مجفف شمسين","categoryId":"herbs-dried","category":"الأعشاب والمواد المجففة","price":15.0,"options":[],"note":"","order":217,"search":"مردقوش مجفف شمسين chamsine tørret merian ch128 الاعشاب والمواد المجففه"},{"id":"1181","sku":"CH211","title":"ملوخية مجففة أمارين 200 غ","categoryId":"herbs-dried","category":"الأعشاب والمواد المجففة","price":17.0,"options":[],"note":"","order":218,"search":"ملوخيه مجففه امارين 200 غ chamsine tørret molokhia katost ch211 الاعشاب والمواد المجففه"},{"id":"1187","sku":"P086","title":"ملوخية مجففة شمسين 400 غ","categoryId":"herbs-dried","category":"الأعشاب والمواد المجففة","price":22.0,"options":[],"note":"","order":219,"search":"ملوخيه مجففه شمسين 400 غ molokhia 400 g p086 الاعشاب والمواد المجففه"},{"id":"1189","sku":"P095","title":"زهورات سورية مشكلة 100 غ","categoryId":"herbs-dried","category":"الأعشاب والمواد المجففة","price":15.0,"options":[],"note":"","order":220,"search":"زهورات سوريه مشكله 100 غ syrisk urtete 100 g salvie citronmelisse og blandede urter p095 الاعشاب والمواد المجففه"}];
 var CATEGORIES=[{"id":"bakery","name":"المخبوزات"},{"id":"nuts-seeds","name":"البذور والمكسرات"},{"id":"grains-legumes","name":"الحبوب والبقوليات"},{"id":"coffee-drinks","name":"القهوة والمشروبات"},{"id":"desserts","name":"الحلويات والكيك"},{"id":"canned","name":"المعلبات"},{"id":"spices","name":"البهارات والتوابل"},{"id":"charcoal","name":"الفحم"},{"id":"jam-dates","name":"المربيات والتمور"},{"id":"oils","name":"الزيوت"},{"id":"pickles-olives","name":"المخللات والزيتون"},{"id":"sauces-syrups","name":"الصلصات والدبس"},{"id":"snacks","name":"السكاكر والتسالي"},{"id":"tahini-sesame","name":"الطحينة والسمسم"},{"id":"herbs-dried","name":"الأعشاب والمواد المجففة"}];
-(function(){
-'use strict';
-var PAGE_SIZE=24;
-var CART_KEY='chamsineCatalogCartV3';
-var FIELDS_KEY='chamsineCatalogFieldsV3';
-var productById={};
-var cardById={};
-var state={query:'',category:'all',sort:'default',limit:PAGE_SIZE,cart:{},activeProduct:null,lastFocus:null};
-var dom={
- grid:document.getElementById('product-grid'),search:document.getElementById('search-input'),sort:document.getElementById('sort-select'),categories:document.getElementById('categories'),results:document.getElementById('results-summary'),empty:document.getElementById('empty-state'),loadMore:document.getElementById('load-more'),reset:document.getElementById('reset-filters'),cartLayer:document.getElementById('cart-layer'),productLayer:document.getElementById('product-layer'),cartTrigger:document.getElementById('cart-trigger'),floatingCart:document.getElementById('floating-cart'),cartCount:document.getElementById('cart-count'),floatingCount:document.getElementById('floating-cart-count'),cartItems:document.getElementById('cart-items'),cartEmpty:document.getElementById('cart-empty'),cartScroll:document.getElementById('cart-scroll'),summaryUnits:document.getElementById('summary-units'),summaryTotal:document.getElementById('summary-total'),totalLabel:document.getElementById('total-label'),pendingNote:document.getElementById('pending-note'),customerName:document.getElementById('customer-name'),orderNotes:document.getElementById('order-notes'),orderPreview:document.getElementById('order-preview'),copyOrder:document.getElementById('copy-order'),whatsappOrder:document.getElementById('whatsapp-order'),shareOrder:document.getElementById('share-order'),clearCart:document.getElementById('clear-cart'),modalImage:document.getElementById('modal-image'),modalCategory:document.getElementById('modal-category'),modalTitle:document.getElementById('modal-title'),modalSku:document.getElementById('modal-sku'),modalPrice:document.getElementById('modal-price'),modalNote:document.getElementById('modal-note'),modalVariant:document.getElementById('modal-variant'),modalVariantLabel:document.getElementById('modal-variant-label'),modalAdd:document.getElementById('modal-add'),toast:document.getElementById('toast')
-};
-var i;
-for(i=0;i<PRODUCTS.length;i++){productById[PRODUCTS[i].id]=PRODUCTS[i];cardById[PRODUCTS[i].id]=document.querySelector('[data-card-id="'+PRODUCTS[i].id+'"]');}
+(function () {
+  'use strict';
 
-function escapeHtml(value){return String(value===null||typeof value==='undefined'?'':value).replace(/[&<>"']/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch];});}
-function normalizeText(value){var text=String(value||'').toLowerCase();try{if(text.normalize)text=text.normalize('NFKD');}catch(err){}return text.replace(/[ً-ٰٟ]/g,'').replace(/[إأآٱ]/g,'ا').replace(/ؤ/g,'و').replace(/ئ/g,'ي').replace(/ة/g,'ه').replace(/ى/g,'ي').replace(/[^a-z0-9؀-ۿ]+/g,' ').replace(/^\s+|\s+$/g,'');}
-function formatPrice(value){if(value===null||typeof value==='undefined'||!isFinite(value))return 'السعر عند الطلب';var n=Number(value);var text;if(window.Intl&&Intl.NumberFormat){try{text=new Intl.NumberFormat('da-DK',{minimumFractionDigits:0,maximumFractionDigits:2}).format(n);}catch(err){text=null;}}if(!text)text=n.toFixed(2).replace(/\.00$/,'').replace(/(\.\d)0$/,'$1');return text+' kr';}
-function safeGet(key,fallback){try{var raw=window.localStorage.getItem(key);return raw===null?fallback:JSON.parse(raw);}catch(err){return fallback;}}
-function safeSet(key,value){try{window.localStorage.setItem(key,JSON.stringify(value));}catch(err){}}
-function closestAction(node,attribute){while(node&&node!==document){if(node.nodeType===1&&node.getAttribute(attribute)!==null)return node;node=node.parentNode;}return null;}
-function imageSrc(id){var img=document.getElementById('product-image-'+id);return img?img.getAttribute('src'):'';}
-function productIndexCompare(a,b){return a.order-b.order;}
-function filteredProducts(){var query=normalizeText(state.query);var tokens=query?query.split(/\s+/):[];var out=[];for(var x=0;x<PRODUCTS.length;x++){var p=PRODUCTS[x];if(state.category!=='all'&&p.categoryId!==state.category)continue;var matches=true;for(var t=0;t<tokens.length;t++){if(p.search.indexOf(tokens[t])===-1){matches=false;break;}}if(matches)out.push(p);}if(state.sort==='name')out.sort(function(a,b){return a.title.localeCompare? a.title.localeCompare(b.title,'ar'): (a.title>b.title?1:-1);});else if(state.sort==='price-asc')out.sort(function(a,b){if(a.price===null&&b.price===null)return productIndexCompare(a,b);if(a.price===null)return 1;if(b.price===null)return -1;return a.price-b.price||productIndexCompare(a,b);});else if(state.sort==='price-desc')out.sort(function(a,b){if(a.price===null&&b.price===null)return productIndexCompare(a,b);if(a.price===null)return 1;if(b.price===null)return -1;return b.price-a.price||productIndexCompare(a,b);});else out.sort(productIndexCompare);return out;}
-function renderProducts(){var items=filteredProducts();var fragment=document.createDocumentFragment();for(var x=0;x<items.length;x++){var card=cardById[items[x].id];card.hidden=x>=state.limit;fragment.appendChild(card);}for(var y=0;y<PRODUCTS.length;y++){var p=PRODUCTS[y];if(items.indexOf(p)===-1)cardById[p.id].hidden=true;}dom.grid.appendChild(fragment);var shown=Math.min(items.length,state.limit);dom.results.textContent=items.length?('عرض '+shown+' من أصل '+items.length+' منتج'): 'لا توجد نتائج';dom.empty.hidden=items.length!==0;dom.loadMore.hidden=shown>=items.length;dom.reset.hidden=!state.query&&state.category==='all';}
-function renderCategories(){var counts={};for(var x=0;x<PRODUCTS.length;x++)counts[PRODUCTS[x].categoryId]=(counts[PRODUCTS[x].categoryId]||0)+1;var htmlText='<button class="category-chip" type="button" data-category="all" aria-pressed="'+(state.category==='all'?'true':'false')+'">الكل <small>'+PRODUCTS.length+'</small></button>';for(var y=0;y<CATEGORIES.length;y++){var c=CATEGORIES[y];htmlText+='<button class="category-chip" type="button" data-category="'+escapeHtml(c.id)+'" aria-pressed="'+(state.category===c.id?'true':'false')+'">'+escapeHtml(c.name)+' <small>'+(counts[c.id]||0)+'</small></button>';}dom.categories.innerHTML=htmlText;}
-function cartKey(id,variant){return String(id)+'␟'+String(variant||'');}
-function loadState(){var saved=safeGet(CART_KEY,{});if(saved&&typeof saved==='object'){var keys=Object.keys(saved);for(var x=0;x<keys.length;x++){var item=saved[keys[x]];if(!item||!productById[String(item.id)])continue;var qty=Math.max(1,Math.min(999,parseInt(item.qty,10)||1));state.cart[keys[x]]={id:String(item.id),variant:String(item.variant||''),qty:qty};}var fields=safeGet(FIELDS_KEY,{});dom.customerName.value=fields&&fields.name?String(fields.name):'';dom.orderNotes.value=fields&&fields.notes?String(fields.notes):'';}}
-function persistCart(){safeSet(CART_KEY,state.cart);renderCart();}
-function persistFields(){safeSet(FIELDS_KEY,{name:dom.customerName.value,notes:dom.orderNotes.value});updateOrderActions();}
-function addToCart(id,variant){var p=productById[String(id)];if(!p)return false;if(p.options&&p.options.length&&!variant){showToast('اختر النوع أولًا.');return false;}var key=cartKey(id,variant);if(state.cart[key])state.cart[key].qty=Math.min(999,state.cart[key].qty+1);else state.cart[key]={id:String(id),variant:String(variant||''),qty:1};persistCart();showToast('تمت إضافة «'+p.title+'» إلى السلة.');return true;}
-function changeQty(key,delta){var item=state.cart[key];if(!item)return;item.qty+=delta;if(item.qty<=0)delete state.cart[key];else if(item.qty>999)item.qty=999;persistCart();}
-function cartMetrics(){var keys=Object.keys(state.cart);var entries=[];var units=0,total=0,pending=0;for(var x=0;x<keys.length;x++){var item=state.cart[keys[x]],p=productById[item.id];if(!p)continue;entries.push({key:keys[x],item:item,product:p});units+=item.qty;if(p.price===null)pending+=item.qty;else total+=p.price*item.qty;}entries.sort(function(a,b){return a.product.order-b.product.order;});return {entries:entries,units:units,total:total,pending:pending};}
-function productTotalInCart(id){var total=0,keys=Object.keys(state.cart);for(var x=0;x<keys.length;x++)if(state.cart[keys[x]].id===String(id))total+=state.cart[keys[x]].qty;return total;}
-function buildOrderText(){var m=cartMetrics();var lines=['طلب جديد من كتالوج شمسين'];var date;try{date=new Date().toLocaleString('ar-DK');}catch(err){date=new Date().toString();}lines.push('التاريخ: '+date);var name=dom.customerName.value.replace(/^\s+|\s+$/g,'');var notes=dom.orderNotes.value.replace(/^\s+|\s+$/g,'');if(name)lines.push('الاسم: '+name);lines.push('--------------------------------');for(var x=0;x<m.entries.length;x++){var entry=m.entries[x],p=entry.product,item=entry.item;lines.push((x+1)+') '+p.title+(item.variant?' — النوع: '+item.variant:''));if(p.price===null)lines.push('   الكمية: '+item.qty+' | السعر عند الطلب');else lines.push('   الكمية: '+item.qty+' × '+formatPrice(p.price)+' = '+formatPrice(p.price*item.qty));lines.push('   الرمز: '+p.sku);}lines.push('--------------------------------');lines.push('عدد القطع: '+m.units);lines.push((m.pending?'الإجمالي المعروف':'الإجمالي')+': '+formatPrice(m.total));if(m.pending)lines.push('ملاحظة: '+m.pending+' قطعة بسعر يحتاج إلى تأكيد.');if(notes)lines.push('ملاحظات: '+notes);return lines.join('\n');}
-function updateOrderActions(){var text=buildOrderText();dom.orderPreview.value=text;var m=cartMetrics();var disabled=m.entries.length===0;dom.copyOrder.disabled=disabled;dom.clearCart.disabled=disabled;dom.whatsappOrder.setAttribute('aria-disabled',disabled?'true':'false');dom.whatsappOrder.href=disabled?'#':'https://wa.me/?text='+encodeURIComponent(text);}
-function renderCart(){var m=cartMetrics(),htmlText='';for(var x=0;x<m.entries.length;x++){var e=m.entries[x],p=e.product,item=e.item;htmlText+='<article class="cart-item"><img class="cart-thumb" src="'+imageSrc(p.id)+'" alt=""><div><h3 class="cart-item-title">'+escapeHtml(p.title)+'</h3><p class="cart-item-meta">'+(item.variant?'النوع: '+escapeHtml(item.variant)+' · ':'')+'الرمز: <bdi dir="ltr">'+escapeHtml(p.sku)+'</bdi></p><div class="cart-item-bottom"><div class="qty"><button type="button" data-cart-action="decrease" data-cart-key="'+escapeHtml(e.key)+'" aria-label="إنقاص">−</button><span>'+item.qty+'</span><button type="button" data-cart-action="increase" data-cart-key="'+escapeHtml(e.key)+'" aria-label="زيادة">+</button></div><div><strong>'+escapeHtml(p.price===null?'السعر عند الطلب':formatPrice(p.price*item.qty))+'</strong> <button class="remove" type="button" data-cart-action="remove" data-cart-key="'+escapeHtml(e.key)+'">حذف</button></div></div></div></article>';}dom.cartItems.innerHTML=htmlText;dom.cartEmpty.hidden=m.entries.length!==0;dom.cartCount.textContent=String(m.units);dom.floatingCount.textContent=String(m.units);dom.summaryUnits.textContent=String(m.units);dom.summaryTotal.textContent=formatPrice(m.total);dom.totalLabel.textContent=m.pending?'الإجمالي المعروف':'الإجمالي';dom.pendingNote.hidden=m.pending===0;dom.pendingNote.textContent=m.pending?('يوجد '+m.pending+' قطعة بسعر عند الطلب ولم تدخل في الإجمالي.'):'';for(var y=0;y<PRODUCTS.length;y++){var badge=document.querySelector('[data-cart-badge="'+PRODUCTS[y].id+'"]');var q=productTotalInCart(PRODUCTS[y].id);if(badge){badge.textContent=String(q);badge.hidden=q===0;}}updateOrderActions();}
-function openLayer(layer,focusTarget){state.lastFocus=document.activeElement;layer.hidden=false;layer.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');window.setTimeout(function(){if(focusTarget)focusTarget.focus();},20);}
-function closeLayer(layer){layer.hidden=true;layer.setAttribute('aria-hidden','true');if(dom.cartLayer.hidden&&dom.productLayer.hidden)document.body.classList.remove('modal-open');if(state.lastFocus&&state.lastFocus.focus){try{state.lastFocus.focus();}catch(err){}}}
-function openProduct(id){var p=productById[String(id)];if(!p)return;state.activeProduct=p;dom.modalImage.src=imageSrc(p.id);dom.modalImage.alt=p.title;dom.modalCategory.textContent=p.category;dom.modalTitle.textContent=p.title;dom.modalSku.textContent='الرمز: '+p.sku;dom.modalPrice.textContent=formatPrice(p.price);dom.modalNote.textContent=p.note||'';dom.modalNote.hidden=!p.note;dom.modalVariant.innerHTML='';if(p.options&&p.options.length){var option=document.createElement('option');option.value='';option.textContent='اختر النوع';dom.modalVariant.appendChild(option);for(var x=0;x<p.options.length;x++){var o=document.createElement('option');o.value=p.options[x];o.textContent=p.options[x];dom.modalVariant.appendChild(o);}dom.modalVariant.hidden=false;dom.modalVariantLabel.hidden=false;}else{dom.modalVariant.hidden=true;dom.modalVariantLabel.hidden=true;}openLayer(dom.productLayer,document.querySelector('#product-layer .icon-button'));}
-function showToast(message){dom.toast.textContent=message;dom.toast.classList.add('show');window.clearTimeout(showToast.timer);showToast.timer=window.setTimeout(function(){dom.toast.classList.remove('show');},2300);}
-function copyOrder(){var text=buildOrderText();function fallback(){var previous=window.pageYOffset;dom.orderPreview.focus();dom.orderPreview.select();try{dom.orderPreview.setSelectionRange(0,dom.orderPreview.value.length);}catch(err){}var ok=false;try{ok=document.execCommand('copy');}catch(err2){ok=false;}window.scrollTo(0,previous);showToast(ok?'تم نسخ الطلب.':'تم تحديد النص؛ اختر «نسخ» من القائمة.');}if(navigator.clipboard&&navigator.clipboard.writeText&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){showToast('تم نسخ الطلب.');},fallback);}else fallback();}
+  var PAGE_SIZE = 24;
+  var CART_KEY = 'chamsineCatalogCartV3';
+  var FIELDS_KEY = 'chamsineCatalogFieldsV3';
+  var productById = {};
+  var cardById = {};
+  var state = {
+    query: '',
+    category: 'all',
+    sort: 'default',
+    limit: PAGE_SIZE,
+    cart: {},
+    cartStep: 'items',
+    activeProduct: null,
+    activeLayer: null,
+    lastFocus: null,
+    scrollY: 0
+  };
 
-renderCategories();loadState();renderProducts();renderCart();
-if(window.location&&window.location.protocol==='file:')document.getElementById('file-notice').hidden=false;
-if(navigator.share)dom.shareOrder.hidden=false;
+  var dom = {
+    grid: document.getElementById('product-grid'),
+    search: document.getElementById('search-input'),
+    sort: document.getElementById('sort-select'),
+    categories: document.getElementById('categories'),
+    results: document.getElementById('results-summary'),
+    empty: document.getElementById('empty-state'),
+    loadMore: document.getElementById('load-more'),
+    reset: document.getElementById('reset-filters'),
+    cartLayer: document.getElementById('cart-layer'),
+    productLayer: document.getElementById('product-layer'),
+    cartTrigger: document.getElementById('cart-trigger'),
+    cartCount: document.getElementById('cart-count'),
+    cartItems: document.getElementById('cart-items'),
+    cartEmpty: document.getElementById('cart-empty'),
+    cartScroll: document.getElementById('cart-scroll'),
+    checkoutScroll: document.getElementById('checkout-scroll'),
+    cartStepItemsTab: document.getElementById('cart-step-items-tab'),
+    cartStepShareTab: document.getElementById('cart-step-share-tab'),
+    cartStepItemsPanel: document.getElementById('cart-step-items'),
+    cartStepSharePanel: document.getElementById('cart-step-share'),
+    cartNext: document.getElementById('cart-next'),
+    cartBack: document.getElementById('cart-back'),
+    checkoutTitle: document.getElementById('checkout-title'),
+    summaryUnits: document.getElementById('summary-units'),
+    summaryTotal: document.getElementById('summary-total'),
+    totalLabel: document.getElementById('total-label'),
+    pendingNote: document.getElementById('pending-note'),
+    checkoutUnits: document.getElementById('checkout-units'),
+    checkoutTotal: document.getElementById('checkout-total'),
+    checkoutTotalLabel: document.getElementById('checkout-total-label'),
+    checkoutPendingNote: document.getElementById('checkout-pending-note'),
+    customerName: document.getElementById('customer-name'),
+    orderNotes: document.getElementById('order-notes'),
+    orderPreview: document.getElementById('order-preview'),
+    copyOrder: document.getElementById('copy-order'),
+    whatsappOrder: document.getElementById('whatsapp-order'),
+    shareOrder: document.getElementById('share-order'),
+    clearCart: document.getElementById('clear-cart'),
+    modalImage: document.getElementById('modal-image'),
+    modalCategory: document.getElementById('modal-category'),
+    modalTitle: document.getElementById('modal-title'),
+    modalSku: document.getElementById('modal-sku'),
+    modalPrice: document.getElementById('modal-price'),
+    modalNote: document.getElementById('modal-note'),
+    modalVariant: document.getElementById('modal-variant'),
+    modalVariantLabel: document.getElementById('modal-variant-label'),
+    modalAdd: document.getElementById('modal-add'),
+    toast: document.getElementById('toast')
+  };
 
-dom.search.addEventListener('input',function(){state.query=dom.search.value;state.limit=PAGE_SIZE;renderProducts();});
-dom.sort.addEventListener('change',function(){state.sort=dom.sort.value;state.limit=PAGE_SIZE;renderProducts();});
-dom.categories.addEventListener('click',function(event){var button=closestAction(event.target,'data-category');if(!button)return;state.category=button.getAttribute('data-category');state.limit=PAGE_SIZE;renderCategories();renderProducts();});
-dom.loadMore.addEventListener('click',function(){state.limit+=PAGE_SIZE;renderProducts();});
-dom.reset.addEventListener('click',function(){state.query='';state.category='all';state.limit=PAGE_SIZE;dom.search.value='';renderCategories();renderProducts();});
-dom.grid.addEventListener('click',function(event){var open=closestAction(event.target,'data-action');if(!open)return;var action=open.getAttribute('data-action'),id=open.getAttribute('data-product-id');if(action==='open-product')openProduct(id);else if(action==='add-product'){var select=document.querySelector('[data-variant-for="'+id+'"]');var variant=select?select.value:'';if(!addToCart(id,variant)&&select)select.focus();}});
-dom.cartTrigger.addEventListener('click',function(){openLayer(dom.cartLayer,document.querySelector('#cart-layer .icon-button'));});
-dom.floatingCart.addEventListener('click',function(){openLayer(dom.cartLayer,document.querySelector('#cart-layer .icon-button'));});
-document.addEventListener('click',function(event){var close=closestAction(event.target,'data-close-layer');if(close){var layer=document.getElementById(close.getAttribute('data-close-layer'));if(layer)closeLayer(layer);}});
-dom.cartItems.addEventListener('click',function(event){var button=closestAction(event.target,'data-cart-action');if(!button)return;var key=button.getAttribute('data-cart-key'),action=button.getAttribute('data-cart-action');if(action==='increase')changeQty(key,1);else if(action==='decrease')changeQty(key,-1);else if(action==='remove'){delete state.cart[key];persistCart();}});
-dom.customerName.addEventListener('input',persistFields);dom.orderNotes.addEventListener('input',persistFields);
-dom.copyOrder.addEventListener('click',copyOrder);
-dom.whatsappOrder.addEventListener('click',function(event){if(dom.whatsappOrder.getAttribute('aria-disabled')==='true')event.preventDefault();});
-dom.shareOrder.addEventListener('click',function(){if(!navigator.share)return;navigator.share({title:'طلب منتجات شمسين',text:buildOrderText()}).catch(function(){});});
-dom.clearCart.addEventListener('click',function(){if(Object.keys(state.cart).length&&window.confirm('هل تريد إفراغ السلة بالكامل؟')){state.cart={};persistCart();}});
-dom.modalAdd.addEventListener('click',function(){if(!state.activeProduct)return;var variant=dom.modalVariant.hidden?'':dom.modalVariant.value;if(addToCart(state.activeProduct.id,variant))closeLayer(dom.productLayer);else if(!dom.modalVariant.hidden)dom.modalVariant.focus();});
-document.addEventListener('keydown',function(event){if(event.key==='Escape'||event.keyCode===27){if(!dom.productLayer.hidden)closeLayer(dom.productLayer);else if(!dom.cartLayer.hidden)closeLayer(dom.cartLayer);}});
-window.__catalogReady=true;var compat=document.getElementById('compat-notice');if(compat)compat.hidden=true;
+  var i;
+  for (i = 0; i < PRODUCTS.length; i += 1) {
+    productById[PRODUCTS[i].id] = PRODUCTS[i];
+    cardById[PRODUCTS[i].id] = document.querySelector('[data-card-id="' + PRODUCTS[i].id + '"]');
+  }
+
+  function escapeHtml(value) {
+    return String(value === null || typeof value === 'undefined' ? '' : value).replace(/[&<>"']/g, function (character) {
+      return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'}[character];
+    });
+  }
+
+  function normalizeText(value) {
+    var normalized = String(value || '').toLowerCase();
+    try {
+      if (normalized.normalize) normalized = normalized.normalize('NFKD');
+    } catch (error) {}
+    return normalized
+      .replace(/[ً-ٰٟ]/g, '')
+      .replace(/[إأآٱ]/g, 'ا')
+      .replace(/ؤ/g, 'و')
+      .replace(/ئ/g, 'ي')
+      .replace(/ة/g, 'ه')
+      .replace(/ى/g, 'ي')
+      .replace(/[^a-z0-9؀-ۿ]+/g, ' ')
+      .replace(/^\s+|\s+$/g, '');
+  }
+
+  function formatPrice(value) {
+    var number;
+    var formatted;
+    if (value === null || typeof value === 'undefined' || !isFinite(value)) return 'السعر عند الطلب';
+    number = Number(value);
+    if (window.Intl && Intl.NumberFormat) {
+      try {
+        formatted = new Intl.NumberFormat('da-DK', {minimumFractionDigits: 0, maximumFractionDigits: 2}).format(number);
+      } catch (error) {
+        formatted = null;
+      }
+    }
+    if (!formatted) formatted = number.toFixed(2).replace(/\.00$/, '').replace(/(\.\d)0$/, '$1');
+    return formatted + ' kr';
+  }
+
+  function safeGet(key, fallback) {
+    try {
+      var raw = window.localStorage.getItem(key);
+      return raw === null ? fallback : JSON.parse(raw);
+    } catch (error) {
+      return fallback;
+    }
+  }
+
+  function safeSet(key, value) {
+    try {
+      window.localStorage.setItem(key, JSON.stringify(value));
+    } catch (error) {}
+  }
+
+  function closestAction(node, attribute) {
+    while (node && node !== document) {
+      if (node.nodeType === 1 && node.getAttribute(attribute) !== null) return node;
+      node = node.parentNode;
+    }
+    return null;
+  }
+
+  function imageSrc(id) {
+    var image = document.getElementById('product-image-' + id);
+    return image ? image.getAttribute('src') : '';
+  }
+
+  function productIndexCompare(a, b) {
+    return a.order - b.order;
+  }
+
+  function filteredProducts() {
+    var query = normalizeText(state.query);
+    var tokens = query ? query.split(/\s+/) : [];
+    var output = [];
+    var product;
+    var matches;
+    var x;
+    var tokenIndex;
+
+    for (x = 0; x < PRODUCTS.length; x += 1) {
+      product = PRODUCTS[x];
+      if (state.category !== 'all' && product.categoryId !== state.category) continue;
+      matches = true;
+      for (tokenIndex = 0; tokenIndex < tokens.length; tokenIndex += 1) {
+        if (product.search.indexOf(tokens[tokenIndex]) === -1) {
+          matches = false;
+          break;
+        }
+      }
+      if (matches) output.push(product);
+    }
+
+    if (state.sort === 'name') {
+      output.sort(function (a, b) {
+        return a.title.localeCompare ? a.title.localeCompare(b.title, 'ar') : (a.title > b.title ? 1 : -1);
+      });
+    } else if (state.sort === 'price-asc') {
+      output.sort(function (a, b) {
+        if (a.price === null && b.price === null) return productIndexCompare(a, b);
+        if (a.price === null) return 1;
+        if (b.price === null) return -1;
+        return a.price - b.price || productIndexCompare(a, b);
+      });
+    } else if (state.sort === 'price-desc') {
+      output.sort(function (a, b) {
+        if (a.price === null && b.price === null) return productIndexCompare(a, b);
+        if (a.price === null) return 1;
+        if (b.price === null) return -1;
+        return b.price - a.price || productIndexCompare(a, b);
+      });
+    } else {
+      output.sort(productIndexCompare);
+    }
+    return output;
+  }
+
+  function renderProducts() {
+    var items = filteredProducts();
+    var visible = {};
+    var fragment = document.createDocumentFragment();
+    var shown;
+    var x;
+
+    for (x = 0; x < items.length; x += 1) {
+      visible[items[x].id] = true;
+      cardById[items[x].id].hidden = x >= state.limit;
+      fragment.appendChild(cardById[items[x].id]);
+    }
+    for (x = 0; x < PRODUCTS.length; x += 1) {
+      if (!visible[PRODUCTS[x].id]) cardById[PRODUCTS[x].id].hidden = true;
+    }
+    dom.grid.appendChild(fragment);
+    shown = Math.min(items.length, state.limit);
+    dom.results.textContent = items.length ? ('عرض ' + shown + ' من أصل ' + items.length + ' منتج') : 'لا توجد نتائج';
+    dom.empty.hidden = items.length !== 0;
+    dom.loadMore.hidden = shown >= items.length;
+    dom.reset.hidden = !state.query && state.category === 'all';
+  }
+
+  function renderCategories() {
+    var counts = {};
+    var html = '<button class="category-chip" type="button" data-category="all" aria-pressed="' + (state.category === 'all' ? 'true' : 'false') + '">الكل <small>' + PRODUCTS.length + '</small></button>';
+    var category;
+    var x;
+
+    for (x = 0; x < PRODUCTS.length; x += 1) {
+      counts[PRODUCTS[x].categoryId] = (counts[PRODUCTS[x].categoryId] || 0) + 1;
+    }
+    for (x = 0; x < CATEGORIES.length; x += 1) {
+      category = CATEGORIES[x];
+      html += '<button class="category-chip" type="button" data-category="' + escapeHtml(category.id) + '" aria-pressed="' + (state.category === category.id ? 'true' : 'false') + '">' + escapeHtml(category.name) + ' <small>' + (counts[category.id] || 0) + '</small></button>';
+    }
+    dom.categories.innerHTML = html;
+  }
+
+  function cartKey(id, variant) {
+    return String(id) + '␟' + String(variant || '');
+  }
+
+  function loadState() {
+    var saved = safeGet(CART_KEY, {});
+    var fields = safeGet(FIELDS_KEY, {});
+    var keys;
+    var item;
+    var quantity;
+    var x;
+
+    if (saved && typeof saved === 'object') {
+      keys = Object.keys(saved);
+      for (x = 0; x < keys.length; x += 1) {
+        item = saved[keys[x]];
+        if (!item || !productById[String(item.id)]) continue;
+        quantity = Math.max(1, Math.min(999, parseInt(item.qty, 10) || 1));
+        state.cart[keys[x]] = {id: String(item.id), variant: String(item.variant || ''), qty: quantity};
+      }
+    }
+    dom.customerName.value = fields && fields.name ? String(fields.name) : '';
+    dom.orderNotes.value = fields && fields.notes ? String(fields.notes) : '';
+  }
+
+  function persistCart() {
+    safeSet(CART_KEY, state.cart);
+    renderCart();
+  }
+
+  function persistFields() {
+    safeSet(FIELDS_KEY, {name: dom.customerName.value, notes: dom.orderNotes.value});
+    updateOrderActions();
+  }
+
+  function addToCart(id, variant) {
+    var product = productById[String(id)];
+    var key;
+    if (!product) return false;
+    if (product.options && product.options.length && !variant) {
+      showToast('اختر النوع أولًا.');
+      return false;
+    }
+    key = cartKey(id, variant);
+    if (state.cart[key]) state.cart[key].qty = Math.min(999, state.cart[key].qty + 1);
+    else state.cart[key] = {id: String(id), variant: String(variant || ''), qty: 1};
+    persistCart();
+    showToast('تمت إضافة «' + product.title + '» إلى السلة.');
+    return true;
+  }
+
+  function changeQty(key, delta) {
+    var item = state.cart[key];
+    if (!item) return;
+    item.qty += delta;
+    if (item.qty <= 0) delete state.cart[key];
+    else if (item.qty > 999) item.qty = 999;
+    persistCart();
+  }
+
+  function cartMetrics() {
+    var keys = Object.keys(state.cart);
+    var entries = [];
+    var units = 0;
+    var total = 0;
+    var pending = 0;
+    var item;
+    var product;
+    var x;
+
+    for (x = 0; x < keys.length; x += 1) {
+      item = state.cart[keys[x]];
+      product = productById[item.id];
+      if (!product) continue;
+      entries.push({key: keys[x], item: item, product: product});
+      units += item.qty;
+      if (product.price === null) pending += item.qty;
+      else total += product.price * item.qty;
+    }
+    entries.sort(function (a, b) { return a.product.order - b.product.order; });
+    return {entries: entries, units: units, total: total, pending: pending};
+  }
+
+  function productTotalInCart(id) {
+    var total = 0;
+    var keys = Object.keys(state.cart);
+    var x;
+    for (x = 0; x < keys.length; x += 1) {
+      if (state.cart[keys[x]].id === String(id)) total += state.cart[keys[x]].qty;
+    }
+    return total;
+  }
+
+  function buildOrderText() {
+    var metrics = cartMetrics();
+    var lines = ['طلب جديد من كتالوج شمسين'];
+    var date;
+    var name;
+    var notes;
+    var entry;
+    var product;
+    var item;
+    var x;
+
+    try {
+      date = new Date().toLocaleString('ar-DK');
+    } catch (error) {
+      date = new Date().toString();
+    }
+    lines.push('التاريخ: ' + date);
+    name = dom.customerName.value.replace(/^\s+|\s+$/g, '');
+    notes = dom.orderNotes.value.replace(/^\s+|\s+$/g, '');
+    if (name) lines.push('الاسم: ' + name);
+    lines.push('--------------------------------');
+
+    for (x = 0; x < metrics.entries.length; x += 1) {
+      entry = metrics.entries[x];
+      product = entry.product;
+      item = entry.item;
+      lines.push((x + 1) + ') ' + product.title + (item.variant ? ' — النوع: ' + item.variant : ''));
+      if (product.price === null) lines.push('   الكمية: ' + item.qty + ' | السعر عند الطلب');
+      else lines.push('   الكمية: ' + item.qty + ' × ' + formatPrice(product.price) + ' = ' + formatPrice(product.price * item.qty));
+      lines.push('   الرمز: ' + product.sku);
+    }
+
+    lines.push('--------------------------------');
+    lines.push('عدد القطع: ' + metrics.units);
+    lines.push((metrics.pending ? 'الإجمالي المعروف' : 'الإجمالي') + ': ' + formatPrice(metrics.total));
+    if (metrics.pending) lines.push('ملاحظة: ' + metrics.pending + ' قطعة بسعر يحتاج إلى تأكيد.');
+    if (notes) lines.push('ملاحظات: ' + notes);
+    return lines.join('\n');
+  }
+
+  function updateOrderActions() {
+    var text = buildOrderText();
+    var metrics = cartMetrics();
+    var disabled = metrics.entries.length === 0;
+
+    dom.orderPreview.value = text;
+    dom.copyOrder.disabled = disabled;
+    dom.shareOrder.disabled = disabled;
+    dom.clearCart.disabled = disabled;
+    dom.cartNext.disabled = disabled;
+    dom.cartStepShareTab.disabled = disabled;
+
+    if (disabled) {
+      dom.whatsappOrder.removeAttribute('href');
+      dom.whatsappOrder.removeAttribute('target');
+      dom.whatsappOrder.removeAttribute('rel');
+      dom.whatsappOrder.setAttribute('aria-disabled', 'true');
+      dom.whatsappOrder.setAttribute('tabindex', '-1');
+    } else {
+      dom.whatsappOrder.href = 'https://wa.me/?text=' + encodeURIComponent(text);
+      dom.whatsappOrder.target = '_blank';
+      dom.whatsappOrder.rel = 'noopener noreferrer';
+      dom.whatsappOrder.setAttribute('aria-disabled', 'false');
+      dom.whatsappOrder.removeAttribute('tabindex');
+    }
+  }
+
+  function updateSummary(metrics) {
+    var totalLabel = metrics.pending ? 'الإجمالي المعروف' : 'الإجمالي';
+    var pendingText = metrics.pending ? ('يوجد ' + metrics.pending + ' قطعة بسعر عند الطلب ولم تدخل في الإجمالي.') : '';
+
+    dom.summaryUnits.textContent = String(metrics.units);
+    dom.summaryTotal.textContent = formatPrice(metrics.total);
+    dom.totalLabel.textContent = totalLabel;
+    dom.pendingNote.hidden = metrics.pending === 0;
+    dom.pendingNote.textContent = pendingText;
+
+    dom.checkoutUnits.textContent = String(metrics.units);
+    dom.checkoutTotal.textContent = formatPrice(metrics.total);
+    dom.checkoutTotalLabel.textContent = totalLabel;
+    dom.checkoutPendingNote.hidden = metrics.pending === 0;
+    dom.checkoutPendingNote.textContent = pendingText;
+  }
+
+  function renderCart() {
+    var metrics = cartMetrics();
+    var html = [];
+    var entry;
+    var product;
+    var item;
+    var unitPrice;
+    var linePrice;
+    var x;
+    var quantity;
+    var badge;
+
+    for (x = 0; x < metrics.entries.length; x += 1) {
+      entry = metrics.entries[x];
+      product = entry.product;
+      item = entry.item;
+      unitPrice = product.price === null ? 'السعر عند الطلب' : formatPrice(product.price);
+      linePrice = product.price === null ? 'السعر عند الطلب' : formatPrice(product.price * item.qty);
+      html.push(
+        '<article class="cart-item">' +
+          '<img class="cart-thumb" src="' + escapeHtml(imageSrc(product.id)) + '" alt="" width="78" height="78" loading="lazy" decoding="async">' +
+          '<div class="cart-item-content">' +
+            '<h3 class="cart-item-title">' + escapeHtml(product.title) + '</h3>' +
+            '<p class="cart-item-meta">الرمز: <bdi dir="ltr">' + escapeHtml(product.sku) + '</bdi></p>' +
+            (item.variant ? '<span class="cart-item-variant">النوع: ' + escapeHtml(item.variant) + '</span>' : '') +
+            '<div class="cart-item-prices"><span class="cart-unit-price">سعر الوحدة: <bdi dir="ltr">' + escapeHtml(unitPrice) + '</bdi></span><strong class="cart-line-price">' + escapeHtml(linePrice) + '</strong></div>' +
+            '<div class="cart-item-controls">' +
+              '<div class="qty" aria-label="تعديل كمية ' + escapeHtml(product.title) + '">' +
+                '<button type="button" data-cart-action="decrease" data-cart-key="' + escapeHtml(entry.key) + '" aria-label="إنقاص كمية ' + escapeHtml(product.title) + '">−</button>' +
+                '<span aria-label="الكمية">' + item.qty + '</span>' +
+                '<button type="button" data-cart-action="increase" data-cart-key="' + escapeHtml(entry.key) + '" aria-label="زيادة كمية ' + escapeHtml(product.title) + '">+</button>' +
+              '</div>' +
+              '<button class="remove" type="button" data-cart-action="remove" data-cart-key="' + escapeHtml(entry.key) + '" aria-label="حذف ' + escapeHtml(product.title) + ' من السلة">حذف</button>' +
+            '</div>' +
+          '</div>' +
+        '</article>'
+      );
+    }
+
+    dom.cartItems.innerHTML = html.join('');
+    dom.cartEmpty.hidden = metrics.entries.length !== 0;
+    dom.cartItems.hidden = metrics.entries.length === 0;
+    dom.cartCount.textContent = String(metrics.units);
+    dom.cartTrigger.setAttribute('aria-label', 'السلة، ' + metrics.units + ' قطعة');
+    updateSummary(metrics);
+
+    for (x = 0; x < PRODUCTS.length; x += 1) {
+      badge = document.querySelector('[data-cart-badge="' + PRODUCTS[x].id + '"]');
+      quantity = productTotalInCart(PRODUCTS[x].id);
+      if (badge) {
+        badge.textContent = String(quantity);
+        badge.hidden = quantity === 0;
+      }
+    }
+
+    if (metrics.entries.length === 0 && state.cartStep === 'share') setCartStep('items', false);
+    updateOrderActions();
+  }
+
+  function setCartStep(step, shouldFocus) {
+    var hasItems = cartMetrics().entries.length > 0;
+    var showItems;
+    var focusTarget;
+
+    if (step === 'share' && !hasItems) step = 'items';
+    state.cartStep = step;
+    showItems = step === 'items';
+
+    dom.cartStepItemsPanel.hidden = !showItems;
+    dom.cartStepSharePanel.hidden = showItems;
+    if (showItems) {
+      dom.cartStepItemsTab.setAttribute('aria-current', 'step');
+      dom.cartStepShareTab.removeAttribute('aria-current');
+      focusTarget = dom.cartStepItemsTab;
+    } else {
+      dom.cartStepItemsTab.removeAttribute('aria-current');
+      dom.cartStepShareTab.setAttribute('aria-current', 'step');
+      dom.checkoutScroll.scrollTop = 0;
+      focusTarget = dom.checkoutTitle;
+    }
+
+    if (shouldFocus) {
+      window.setTimeout(function () {
+        if (focusTarget && focusTarget.focus) focusTarget.focus();
+      }, 20);
+    }
+  }
+
+  function lockPageScroll() {
+    if (document.body.classList.contains('modal-open')) return;
+    state.scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+    document.body.style.top = '-' + state.scrollY + 'px';
+    document.body.classList.add('modal-open');
+  }
+
+  function unlockPageScroll() {
+    var scrollY = state.scrollY || 0;
+    document.body.classList.remove('modal-open');
+    document.body.style.top = '';
+    window.scrollTo(0, scrollY);
+  }
+
+  function openLayer(layer, focusTarget) {
+    state.lastFocus = document.activeElement;
+    state.activeLayer = layer;
+    layer.hidden = false;
+    layer.setAttribute('aria-hidden', 'false');
+    lockPageScroll();
+    window.setTimeout(function () {
+      if (focusTarget && focusTarget.focus) focusTarget.focus();
+    }, 20);
+  }
+
+  function closeLayer(layer) {
+    layer.hidden = true;
+    layer.setAttribute('aria-hidden', 'true');
+    if (layer === dom.cartLayer) dom.cartTrigger.setAttribute('aria-expanded', 'false');
+    if (dom.cartLayer.hidden && dom.productLayer.hidden) {
+      state.activeLayer = null;
+      unlockPageScroll();
+    }
+    if (state.lastFocus && state.lastFocus.focus) {
+      try { state.lastFocus.focus(); } catch (error) {}
+    }
+  }
+
+  function openCart() {
+    setCartStep('items', false);
+    dom.cartScroll.scrollTop = 0;
+    dom.cartTrigger.setAttribute('aria-expanded', 'true');
+    openLayer(dom.cartLayer, dom.cartLayer.querySelector('.icon-button'));
+  }
+
+  function openProduct(id) {
+    var product = productById[String(id)];
+    var option;
+    var x;
+    if (!product) return;
+
+    state.activeProduct = product;
+    dom.modalImage.src = imageSrc(product.id);
+    dom.modalImage.alt = product.title;
+    dom.modalCategory.textContent = product.category;
+    dom.modalTitle.textContent = product.title;
+    dom.modalSku.textContent = 'الرمز: ' + product.sku;
+    dom.modalPrice.textContent = formatPrice(product.price);
+    dom.modalNote.textContent = product.note || '';
+    dom.modalNote.hidden = !product.note;
+    dom.modalVariant.innerHTML = '';
+
+    if (product.options && product.options.length) {
+      option = document.createElement('option');
+      option.value = '';
+      option.textContent = 'اختر النوع';
+      dom.modalVariant.appendChild(option);
+      for (x = 0; x < product.options.length; x += 1) {
+        option = document.createElement('option');
+        option.value = product.options[x];
+        option.textContent = product.options[x];
+        dom.modalVariant.appendChild(option);
+      }
+      dom.modalVariant.hidden = false;
+      dom.modalVariantLabel.hidden = false;
+    } else {
+      dom.modalVariant.hidden = true;
+      dom.modalVariantLabel.hidden = true;
+    }
+    openLayer(dom.productLayer, dom.productLayer.querySelector('.icon-button'));
+  }
+
+  function showToast(message) {
+    dom.toast.textContent = message;
+    dom.toast.classList.add('show');
+    window.clearTimeout(showToast.timer);
+    showToast.timer = window.setTimeout(function () {
+      dom.toast.classList.remove('show');
+    }, 2300);
+  }
+
+  function copyOrder() {
+    var text = buildOrderText();
+
+    function fallback() {
+      var previous = window.pageYOffset;
+      var copied = false;
+      dom.orderPreview.focus();
+      dom.orderPreview.select();
+      try { dom.orderPreview.setSelectionRange(0, dom.orderPreview.value.length); } catch (error) {}
+      try { copied = document.execCommand('copy'); } catch (error2) { copied = false; }
+      window.scrollTo(0, previous);
+      showToast(copied ? 'تم نسخ الطلب.' : 'تم تحديد النص؛ اختر «نسخ» من القائمة.');
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () {
+        showToast('تم نسخ الطلب.');
+      }, fallback);
+    } else {
+      fallback();
+    }
+  }
+
+  function getFocusableElements(layer) {
+    var nodes = layer.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])');
+    var output = [];
+    var style;
+    var x;
+    for (x = 0; x < nodes.length; x += 1) {
+      style = window.getComputedStyle ? window.getComputedStyle(nodes[x]) : null;
+      if ((!style || (style.visibility !== 'hidden' && style.display !== 'none')) && (nodes[x].offsetWidth || nodes[x].offsetHeight || nodes[x].getClientRects().length)) output.push(nodes[x]);
+    }
+    return output;
+  }
+
+  function trapFocus(event, layer) {
+    var focusable = getFocusableElements(layer);
+    var first;
+    var last;
+    if (!focusable.length) {
+      event.preventDefault();
+      layer.focus();
+      return;
+    }
+    first = focusable[0];
+    last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
+
+  renderCategories();
+  loadState();
+  renderProducts();
+  renderCart();
+
+  if (window.location && window.location.protocol === 'file:') document.getElementById('file-notice').hidden = false;
+  if (navigator.share) dom.shareOrder.hidden = false;
+
+  dom.search.addEventListener('input', function () {
+    state.query = dom.search.value;
+    state.limit = PAGE_SIZE;
+    renderProducts();
+  });
+
+  dom.sort.addEventListener('change', function () {
+    state.sort = dom.sort.value;
+    state.limit = PAGE_SIZE;
+    renderProducts();
+  });
+
+  dom.categories.addEventListener('click', function (event) {
+    var button = closestAction(event.target, 'data-category');
+    if (!button) return;
+    state.category = button.getAttribute('data-category');
+    state.limit = PAGE_SIZE;
+    renderCategories();
+    renderProducts();
+  });
+
+  dom.loadMore.addEventListener('click', function () {
+    state.limit += PAGE_SIZE;
+    renderProducts();
+  });
+
+  dom.reset.addEventListener('click', function () {
+    state.query = '';
+    state.category = 'all';
+    state.limit = PAGE_SIZE;
+    dom.search.value = '';
+    renderCategories();
+    renderProducts();
+  });
+
+  dom.grid.addEventListener('click', function (event) {
+    var control = closestAction(event.target, 'data-action');
+    var action;
+    var id;
+    var select;
+    var variant;
+    if (!control) return;
+    action = control.getAttribute('data-action');
+    id = control.getAttribute('data-product-id');
+    if (action === 'open-product') {
+      openProduct(id);
+    } else if (action === 'add-product') {
+      select = document.querySelector('[data-variant-for="' + id + '"]');
+      variant = select ? select.value : '';
+      if (!addToCart(id, variant) && select) select.focus();
+    }
+  });
+
+  dom.cartTrigger.addEventListener('click', openCart);
+
+  dom.cartStepItemsTab.addEventListener('click', function () {
+    setCartStep('items', true);
+  });
+
+  dom.cartStepShareTab.addEventListener('click', function () {
+    setCartStep('share', true);
+  });
+
+  dom.cartNext.addEventListener('click', function () {
+    setCartStep('share', true);
+  });
+
+  dom.cartBack.addEventListener('click', function () {
+    setCartStep('items', true);
+  });
+
+  document.addEventListener('click', function (event) {
+    var close = closestAction(event.target, 'data-close-layer');
+    var layer;
+    if (!close) return;
+    layer = document.getElementById(close.getAttribute('data-close-layer'));
+    if (layer) closeLayer(layer);
+  });
+
+  dom.cartItems.addEventListener('click', function (event) {
+    var button = closestAction(event.target, 'data-cart-action');
+    var key;
+    var action;
+    if (!button) return;
+    key = button.getAttribute('data-cart-key');
+    action = button.getAttribute('data-cart-action');
+    if (action === 'increase') changeQty(key, 1);
+    else if (action === 'decrease') changeQty(key, -1);
+    else if (action === 'remove') {
+      delete state.cart[key];
+      persistCart();
+    }
+  });
+
+  dom.customerName.addEventListener('input', persistFields);
+  dom.orderNotes.addEventListener('input', persistFields);
+  dom.copyOrder.addEventListener('click', copyOrder);
+
+  dom.whatsappOrder.addEventListener('click', function (event) {
+    if (dom.whatsappOrder.getAttribute('aria-disabled') === 'true') event.preventDefault();
+  });
+
+  dom.shareOrder.addEventListener('click', function () {
+    if (!navigator.share || dom.shareOrder.disabled) return;
+    navigator.share({title: 'طلب منتجات شمسين', text: buildOrderText()}).catch(function (error) {
+      if (!error || error.name !== 'AbortError') showToast('تعذر فتح خيارات المشاركة.');
+    });
+  });
+
+  dom.clearCart.addEventListener('click', function () {
+    if (Object.keys(state.cart).length && window.confirm('هل تريد إفراغ السلة بالكامل؟')) {
+      state.cart = {};
+      persistCart();
+    }
+  });
+
+  dom.modalAdd.addEventListener('click', function () {
+    var variant;
+    if (!state.activeProduct) return;
+    variant = dom.modalVariant.hidden ? '' : dom.modalVariant.value;
+    if (addToCart(state.activeProduct.id, variant)) closeLayer(dom.productLayer);
+    else if (!dom.modalVariant.hidden) dom.modalVariant.focus();
+  });
+
+  document.addEventListener('keydown', function (event) {
+    var activeLayer = !dom.productLayer.hidden ? dom.productLayer : (!dom.cartLayer.hidden ? dom.cartLayer : null);
+    if (!activeLayer) return;
+    if (event.key === 'Escape' || event.keyCode === 27) {
+      event.preventDefault();
+      closeLayer(activeLayer);
+    } else if (event.key === 'Tab' || event.keyCode === 9) {
+      trapFocus(event, activeLayer);
+    }
+  });
+
+  window.__catalogReady = true;
+  var compatibilityNotice = document.getElementById('compat-notice');
+  if (compatibilityNotice) compatibilityNotice.hidden = true;
 }());
 </script>
 </body>

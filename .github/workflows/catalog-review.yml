@@ -1,0 +1,35 @@
+name: Catalog review
+on:
+  push:
+    branches: [catalog-refresh-2026-10-24]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare review snapshot
+        run: |
+          mkdir -p /tmp/catalog-review
+          cp index.html /tmp/catalog-review/original.html
+          python - <<'PY'
+          import pathlib, re, json, urllib.request, hashlib
+          text = pathlib.Path('index.html').read_text()
+          match = re.search(r'var PRODUCTS=(\[.*?\]);', text, re.S)
+          if match:
+              pathlib.Path('/tmp/catalog-review/legacy-products.json').write_text(json.dumps(json.loads(match.group(1)), ensure_ascii=False, indent=2))
+          samples = ['https://chamsine.dk/wp-content/uploads/2026/09/Chamsine-Oriental-Breadsticks-Bakery-Pastry-%E2%80%93-300-g-1.png', 'https://chamsine.dk/wp-content/uploads/2026/08/ch243-white-bg-1.jpg']
+          for url in samples:
+              try:
+                  data = urllib.request.urlopen(url, timeout=30).read()
+                  print('SOURCE_IMAGE', url, len(data), hashlib.sha256(data).hexdigest())
+              except Exception as exc:
+                  print('SOURCE_IMAGE_UNAVAILABLE', str(exc))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: catalog-review
+          path: /tmp/catalog-review/
+          retention-days: 3

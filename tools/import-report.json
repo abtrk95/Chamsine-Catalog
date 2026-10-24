@@ -1,0 +1,1837 @@
+{
+  "source": "Chamsine-Products.zip",
+  "productCount": 229,
+  "imageFiles": 223,
+  "productsWithImages": 226,
+  "productsWithoutPrice": [
+    "CH275",
+    "CH210",
+    "CH039",
+    "CH069",
+    "CH276",
+    "CH099",
+    "CH311",
+    "CH014",
+    "CH059",
+    "LAT001",
+    "LAT002",
+    "LAT003",
+    "LAT004",
+    "LAT005",
+    "LAT006",
+    "LAT007",
+    "LAT008"
+  ],
+  "productsWithoutSKU": [
+    "item-216",
+    "item-217",
+    "item-218",
+    "item-219",
+    "item-220",
+    "item-221"
+  ],
+  "productsWithoutImage": [
+    "CH361",
+    "CH308",
+    "CH014"
+  ],
+  "sourceDraftsIncluded": [
+    "LAT001",
+    "LAT002",
+    "LAT003",
+    "LAT004",
+    "LAT005",
+    "LAT006",
+    "LAT007",
+    "LAT008"
+  ],
+  "originalImageBytes": 156140354,
+  "optimizedImageBytes": 8805554,
+  "priceSource": "products.csv, Sale Price when supplied, otherwise Regular Price. prices.csv contains alternate price-list overrides and is not used for this DKK catalog.",
+  "images": {
+    "634-ch124-white-bg-1.jpg": {
+      "path": "images/7898087028f9ded9.webp",
+      "sha256": "7898087028f9ded9818a0ffd7954def03c19e301109e235c52261d0e8c43a76c",
+      "sourceBytes": 187866,
+      "bytes": 39536,
+      "width": 640,
+      "height": 640
+    },
+    "764-ch106-white-bg-1.jpg": {
+      "path": "images/8c8bb0a330154a2a.webp",
+      "sha256": "8c8bb0a330154a2a8d618e907c57a9a5bd565bee5ce4dfcf04e9bcb3202cc632",
+      "sourceBytes": 262421,
+      "bytes": 55788,
+      "width": 640,
+      "height": 640
+    },
+    "904-ch078-white-bg-1.jpg": {
+      "path": "images/efe5707a049e67b2.webp",
+      "sha256": "efe5707a049e67b20c576ca57dcf0e98f1a87f44f1987a7e8a0aabfe84858b00",
+      "sourceBytes": 122932,
+      "bytes": 22042,
+      "width": 640,
+      "height": 640
+    },
+    "696-ch193-white-bg-1.jpg": {
+      "path": "images/ccd1f90820847545.webp",
+      "sha256": "ccd1f90820847545d96d6d2edbbdc78b28ff36233c66d1ccd4dbcaa1ee823449",
+      "sourceBytes": 239467,
+      "bytes": 38850,
+      "width": 640,
+      "height": 640
+    },
+    "618-ch351-white-bg-1.jpg": {
+      "path": "images/156b995d7bc5ae2a.webp",
+      "sha256": "156b995d7bc5ae2a73436832c8e5e109bbd462837e0f5626b597788cdcd6c900",
+      "sourceBytes": 141709,
+      "bytes": 27292,
+      "width": 640,
+      "height": 640
+    },
+    "912-ch235-white-bg-1.jpg": {
+      "path": "images/6b51f4abc41b2af7.webp",
+      "sha256": "6b51f4abc41b2af7e201c4bb48ed9f4e7ade0ab5bdb7b61adaee761a8369c981",
+      "sourceBytes": 144852,
+      "bytes": 26148,
+      "width": 640,
+      "height": 640
+    },
+    "1122-ch053-white-bg-1.jpg": {
+      "path": "images/8147e957f4279a9a.webp",
+      "sha256": "8147e957f4279a9a9cc164dab2087c18a87983a95909786a38da713778d7220b",
+      "sourceBytes": 74108,
+      "bytes": 16298,
+      "width": 640,
+      "height": 640
+    },
+    "1090-ch204-white-bg-1.jpg": {
+      "path": "images/4565924ebd1d3a58.webp",
+      "sha256": "4565924ebd1d3a58488d08633a22e22c9272bbdc156106a7cd808662b0474113",
+      "sourceBytes": 103205,
+      "bytes": 14228,
+      "width": 640,
+      "height": 640
+    },
+    "1124-ch171-white-bg-1.jpg": {
+      "path": "images/416d14f4d7d158a0.webp",
+      "sha256": "416d14f4d7d158a0e6550f5b3d2e7937c66beaa267c3516ba8e0ac6d9d0561d7",
+      "sourceBytes": 191731,
+      "bytes": 35100,
+      "width": 640,
+      "height": 640
+    },
+    "1080-p025-white-bg-1.png": {
+      "path": "images/c2b764a8afdd1dc6.webp",
+      "sha256": "c2b764a8afdd1dc634d23686e92a6f9fe04ff172054e25f7dae190ea68cb6166",
+      "sourceBytes": 1251423,
+      "bytes": 22596,
+      "width": 640,
+      "height": 640
+    },
+    "680-p066-white-bg-1.png": {
+      "path": "images/4f8e1a9f2e00a44d.webp",
+      "sha256": "4f8e1a9f2e00a44d824b7d5e7f7afa89cea773cb022612455ff53c974eca743e",
+      "sourceBytes": 1534148,
+      "bytes": 42710,
+      "width": 640,
+      "height": 640
+    },
+    "940-ch196-white-bg-1.jpg": {
+      "path": "images/1aca1b5f57db7467.webp",
+      "sha256": "1aca1b5f57db7467036e238942b2d3f232b5e347134cccf9a7abe07352890f1c",
+      "sourceBytes": 269530,
+      "bytes": 42820,
+      "width": 640,
+      "height": 640
+    },
+    "558-p102-white-bg-1.png": {
+      "path": "images/0c1383d6fb4fe3a0.webp",
+      "sha256": "0c1383d6fb4fe3a016a234d3f985ac0f6fd02ec99bc727a7c5c0e294333aa672",
+      "sourceBytes": 1336351,
+      "bytes": 35704,
+      "width": 640,
+      "height": 640
+    },
+    "982-ch147-white-bg-1.jpg": {
+      "path": "images/83c80bca0096d048.webp",
+      "sha256": "83c80bca0096d04813bdb4d6d3d191d9047dfaf0186b927112dc2b4ca4b6679a",
+      "sourceBytes": 262452,
+      "bytes": 52924,
+      "width": 640,
+      "height": 640
+    },
+    "722-p029-white-bg-1.png": {
+      "path": "images/663c422222c12762.webp",
+      "sha256": "663c422222c12762059234bddfbaa6be9a862369371c93dc07cc3f21a5b58ef5",
+      "sourceBytes": 1793814,
+      "bytes": 62326,
+      "width": 640,
+      "height": 640
+    },
+    "950-ch305-white-bg-1.jpg": {
+      "path": "images/8d68641222d1c71f.webp",
+      "sha256": "8d68641222d1c71f2b94a38250937d09e8f82138d90b40cf57e822a1dac43d27",
+      "sourceBytes": 176158,
+      "bytes": 33816,
+      "width": 640,
+      "height": 640
+    },
+    "1096-ch105-white-bg-1.jpg": {
+      "path": "images/46117ca2d9940c28.webp",
+      "sha256": "46117ca2d9940c28e069c1508e601b96a77a04dc2ec611f09187447f4aae17db",
+      "sourceBytes": 110353,
+      "bytes": 18730,
+      "width": 640,
+      "height": 640
+    },
+    "610-ch206-white-bg-1.jpg": {
+      "path": "images/35cab41e384aecf7.webp",
+      "sha256": "35cab41e384aecf79901e07c03b992092ac5b7a8e75eb9e1ffda4cdc956b2446",
+      "sourceBytes": 282926,
+      "bytes": 46116,
+      "width": 640,
+      "height": 640
+    },
+    "552-ch325-white-bg-1.jpg": {
+      "path": "images/f72ae36d9e97a47d.webp",
+      "sha256": "f72ae36d9e97a47db2e4798337b043b362e47de46ee1d873b864507e3e0d584f",
+      "sourceBytes": 177039,
+      "bytes": 41584,
+      "width": 640,
+      "height": 640
+    },
+    "1036-ch236-white-bg-1.jpg": {
+      "path": "images/ff18f8adbaa27fb0.webp",
+      "sha256": "ff18f8adbaa27fb01491111ae9fdee6c86906e2ce6ccd333fd07c87f99327b8f",
+      "sourceBytes": 135198,
+      "bytes": 26154,
+      "width": 640,
+      "height": 640
+    },
+    "622-ch302-white-bg-1.jpg": {
+      "path": "images/b3394cc252259be1.webp",
+      "sha256": "b3394cc252259be1cc0fddb1307005f7f433d4848d026632f118c65a1f5102ca",
+      "sourceBytes": 172746,
+      "bytes": 35050,
+      "width": 640,
+      "height": 640
+    },
+    "672-p018-white-bg-1.png": {
+      "path": "images/1fb4328647a40525.webp",
+      "sha256": "1fb4328647a4052559c5271a9a2e78dd4464725d542260f89fbb1a677b3caa5b",
+      "sourceBytes": 1289556,
+      "bytes": 35254,
+      "width": 640,
+      "height": 640
+    },
+    "1225-Danisa-Traditional-Butter-Cookies-–-454-g-1.png": {
+      "path": "images/07a90c2f7b98594c.webp",
+      "sha256": "07a90c2f7b98594c6dd116a1e214fe3073db26ef6b472f4f4b8606f47e948342",
+      "sourceBytes": 2206388,
+      "bytes": 89494,
+      "width": 640,
+      "height": 640
+    },
+    "670-p085-white-bg-1.png": {
+      "path": "images/9a382a1b66328bd7.webp",
+      "sha256": "9a382a1b66328bd730dbdd3871cf6fe35c6b8bb72d5bd669879595f3e130ac06",
+      "sourceBytes": 1397024,
+      "bytes": 37974,
+      "width": 640,
+      "height": 640
+    },
+    "1216-Chamsine-Amarin-Sweets-–-Corekotlu-Hurmali-Sesame-Date-Filled-Sweets-1.png": {
+      "path": "images/889620fc46ac895b.webp",
+      "sha256": "889620fc46ac895be46c4595dff960d78133298a25a38db915397a862f02f0be",
+      "sourceBytes": 2486173,
+      "bytes": 104090,
+      "width": 640,
+      "height": 640
+    },
+    "694-ch363-white-bg-1.jpg": {
+      "path": "images/95af5494d858bce9.webp",
+      "sha256": "95af5494d858bce98c97443e418c77d02e7c697af72b6462a15aadb03732f5dc",
+      "sourceBytes": 165844,
+      "bytes": 28894,
+      "width": 640,
+      "height": 640
+    },
+    "538-p058-white-bg-1.png": {
+      "path": "images/2831aa5c5b7a0b1d.webp",
+      "sha256": "2831aa5c5b7a0b1d88357f9b3fdc61cc3ff741dc476e4ce9bc3fc1e121b47552",
+      "sourceBytes": 1644558,
+      "bytes": 48490,
+      "width": 640,
+      "height": 640
+    },
+    "1126-ch297-white-bg-1.jpg": {
+      "path": "images/67e35f46278f754f.webp",
+      "sha256": "67e35f46278f754f5769cb2522f349708bc94b15ce4b21cda28da1c4ede2a3ac",
+      "sourceBytes": 85667,
+      "bytes": 14506,
+      "width": 640,
+      "height": 640
+    },
+    "1050-ch133-white-bg-1.jpg": {
+      "path": "images/a7aedd191dde8cbb.webp",
+      "sha256": "a7aedd191dde8cbb0cfed886a3973ebdc3be558ce21015f14b3b831faf43a9b9",
+      "sourceBytes": 139746,
+      "bytes": 24854,
+      "width": 640,
+      "height": 640
+    },
+    "828-ch025-white-bg-1.jpg": {
+      "path": "images/02d8f180824f5a88.webp",
+      "sha256": "02d8f180824f5a88e9c7e660b598e6e3e5b4d45c588b19deaefbd8fb090042ea",
+      "sourceBytes": 129565,
+      "bytes": 21948,
+      "width": 640,
+      "height": 640
+    },
+    "920-ch195-white-bg-1.jpg": {
+      "path": "images/c48284ae089d4846.webp",
+      "sha256": "c48284ae089d484699f417ca3cb86730881eb143053006ed1e841abef228a609",
+      "sourceBytes": 235166,
+      "bytes": 36368,
+      "width": 640,
+      "height": 640
+    },
+    "1150-ch203-white-bg-1.jpg": {
+      "path": "images/96fedd68a45f9987.webp",
+      "sha256": "96fedd68a45f99871b17e427b033be4536dc690d9a8a41d990cdf074dbc91462",
+      "sourceBytes": 376685,
+      "bytes": 60078,
+      "width": 640,
+      "height": 640
+    },
+    "1082-p040-white-bg-1.png": {
+      "path": "images/77f029c7ce17175b.webp",
+      "sha256": "77f029c7ce17175bdf3510219cc576eedb544a4010ff04e83b75730c97ecf9dc",
+      "sourceBytes": 1186747,
+      "bytes": 22024,
+      "width": 640,
+      "height": 640
+    },
+    "1014-p067-white-bg-1.png": {
+      "path": "images/e2143f23895ab837.webp",
+      "sha256": "e2143f23895ab83732fad91a86d0f5efa83c45cfc355b9753fecb6f1c905d6f0",
+      "sourceBytes": 1343727,
+      "bytes": 21474,
+      "width": 640,
+      "height": 640
+    },
+    "802-p024-white-bg-1.png": {
+      "path": "images/de33930f4ff0ae68.webp",
+      "sha256": "de33930f4ff0ae6846b41e07319daf09cbc4c164941bb1c2253a22b23c71daa8",
+      "sourceBytes": 1234176,
+      "bytes": 27312,
+      "width": 640,
+      "height": 640
+    },
+    "918-ch162-white-bg-1.jpg": {
+      "path": "images/261f7ee93d4cb2ba.webp",
+      "sha256": "261f7ee93d4cb2ba4503f2b2ffbc6120e0abdbcc6a57d666740d6c29650dba58",
+      "sourceBytes": 181730,
+      "bytes": 39704,
+      "width": 640,
+      "height": 640
+    },
+    "1152-ch073-white-bg-1.jpg": {
+      "path": "images/24d33f5cd8b536cb.webp",
+      "sha256": "24d33f5cd8b536cb9ce124c6dd6602bfb2b152538012ae5e139251a35823775e",
+      "sourceBytes": 106998,
+      "bytes": 22948,
+      "width": 640,
+      "height": 640
+    },
+    "554-ch037-white-bg-1.jpg": {
+      "path": "images/7129a58bcf28b010.webp",
+      "sha256": "7129a58bcf28b0109ef6bba19ae09d79ad1ba87ac927e305f5c1c149cc3b9f83",
+      "sourceBytes": 188307,
+      "bytes": 41694,
+      "width": 640,
+      "height": 640
+    },
+    "1006-p093-white-bg-1.png": {
+      "path": "images/a2e0b4bbb5a5022f.webp",
+      "sha256": "a2e0b4bbb5a5022f41d1d7f70827ece4c718a9a0a2e3186accdb246531abc6fb",
+      "sourceBytes": 884635,
+      "bytes": 12172,
+      "width": 640,
+      "height": 640
+    },
+    "788-ch032-white-bg-1.jpg": {
+      "path": "images/9823bdc99452e230.webp",
+      "sha256": "9823bdc99452e2307ac9a1143c955fc477cf6900a6468b8096662666f5ee095f",
+      "sourceBytes": 301258,
+      "bytes": 71474,
+      "width": 640,
+      "height": 640
+    },
+    "826-ch269-white-bg-1.jpg": {
+      "path": "images/2d8e663ad8cc8bd7.webp",
+      "sha256": "2d8e663ad8cc8bd70c3f119f05b0a781d04e9f3fb75f99eaba0f4f4fb89a968b",
+      "sourceBytes": 209250,
+      "bytes": 44572,
+      "width": 640,
+      "height": 640
+    },
+    "1004-p071-white-bg-1.png": {
+      "path": "images/db2bf63e0d4a66d0.webp",
+      "sha256": "db2bf63e0d4a66d0326fe74b34d0fe4df11baf02180fef55b741d350e8de1ff1",
+      "sourceBytes": 1435241,
+      "bytes": 30310,
+      "width": 640,
+      "height": 640
+    },
+    "676-p069-white-bg-1.png": {
+      "path": "images/6a141e2a1d71faef.webp",
+      "sha256": "6a141e2a1d71faeff51173d2bb556b1fa6011e5a05fce3484bc181782c16ce3b",
+      "sourceBytes": 1670979,
+      "bytes": 36728,
+      "width": 640,
+      "height": 640
+    },
+    "596-ch339-white-bg-1.jpg": {
+      "path": "images/0c163ffa186f1f15.webp",
+      "sha256": "0c163ffa186f1f150f304fee384f132cf15feeb1f05da64094bbbcdf09c1f9b7",
+      "sourceBytes": 263563,
+      "bytes": 68816,
+      "width": 640,
+      "height": 640
+    },
+    "1020-ch244-white-bg-1.jpg": {
+      "path": "images/0fe55dae0bfa024a.webp",
+      "sha256": "0fe55dae0bfa024ad3ecf93dc4ac4ddf88745f2f04890edee815bab96c8e70af",
+      "sourceBytes": 172122,
+      "bytes": 35280,
+      "width": 640,
+      "height": 640
+    },
+    "702-ch300-white-bg-1.jpg": {
+      "path": "images/754617a51ade1d5d.webp",
+      "sha256": "754617a51ade1d5dd7cbde98d71c7563926e0274daea3660680f69e02ad1d872",
+      "sourceBytes": 195972,
+      "bytes": 40894,
+      "width": 640,
+      "height": 640
+    },
+    "710-ch202-white-bg-1.jpg": {
+      "path": "images/9fe4e46618a1b3c6.webp",
+      "sha256": "9fe4e46618a1b3c68237221c4522633992a263e6ec603024e5094a21e351f1ac",
+      "sourceBytes": 255934,
+      "bytes": 37856,
+      "width": 640,
+      "height": 640
+    },
+    "868-ch309-white-bg-1.jpg": {
+      "path": "images/020d17d1c64c8d19.webp",
+      "sha256": "020d17d1c64c8d19c80936df34387440f170bfe881a2d8485d29e9f217a9185b",
+      "sourceBytes": 104600,
+      "bytes": 16506,
+      "width": 640,
+      "height": 640
+    },
+    "1128-ch316-white-bg-1.jpg": {
+      "path": "images/81b5451af18b6aeb.webp",
+      "sha256": "81b5451af18b6aeb169df18b583ef007ffa9a64884b2806b2f627273ce0b9949",
+      "sourceBytes": 219973,
+      "bytes": 52934,
+      "width": 640,
+      "height": 640
+    },
+    "834-ch280-white-bg-1.jpg": {
+      "path": "images/ea5ca41bccbd33bf.webp",
+      "sha256": "ea5ca41bccbd33bf9804ed57e97b41c2697f24e3ab7d263adc6f5a086a132f99",
+      "sourceBytes": 289901,
+      "bytes": 46274,
+      "width": 640,
+      "height": 640
+    },
+    "626-ch270-white-bg-1.jpg": {
+      "path": "images/0950d95c4a621feb.webp",
+      "sha256": "0950d95c4a621feb886540dbaea4033dbfec7381f1a92eeeec5708087f1a9b55",
+      "sourceBytes": 164234,
+      "bytes": 31768,
+      "width": 640,
+      "height": 640
+    },
+    "726-p023-white-bg-1.png": {
+      "path": "images/09413a1a5951ef69.webp",
+      "sha256": "09413a1a5951ef6940fb6c777e794ee8049e2954f417f99bcf693b6b9f205943",
+      "sourceBytes": 1302031,
+      "bytes": 41594,
+      "width": 640,
+      "height": 640
+    },
+    "1190-p095-white-bg-1.png": {
+      "path": "images/83cb34a68908c49f.webp",
+      "sha256": "83cb34a68908c49fcc6e457fba3f9b58da970458d59838040f4bc4820a40667e",
+      "sourceBytes": 1585957,
+      "bytes": 56186,
+      "width": 640,
+      "height": 640
+    },
+    "1008-p064-white-bg-1.png": {
+      "path": "images/b1b04579b952400a.webp",
+      "sha256": "b1b04579b952400a3ed44863cfd5976cac0a6a01d3ba63edd8756e559044f66b",
+      "sourceBytes": 1459512,
+      "bytes": 35122,
+      "width": 640,
+      "height": 640
+    },
+    "1076-p059-white-bg-1.png": {
+      "path": "images/90ac9d46f4808579.webp",
+      "sha256": "90ac9d46f4808579df8a9ddcea92c6bc491314107576ca6726c52b02bd50bda1",
+      "sourceBytes": 1399916,
+      "bytes": 31312,
+      "width": 640,
+      "height": 640
+    },
+    "890-ch290-white-bg-1.jpg": {
+      "path": "images/bf7bbd5e3038d932.webp",
+      "sha256": "bf7bbd5e3038d93297c98bff1e29edda0a67a1610337b8525f2cdcadf21f1a81",
+      "sourceBytes": 231947,
+      "bytes": 53828,
+      "width": 640,
+      "height": 640
+    },
+    "580-ch004-white-bg-1.jpg": {
+      "path": "images/04b8028fdabee743.webp",
+      "sha256": "04b8028fdabee743c1c0619e70cb4e786a1dc995a9b35601bbe4479a251163d4",
+      "sourceBytes": 261730,
+      "bytes": 62846,
+      "width": 640,
+      "height": 640
+    },
+    "1084-p028-white-bg-1.png": {
+      "path": "images/0a2fdc0d1a6c921b.webp",
+      "sha256": "0a2fdc0d1a6c921b1c6dc8ae368aa25e8fb3b9169c4e7d681d6e1f008aec808c",
+      "sourceBytes": 1361987,
+      "bytes": 25710,
+      "width": 640,
+      "height": 640
+    },
+    "900-ch062-white-bg-1.jpg": {
+      "path": "images/e72ee8496c37bbab.webp",
+      "sha256": "e72ee8496c37bbab6b08d42a4529e42bdf35f9bd870fee8d62aec744c98870e7",
+      "sourceBytes": 211908,
+      "bytes": 51828,
+      "width": 640,
+      "height": 640
+    },
+    "1182-ch211-white-bg-1.jpg": {
+      "path": "images/8f424d8c5db28b17.webp",
+      "sha256": "8f424d8c5db28b17ca32f0baaa961c2de38c6d0d49c47465215eb4017f50fe94",
+      "sourceBytes": 324178,
+      "bytes": 52712,
+      "width": 640,
+      "height": 640
+    },
+    "1282-darling.jpg": {
+      "path": "images/4bfd7d92bf0e9c24.webp",
+      "sha256": "4bfd7d92bf0e9c24300e7cc56d6ca139d3b8e303a727022865b8548461cf59e5",
+      "sourceBytes": 178031,
+      "bytes": 13166,
+      "width": 640,
+      "height": 282
+    },
+    "1064-ch183-white-bg-1.jpg": {
+      "path": "images/097bfb2d79c1d64a.webp",
+      "sha256": "097bfb2d79c1d64a31cb9ffc472553e0a5e93d8b9e1efcc6d47ff97286975c6b",
+      "sourceBytes": 177731,
+      "bytes": 23880,
+      "width": 640,
+      "height": 640
+    },
+    "850-ch208-white-bg-1.jpg": {
+      "path": "images/be06224de31ae3ba.webp",
+      "sha256": "be06224de31ae3baf3a9f717579cfa0c6924f4e10785a4fe52f0a330be3d00b5",
+      "sourceBytes": 222958,
+      "bytes": 32322,
+      "width": 640,
+      "height": 640
+    },
+    "714-ch312-white-bg-1.jpg": {
+      "path": "images/708b53009bd5f9ad.webp",
+      "sha256": "708b53009bd5f9ad32b2cdff7f3f8dbff1c5120b0751eb8c803d946bc2bd3925",
+      "sourceBytes": 181092,
+      "bytes": 38224,
+      "width": 640,
+      "height": 640
+    },
+    "844-ch163-white-bg-1.jpg": {
+      "path": "images/14ddc68e7eb9d227.webp",
+      "sha256": "14ddc68e7eb9d227bcae8b2889a5541794d756ff143acc2872d91a5f60191aec",
+      "sourceBytes": 112392,
+      "bytes": 17584,
+      "width": 640,
+      "height": 640
+    },
+    "1094-ch155-white-bg-1.jpg": {
+      "path": "images/a971264468b9b3a4.webp",
+      "sha256": "a971264468b9b3a432383958e6500c6b6e1c5a0d27752e2ab1e7c67ded15eed9",
+      "sourceBytes": 116960,
+      "bytes": 20798,
+      "width": 640,
+      "height": 640
+    },
+    "924-ch090-white-bg-1.jpg": {
+      "path": "images/91e266bbe8516ff6.webp",
+      "sha256": "91e266bbe8516ff683261f8cc99054144b3f26f60b43643401c128084844749c",
+      "sourceBytes": 121166,
+      "bytes": 21358,
+      "width": 640,
+      "height": 640
+    },
+    "766-ch048-white-bg-1.jpg": {
+      "path": "images/42ab98a5bfb80a5f.webp",
+      "sha256": "42ab98a5bfb80a5f9e1e006315f20fdfe9f3f0830095f3559088603ad91a6ecb",
+      "sourceBytes": 206644,
+      "bytes": 44846,
+      "width": 640,
+      "height": 640
+    },
+    "988-ch264-white-bg-1.jpg": {
+      "path": "images/bb66b5d715a9a3a8.webp",
+      "sha256": "bb66b5d715a9a3a8a38940b7ae4f7e85905425294a85a33583dd806c8f102314",
+      "sourceBytes": 157403,
+      "bytes": 27182,
+      "width": 640,
+      "height": 640
+    },
+    "1106-ch143-white-bg-1.jpg": {
+      "path": "images/a288a332a503a8c6.webp",
+      "sha256": "a288a332a503a8c6c06784adf822c54cfbb26614b4bca48c9d4d6a8543bc6efa",
+      "sourceBytes": 138509,
+      "bytes": 26586,
+      "width": 640,
+      "height": 640
+    },
+    "1028-ch276-white-bg-1.jpg": {
+      "path": "images/59d45ddee7ce01c5.webp",
+      "sha256": "59d45ddee7ce01c5024aabc5245b41a978be0c6975bf7968881307b2afcf4129",
+      "sourceBytes": 164659,
+      "bytes": 31378,
+      "width": 640,
+      "height": 640
+    },
+    "728-p034-white-bg-1.png": {
+      "path": "images/11c01769108e2a03.webp",
+      "sha256": "11c01769108e2a0375cd403448fe50d9e827f0787644c26c34388d811d4a7c92",
+      "sourceBytes": 1597612,
+      "bytes": 48276,
+      "width": 640,
+      "height": 640
+    },
+    "992-p055-white-bg-1.png": {
+      "path": "images/cbcd611fc44fc6fd.webp",
+      "sha256": "cbcd611fc44fc6fd4d284ca515b7588247a15956d6ea8c4bb242474ae66f7aaa",
+      "sourceBytes": 1330214,
+      "bytes": 22652,
+      "width": 640,
+      "height": 640
+    },
+    "624-ch168-white-bg-1.jpg": {
+      "path": "images/5b9c4845d5791c69.webp",
+      "sha256": "5b9c4845d5791c695b3ff0f3a51dc95aae6059b2cd7273c97737eef10c854caf",
+      "sourceBytes": 193730,
+      "bytes": 42136,
+      "width": 640,
+      "height": 640
+    },
+    "686-p094-white-bg-1.png": {
+      "path": "images/2a557f6bf0fbf000.webp",
+      "sha256": "2a557f6bf0fbf0001d62a93130f0ae2dba29673375b79869dce707a07a4bfc2a",
+      "sourceBytes": 1905366,
+      "bytes": 64486,
+      "width": 640,
+      "height": 640
+    },
+    "952-ch194-white-bg-1.jpg": {
+      "path": "images/0c660daa872ff1fc.webp",
+      "sha256": "0c660daa872ff1fcda82a608cbf5a6831619f8bbe02b22a0715027410fcb2403",
+      "sourceBytes": 241939,
+      "bytes": 36468,
+      "width": 640,
+      "height": 640
+    },
+    "1018-ch070-white-bg-1.jpg": {
+      "path": "images/b37644a23e4b8c44.webp",
+      "sha256": "b37644a23e4b8c4415769f54091f15e385dc3a1d5fd944830193902e55318899",
+      "sourceBytes": 141543,
+      "bytes": 29806,
+      "width": 640,
+      "height": 640
+    },
+    "1188-p086-white-bg-1.png": {
+      "path": "images/1da868a77e62a30f.webp",
+      "sha256": "1da868a77e62a30f0ed6e742d1df5ab830308c6a4990bfb059bc9427e47a5abc",
+      "sourceBytes": 2222286,
+      "bytes": 78914,
+      "width": 640,
+      "height": 640
+    },
+    "1104-ch086-white-bg-1.jpg": {
+      "path": "images/855e437f6118787f.webp",
+      "sha256": "855e437f6118787fd63418e7529f37270b255fa85dcf9d2e27ebde629ca068a0",
+      "sourceBytes": 158797,
+      "bytes": 30418,
+      "width": 640,
+      "height": 640
+    },
+    "616-ch065-white-bg-1.jpg": {
+      "path": "images/0b1eca0eb0f9c055.webp",
+      "sha256": "0b1eca0eb0f9c05550df88ffc9e4d600f5c651f2b5fd22068d29534c091b3927",
+      "sourceBytes": 189101,
+      "bytes": 39240,
+      "width": 640,
+      "height": 640
+    },
+    "1044-ch321-white-bg-1.jpg": {
+      "path": "images/997b9be146f0c147.webp",
+      "sha256": "997b9be146f0c147782f4ec5ee9244d40d7b4d89b7a94faa794df172f7e11f86",
+      "sourceBytes": 111558,
+      "bytes": 20378,
+      "width": 640,
+      "height": 640
+    },
+    "658-ch118-white-bg-1.jpg": {
+      "path": "images/c8da227916820326.webp",
+      "sha256": "c8da22791682032621fa0196f36a4a8a6b02e3363e4ddfc57dedc9c01c123004",
+      "sourceBytes": 264734,
+      "bytes": 68616,
+      "width": 640,
+      "height": 640
+    },
+    "682-p008-white-bg-1.png": {
+      "path": "images/bc2b478fa5739cfd.webp",
+      "sha256": "bc2b478fa5739cfde20b0888b0de331de60ccf6eeea4daf3e2b27b6199e3098e",
+      "sourceBytes": 1510127,
+      "bytes": 28196,
+      "width": 640,
+      "height": 640
+    },
+    "932-ch012-white-bg-1.jpg": {
+      "path": "images/f516f484820ad58b.webp",
+      "sha256": "f516f484820ad58b413b920f9f9c858430861e7067cc1edbe60507d64410b2cd",
+      "sourceBytes": 221794,
+      "bytes": 49620,
+      "width": 640,
+      "height": 640
+    },
+    "1040-ch257-white-bg-1.jpg": {
+      "path": "images/7957f9cfaa65f486.webp",
+      "sha256": "7957f9cfaa65f486533c5e35511d549325672202fe91fdab775cee47d1e77aca",
+      "sourceBytes": 235455,
+      "bytes": 58914,
+      "width": 640,
+      "height": 640
+    },
+    "546-ch260-white-bg-1.jpg": {
+      "path": "images/c328e04648286633.webp",
+      "sha256": "c328e04648286633afbd58b9b303d6849f533ca95d0461d11950a967d62aa2c2",
+      "sourceBytes": 197161,
+      "bytes": 45340,
+      "width": 640,
+      "height": 640
+    },
+    "810-ch154-white-bg-1.jpg": {
+      "path": "images/44c56a4ddff6756b.webp",
+      "sha256": "44c56a4ddff6756bf979856b4d832d155716a2b49960d084bc96549ebc0e883f",
+      "sourceBytes": 139140,
+      "bytes": 26072,
+      "width": 640,
+      "height": 640
+    },
+    "712-ch104-white-bg-1.jpg": {
+      "path": "images/423e2e9a766a457f.webp",
+      "sha256": "423e2e9a766a457f0b94cc5b781a15480428da58d493b6b840bb0b3d5a693d73",
+      "sourceBytes": 205731,
+      "bytes": 45232,
+      "width": 640,
+      "height": 640
+    },
+    "832-ch188-white-bg-1.jpg": {
+      "path": "images/f3d162c5a5d740dd.webp",
+      "sha256": "f3d162c5a5d740dd44c90decbc28b7f021e218c7845e1c9d476cec118a970598",
+      "sourceBytes": 161335,
+      "bytes": 20800,
+      "width": 640,
+      "height": 640
+    },
+    "1160-p012-white-bg-1.png": {
+      "path": "images/410e526aa3b6ef28.webp",
+      "sha256": "410e526aa3b6ef287722a938d8222d7b17b666df0dae75118a34fe9c90766c43",
+      "sourceBytes": 1257112,
+      "bytes": 30720,
+      "width": 640,
+      "height": 640
+    },
+    "1046-ch200-white-bg-1.jpg": {
+      "path": "images/c87504151fb1faa7.webp",
+      "sha256": "c87504151fb1faa73809153f27f15491d493ba8306aa6533651e97cd47cd729b",
+      "sourceBytes": 198108,
+      "bytes": 29112,
+      "width": 640,
+      "height": 640
+    },
+    "1012-p088-white-bg-1.png": {
+      "path": "images/35d19fa7670a4188.webp",
+      "sha256": "35d19fa7670a4188100ace88dc76fa2a8b0ba2c84dc0c116f9543d33beb621c7",
+      "sourceBytes": 1387934,
+      "bytes": 27370,
+      "width": 640,
+      "height": 640
+    },
+    "692-p098-white-bg-1.png": {
+      "path": "images/28751ac7c306556f.webp",
+      "sha256": "28751ac7c306556f7c33de24eb134b87d4fddcb696b840f056cf589682fe3853",
+      "sourceBytes": 1709037,
+      "bytes": 40762,
+      "width": 640,
+      "height": 640
+    },
+    "742-ch123-white-bg-1.jpg": {
+      "path": "images/2cf3fc875bd4cc81.webp",
+      "sha256": "2cf3fc875bd4cc81a9b3ba3236a8d4ef03b00bf954f08162a79cfe6e5caa476a",
+      "sourceBytes": 251071,
+      "bytes": 51604,
+      "width": 640,
+      "height": 640
+    },
+    "946-ch262-white-bg-1.jpg": {
+      "path": "images/d1907654cd7f686f.webp",
+      "sha256": "d1907654cd7f686feee152b5242ef0675c3ad65da0f185d9a0e8086ac45047d7",
+      "sourceBytes": 234798,
+      "bytes": 52240,
+      "width": 640,
+      "height": 640
+    },
+    "700-ch230-white-bg-1.jpg": {
+      "path": "images/3d9fb9bcf9203033.webp",
+      "sha256": "3d9fb9bcf92030337d2931baf66af6a5c7c7e1c156c035381a1360f0aeba2733",
+      "sourceBytes": 171552,
+      "bytes": 36046,
+      "width": 640,
+      "height": 640
+    },
+    "1281-3D-XXXL-haz.png": {
+      "path": "images/33ce2b33f0a5b899.webp",
+      "sha256": "33ce2b33f0a5b8996fe4da62a1eed85350ea3e6c3a7839568e70d90def860b85",
+      "sourceBytes": 1999754,
+      "bytes": 27210,
+      "width": 640,
+      "height": 312
+    },
+    "1278-dayli-vanilla-70-g-3D.png": {
+      "path": "images/e8ffdf61a25990a1.webp",
+      "sha256": "e8ffdf61a25990a10051d344a479b624a7d3ddd694557b980e220dbd5c165970",
+      "sourceBytes": 1726665,
+      "bytes": 38050,
+      "width": 640,
+      "height": 316
+    },
+    "578-ch329-white-bg-1.jpg": {
+      "path": "images/21b6e0897275dd71.webp",
+      "sha256": "21b6e0897275dd718b40d081c9d871d517f7f300597bc52cc6e9545d457603cd",
+      "sourceBytes": 273228,
+      "bytes": 67850,
+      "width": 640,
+      "height": 640
+    },
+    "536-ch117-white-bg-1.jpg": {
+      "path": "images/25caad2378f4fd15.webp",
+      "sha256": "25caad2378f4fd1520454dd0e5996233630303e10dad59d3ecaefe808ba4bcbd",
+      "sourceBytes": 204119,
+      "bytes": 47206,
+      "width": 640,
+      "height": 640
+    },
+    "690-p082-white-bg-1.png": {
+      "path": "images/471519cd80503814.webp",
+      "sha256": "471519cd8050381462a8ae9a5d71c9d01f799ac8a31c1a19fa15045141eadb79",
+      "sourceBytes": 1631279,
+      "bytes": 38994,
+      "width": 640,
+      "height": 640
+    },
+    "814-ch041-white-bg-1.jpg": {
+      "path": "images/34a69db51023e0e9.webp",
+      "sha256": "34a69db51023e0e95ae59baaffc2243d728f1ef8258fa6c3d0fe9fee2c38b178",
+      "sourceBytes": 164344,
+      "bytes": 32358,
+      "width": 640,
+      "height": 640
+    },
+    "1068-p035-white-bg-1.png": {
+      "path": "images/2179aa532d5818dc.webp",
+      "sha256": "2179aa532d5818dc8e91eae1badca250c2343bb7b01aadb5d94c502e6646a426",
+      "sourceBytes": 1325812,
+      "bytes": 26032,
+      "width": 640,
+      "height": 640
+    },
+    "1140-p054-white-bg-1.png": {
+      "path": "images/d39e077ccfa9d276.webp",
+      "sha256": "d39e077ccfa9d2764251eb90d0ffa48df157c689bca84a502d37f6355733f133",
+      "sourceBytes": 1814841,
+      "bytes": 62380,
+      "width": 640,
+      "height": 640
+    },
+    "1227-Chamsine-Pistachio-Halawa-White-Nougat-with-Pistachios-–-700-g-1.png": {
+      "path": "images/a3dc58343312b8d7.webp",
+      "sha256": "a3dc58343312b8d7205dd831d84058a01b580ade1d74f94931d5273ad00b36c4",
+      "sourceBytes": 2029529,
+      "bytes": 75840,
+      "width": 640,
+      "height": 640
+    },
+    "542-ch212-white-bg-1.jpg": {
+      "path": "images/e412ba228796c976.webp",
+      "sha256": "e412ba228796c9762189e53383943857d359350907dc982ace95917c5787c38d",
+      "sourceBytes": 220310,
+      "bytes": 32686,
+      "width": 640,
+      "height": 640
+    },
+    "980-ch093-white-bg-1.jpg": {
+      "path": "images/460af8e183596cd9.webp",
+      "sha256": "460af8e183596cd90bbabb9f3d71f487d3bde9794d183f6ae801da3f0e5883a2",
+      "sourceBytes": 254319,
+      "bytes": 51384,
+      "width": 640,
+      "height": 640
+    },
+    "620-ch221-white-bg-1.jpg": {
+      "path": "images/2943f3488ce99f62.webp",
+      "sha256": "2943f3488ce99f62fd7a8d8caaeaf34efc49dc644a848ffc866ab55c84285de6",
+      "sourceBytes": 180601,
+      "bytes": 27798,
+      "width": 640,
+      "height": 640
+    },
+    "998-p045-white-bg-1.png": {
+      "path": "images/88550cd9fc542668.webp",
+      "sha256": "88550cd9fc5426681565dcdf5ba512346ddf8bb0a187605b333736aae2ab9d7a",
+      "sourceBytes": 1568268,
+      "bytes": 37706,
+      "width": 640,
+      "height": 640
+    },
+    "914-ch161-white-bg-1.jpg": {
+      "path": "images/6ed58bfdc6d94b5d.webp",
+      "sha256": "6ed58bfdc6d94b5d98d58ebbb5d6f997af8d7206efbc91449111a15403349f70",
+      "sourceBytes": 143042,
+      "bytes": 28252,
+      "width": 640,
+      "height": 640
+    },
+    "930-ch060-white-bg-1.jpg": {
+      "path": "images/66c7e72fc3a436f9.webp",
+      "sha256": "66c7e72fc3a436f961966d5858cd5007d0876338fbe6c3fe4c5842f978aa9f6b",
+      "sourceBytes": 123676,
+      "bytes": 26058,
+      "width": 640,
+      "height": 640
+    },
+    "1226-Chamsine-Oriental-Breadsticks-Bakery-Pastry-–-300-g-1.png": {
+      "path": "images/60392e46e64d5b94.webp",
+      "sha256": "60392e46e64d5b94fa8e475e2605fad2a8418439345383d38c422f8d57c46df1",
+      "sourceBytes": 1725199,
+      "bytes": 51858,
+      "width": 640,
+      "height": 640
+    },
+    "1034-ch013-white-bg-1.jpg": {
+      "path": "images/5175b35b2024dfe3.webp",
+      "sha256": "5175b35b2024dfe37d2bd42f8d76fd1199b58ef36eadff6e76fdfc3caecb5d97",
+      "sourceBytes": 148821,
+      "bytes": 29508,
+      "width": 640,
+      "height": 640
+    },
+    "1030-ch099-white-bg-1.jpg": {
+      "path": "images/9419534bc3d3f8d5.webp",
+      "sha256": "9419534bc3d3f8d5d4c6a7046c15822f6d0935c42e320042d230713ccda2a1c7",
+      "sourceBytes": 129755,
+      "bytes": 25156,
+      "width": 640,
+      "height": 640
+    },
+    "724-p068-white-bg-1.png": {
+      "path": "images/0c496cd6c5d4ef17.webp",
+      "sha256": "0c496cd6c5d4ef17fbf68aee59b518d1a499f0d654da6610ed0f2265d1a4ad0e",
+      "sourceBytes": 1590807,
+      "bytes": 46426,
+      "width": 640,
+      "height": 640
+    },
+    "1228-Tora-Bika-Brown-Coffee-3-in-1-1.png": {
+      "path": "images/4f2f0b8f6a615a65.webp",
+      "sha256": "4f2f0b8f6a615a6580a7bda57337eea6ea198367f3555969045e038c60e33252",
+      "sourceBytes": 1797315,
+      "bytes": 65820,
+      "width": 640,
+      "height": 640
+    },
+    "1110-ch237-white-bg-1.jpg": {
+      "path": "images/2ca392e8742120d5.webp",
+      "sha256": "2ca392e8742120d51a45e7160ae201b875dc8ee525f6b2d83c86b189df917a64",
+      "sourceBytes": 109521,
+      "bytes": 18950,
+      "width": 640,
+      "height": 640
+    },
+    "660-p037-white-bg-1.png": {
+      "path": "images/be297d599380f904.webp",
+      "sha256": "be297d599380f904d0538d792262e8e7ee91cfc14344b05460bc9c8b49180867",
+      "sourceBytes": 1611635,
+      "bytes": 34042,
+      "width": 640,
+      "height": 640
+    },
+    "1120-ch055-white-bg-1.jpg": {
+      "path": "images/193910462029bcbe.webp",
+      "sha256": "193910462029bcbe8c93ae9104cc8a7547fae8355dcbdd255c50c9969122b5be",
+      "sourceBytes": 75343,
+      "bytes": 15488,
+      "width": 640,
+      "height": 640
+    },
+    "550-ch256-white-bg-1.jpg": {
+      "path": "images/463d6ef45a27a678.webp",
+      "sha256": "463d6ef45a27a678c4f4d86cdd6644675306421adb942b46713b917eb3d14d57",
+      "sourceBytes": 121287,
+      "bytes": 20706,
+      "width": 640,
+      "height": 640
+    },
+    "978-ch150-white-bg-1.jpg": {
+      "path": "images/142c120c948c830a.webp",
+      "sha256": "142c120c948c830aa3291baa6bcb1947fee9689eae25de702026ccf957e0fe12",
+      "sourceBytes": 176344,
+      "bytes": 32752,
+      "width": 640,
+      "height": 640
+    },
+    "1162-p033-white-bg-1.png": {
+      "path": "images/40035d0214d7ca1f.webp",
+      "sha256": "40035d0214d7ca1f58228a5e356caf239e103500b0f53acd0805f1aba1667279",
+      "sourceBytes": 1316449,
+      "bytes": 24142,
+      "width": 640,
+      "height": 640
+    },
+    "816-ch034-white-bg-1.jpg": {
+      "path": "images/94a081629fd26ad2.webp",
+      "sha256": "94a081629fd26ad290ca68e23e8c14601b424b2bac940885ccbea485365f1390",
+      "sourceBytes": 223681,
+      "bytes": 48618,
+      "width": 640,
+      "height": 640
+    },
+    "812-ch126-white-bg-1.jpg": {
+      "path": "images/220ecc3544fbbde2.webp",
+      "sha256": "220ecc3544fbbde222565454d34be54f6b626dbf21652b7d3e34dfa86de25453",
+      "sourceBytes": 138924,
+      "bytes": 25834,
+      "width": 640,
+      "height": 640
+    },
+    "708-ch170-white-bg-1.jpg": {
+      "path": "images/0d0259c853a34340.webp",
+      "sha256": "0d0259c853a34340a01ea1276fa454c4e471179935e708200149d3a5484d14a0",
+      "sourceBytes": 174225,
+      "bytes": 39296,
+      "width": 640,
+      "height": 640
+    },
+    "1092-ch138-white-bg-1.jpg": {
+      "path": "images/6698997381abbbc7.webp",
+      "sha256": "6698997381abbbc7a2c6795c7db957ca424b61163efbf214ed5f6ee909a0990c",
+      "sourceBytes": 248650,
+      "bytes": 50842,
+      "width": 640,
+      "height": 640
+    },
+    "1102-ch359-white-bg-1.jpg": {
+      "path": "images/13f505ef02a82b6f.webp",
+      "sha256": "13f505ef02a82b6f5194f9bd6b051661557ee3f6cc43f7c781c0f6fadb35a8e9",
+      "sourceBytes": 70741,
+      "bytes": 11144,
+      "width": 640,
+      "height": 640
+    },
+    "684-p056-white-bg-1.png": {
+      "path": "images/3546823e3df3c559.webp",
+      "sha256": "3546823e3df3c55922068487c1adbbc89f1c256bdc080579ae85371dbe7a0781",
+      "sourceBytes": 1245831,
+      "bytes": 29548,
+      "width": 640,
+      "height": 640
+    },
+    "1164-p043-white-bg-1.png": {
+      "path": "images/d849485dada264ea.webp",
+      "sha256": "d849485dada264ea0fdd0f1ee8357000efc4bf9816858cd299d5263301085424",
+      "sourceBytes": 1318925,
+      "bytes": 27842,
+      "width": 640,
+      "height": 640
+    },
+    "1088-p096-white-bg-1.png": {
+      "path": "images/be59d8234ce71754.webp",
+      "sha256": "be59d8234ce7175448ff80221c656d210a60d4744debeeb63abc821c55825fa9",
+      "sourceBytes": 1422120,
+      "bytes": 27604,
+      "width": 640,
+      "height": 640
+    },
+    "1074-p015-white-bg-1.png": {
+      "path": "images/4337c820a6c7df54.webp",
+      "sha256": "4337c820a6c7df5443739e33458f977d78e2190da55b154c73e1d5c6e9c0ceb6",
+      "sourceBytes": 1334689,
+      "bytes": 26830,
+      "width": 640,
+      "height": 640
+    },
+    "1218-Chamsine-Assorted-Individually-Wrapped-Pastries-Cookies-Box-1.png": {
+      "path": "images/689d709915d38515.webp",
+      "sha256": "689d709915d385151ffa61e46a2321c0b3521ceaf696d11952819a34bfa9abd7",
+      "sourceBytes": 1598723,
+      "bytes": 39272,
+      "width": 640,
+      "height": 640
+    },
+    "752-ch022-white-bg-1.jpg": {
+      "path": "images/0d8d3b153ee59337.webp",
+      "sha256": "0d8d3b153ee59337f29d761d7777de8ee93cafa02c505ff140b3f358505be33f",
+      "sourceBytes": 234808,
+      "bytes": 56684,
+      "width": 640,
+      "height": 640
+    },
+    "736-ch039-white-bg-1.jpg": {
+      "path": "images/63b2ea5495d48316.webp",
+      "sha256": "63b2ea5495d4831633153bc0de82e0d33249c2967768e47754db054592cba15d",
+      "sourceBytes": 283306,
+      "bytes": 69060,
+      "width": 640,
+      "height": 640
+    },
+    "894-ch068-white-bg-1.jpg": {
+      "path": "images/5b8325ff3a15db44.webp",
+      "sha256": "5b8325ff3a15db4441509201972007cf66603e497eabfe30ee90d4976445911e",
+      "sourceBytes": 126081,
+      "bytes": 25430,
+      "width": 640,
+      "height": 640
+    },
+    "768-ch160-white-bg-1.jpg": {
+      "path": "images/5d5bf2689b48e9a4.webp",
+      "sha256": "5d5bf2689b48e9a4ab7ed751c920146c53dd2f247218fef4e2a47ca14bbeac39",
+      "sourceBytes": 233302,
+      "bytes": 55592,
+      "width": 640,
+      "height": 640
+    },
+    "1217-Chamsine-Amarin-Sweets-–-Susamli-Hurmali-Sesame-Date-Sweets-1.png": {
+      "path": "images/1d2a015a7a8f0d4c.webp",
+      "sha256": "1d2a015a7a8f0d4c7b5ece1384637ff17028b8be9587b8bc7d3edd120d4884b8",
+      "sourceBytes": 2357711,
+      "bytes": 92384,
+      "width": 640,
+      "height": 640
+    },
+    "678-ch210-white-bg-1.jpg": {
+      "path": "images/da6bc7b956420676.webp",
+      "sha256": "da6bc7b9564206769eb48588881a42b3865f0ac7985d59806f63616952acccc4",
+      "sourceBytes": 167005,
+      "bytes": 21330,
+      "width": 640,
+      "height": 640
+    },
+    "1010-p032-white-bg-1.png": {
+      "path": "images/91ca89635bf69c44.webp",
+      "sha256": "91ca89635bf69c44ee08b8c2bf40aaff2f72e62b27841b0925680f8430f5d000",
+      "sourceBytes": 1425680,
+      "bytes": 32234,
+      "width": 640,
+      "height": 640
+    },
+    "1022-ch082-white-bg-1.jpg": {
+      "path": "images/3faa7d76e00a16bd.webp",
+      "sha256": "3faa7d76e00a16bdd1a4d292b279baff0c05462f25c8ac69d7a1914c32b0aebf",
+      "sourceBytes": 185216,
+      "bytes": 38644,
+      "width": 640,
+      "height": 640
+    },
+    "1054-ch016-white-bg-1.jpg": {
+      "path": "images/3dc7703bf73fb6a2.webp",
+      "sha256": "3dc7703bf73fb6a2340f827a7595e0d64ada0cbb4df733b7970a00b5ffd315e2",
+      "sourceBytes": 178279,
+      "bytes": 37218,
+      "width": 640,
+      "height": 640
+    },
+    "994-p112-white-bg-1.png": {
+      "path": "images/5e14a61cb5957a8b.webp",
+      "sha256": "5e14a61cb5957a8b44f50af6b5d4506772851457d353906d94740884590f18a1",
+      "sourceBytes": 1817024,
+      "bytes": 49608,
+      "width": 640,
+      "height": 640
+    },
+    "1275-3D_LATINO-mini-crispy__edinichka.png": {
+      "path": "images/a6efdc2a5be7e76c.webp",
+      "sha256": "a6efdc2a5be7e76c9b553d10682fc694134d78316ce57ffe94ac24e5e5c662b3",
+      "sourceBytes": 3809629,
+      "bytes": 32834,
+      "width": 640,
+      "height": 640
+    },
+    "974-p111-white-bg-1.png": {
+      "path": "images/1534a638cf56e379.webp",
+      "sha256": "1534a638cf56e379ff2034a6e193b97d2bff8984b13e3b0d7203ee61e0aea522",
+      "sourceBytes": 1408581,
+      "bytes": 24022,
+      "width": 640,
+      "height": 640
+    },
+    "1277-daily-cocoa-70-g-3-D.png": {
+      "path": "images/5703f7a5fa0e645b.webp",
+      "sha256": "5703f7a5fa0e645bd25b80762b3f1fb7219d0c1539bee9e7d895913cac2c5b8d",
+      "sourceBytes": 2080382,
+      "bytes": 31486,
+      "width": 640,
+      "height": 317
+    },
+    "784-p061-white-bg-1.png": {
+      "path": "images/661197be21c97175.webp",
+      "sha256": "661197be21c971750df0bda70370b5a5c44280c68ed673ac5049a25f7e06dc0b",
+      "sourceBytes": 1471573,
+      "bytes": 41574,
+      "width": 640,
+      "height": 640
+    },
+    "1066-p101-white-bg-1.png": {
+      "path": "images/f925a6ff645c46d8.webp",
+      "sha256": "f925a6ff645c46d89078dbd6a5faabf51558eaca1e78010f8e85e16a13cec718",
+      "sourceBytes": 1655002,
+      "bytes": 36526,
+      "width": 640,
+      "height": 640
+    },
+    "598-ch040-white-bg-1.jpg": {
+      "path": "images/950e2bd0ce036865.webp",
+      "sha256": "950e2bd0ce0368653e74b1e25b38045d5ee4086a0f920e22dc699d7ddcc2b46f",
+      "sourceBytes": 287963,
+      "bytes": 65932,
+      "width": 640,
+      "height": 640
+    },
+    "762-ch357-white-bg-1.jpg": {
+      "path": "images/6dcd67e13854aa59.webp",
+      "sha256": "6dcd67e13854aa59c115d3dc2ecc434674cc5c4612090e3d3a637d8801a6b76c",
+      "sourceBytes": 73710,
+      "bytes": 13710,
+      "width": 640,
+      "height": 640
+    },
+    "754-ch114-white-bg-1.jpg": {
+      "path": "images/a06b32b0bf199148.webp",
+      "sha256": "a06b32b0bf199148a2ae34195c08089bc348a6c2f3d8840d67d3d66f2a50515f",
+      "sourceBytes": 204621,
+      "bytes": 43568,
+      "width": 640,
+      "height": 640
+    },
+    "1038-ch057-white-bg-1.jpg": {
+      "path": "images/cef0501a221aee8a.webp",
+      "sha256": "cef0501a221aee8ad1fa5a709fa7d199a6525bd7735bb4bc74cb42cf78fdfba7",
+      "sourceBytes": 159527,
+      "bytes": 35232,
+      "width": 640,
+      "height": 640
+    },
+    "572-p010-white-bg-1.png": {
+      "path": "images/0aefc97b1e198cb9.webp",
+      "sha256": "0aefc97b1e198cb9d0c8700607e21ef92826e71906c09253c011e8248da6b61d",
+      "sourceBytes": 1604361,
+      "bytes": 32834,
+      "width": 640,
+      "height": 640
+    },
+    "1279-Latino_1kg_cocoa.png": {
+      "path": "images/a8ce722d62566c02.webp",
+      "sha256": "a8ce722d62566c02718f7f1e37233f0c68e7f28bafdb1e4a85f315cada134119",
+      "sourceBytes": 2499256,
+      "bytes": 32974,
+      "width": 250,
+      "height": 640
+    },
+    "1000-p041-white-bg-1.png": {
+      "path": "images/8b2a58194ce54d1f.webp",
+      "sha256": "8b2a58194ce54d1f61346a399a8d73d3eeafbe4e8ff73d042131e05c8362e4df",
+      "sourceBytes": 1457588,
+      "bytes": 26592,
+      "width": 640,
+      "height": 640
+    },
+    "740-ch038-white-bg-1.jpg": {
+      "path": "images/4480ac07a9a37e0f.webp",
+      "sha256": "4480ac07a9a37e0f51cd5566628138ef083229eeea7dcdc7e167744821c4e8df",
+      "sourceBytes": 153046,
+      "bytes": 23158,
+      "width": 640,
+      "height": 640
+    },
+    "746-ch251-white-bg-1.jpg": {
+      "path": "images/1534016c02bf9555.webp",
+      "sha256": "1534016c02bf955570e85e1d06f55a3afc4715cc99aaa7efb35cd84046149d5c",
+      "sourceBytes": 293021,
+      "bytes": 73214,
+      "width": 640,
+      "height": 640
+    },
+    "544-ch213-white-bg-1.jpg": {
+      "path": "images/d15d5b75f8698bfe.webp",
+      "sha256": "d15d5b75f8698bfed805eea23f7e03763385798e90be62c272e80aa8f40ae4fe",
+      "sourceBytes": 255985,
+      "bytes": 41912,
+      "width": 640,
+      "height": 640
+    },
+    "1223-Tora-Bika-Macchiato-Espresso-–-480-g-1.png": {
+      "path": "images/8de45a05bac3e99e.webp",
+      "sha256": "8de45a05bac3e99e002278a6385627caaf6e478fc4289301bd5e9d9e6caecdf4",
+      "sourceBytes": 1806841,
+      "bytes": 56920,
+      "width": 640,
+      "height": 640
+    },
+    "592-p092-white-bg-1.png": {
+      "path": "images/f39bb4aa8a188a02.webp",
+      "sha256": "f39bb4aa8a188a02e6c8d2ed3f09276b7788ba9e71f99a6a6b266895c1352037",
+      "sourceBytes": 2135807,
+      "bytes": 79122,
+      "width": 640,
+      "height": 640
+    },
+    "888-ch185-white-bg-1.jpg": {
+      "path": "images/02df6b5fafce5cb9.webp",
+      "sha256": "02df6b5fafce5cb940466c0773644463be08db04b11d2c95d47ede1bc6bb2690",
+      "sourceBytes": 237638,
+      "bytes": 33910,
+      "width": 640,
+      "height": 640
+    },
+    "870-ch100-white-bg-1.jpg": {
+      "path": "images/42b8e11d157f5aef.webp",
+      "sha256": "42b8e11d157f5aef0608b90c5b9b6f945413f99ca4d41dda3fda365d64f6b090",
+      "sourceBytes": 142440,
+      "bytes": 27638,
+      "width": 640,
+      "height": 640
+    },
+    "964-p075-white-bg-1.png": {
+      "path": "images/dfb7f07050b6457a.webp",
+      "sha256": "dfb7f07050b6457a316672de2654f537b26f31bb6c74b89581ed40aa5c1b5996",
+      "sourceBytes": 1220581,
+      "bytes": 30378,
+      "width": 640,
+      "height": 640
+    },
+    "1222-Tora-Bika-Creamy-Latte-–-600-g-1.png": {
+      "path": "images/cc6cd06013fb55bf.webp",
+      "sha256": "cc6cd06013fb55bf20894c1d9a5e9b5c018ded6e0d2e9866b28e66bed0c7e7c4",
+      "sourceBytes": 1718646,
+      "bytes": 51722,
+      "width": 640,
+      "height": 640
+    },
+    "748-ch328-white-bg-1.jpg": {
+      "path": "images/632531697fc94efb.webp",
+      "sha256": "632531697fc94efb9c00617082568532bfcec6a74597e99d8b6b6fb81fc91188",
+      "sourceBytes": 273221,
+      "bytes": 71522,
+      "width": 640,
+      "height": 640
+    },
+    "706-ch343-white-bg-1.jpg": {
+      "path": "images/439568d9638e15e9.webp",
+      "sha256": "439568d9638e15e9aa3df6de84728c8487b00b44c8b35a14e57c2b426d7a931c",
+      "sourceBytes": 237932,
+      "bytes": 51898,
+      "width": 640,
+      "height": 640
+    },
+    "780-ch314-white-bg-1.jpg": {
+      "path": "images/da550f4126cbd6dc.webp",
+      "sha256": "da550f4126cbd6dcf75cd79cc0b3ed204375cad7fd00fd8d5c947f687ed7564a",
+      "sourceBytes": 205121,
+      "bytes": 43406,
+      "width": 640,
+      "height": 640
+    },
+    "628-ch007-white-bg-1.jpg": {
+      "path": "images/ee377f862050d184.webp",
+      "sha256": "ee377f862050d1849efb08d3368f6ecf77697bec976ee053b70ee7e4c6465ef8",
+      "sourceBytes": 191462,
+      "bytes": 40884,
+      "width": 640,
+      "height": 640
+    },
+    "1086-p080-white-bg-1.png": {
+      "path": "images/7fe5e88b6d1fb0df.webp",
+      "sha256": "7fe5e88b6d1fb0df5a6cfcca512f0cd35ff888bfc84a0741c396fbb1fbd7060c",
+      "sourceBytes": 1419382,
+      "bytes": 27324,
+      "width": 640,
+      "height": 640
+    },
+    "772-ch295-white-bg-1.jpg": {
+      "path": "images/9d5f6ff4173f5c15.webp",
+      "sha256": "9d5f6ff4173f5c156ba27f1ef4538de4d3c2c203f46ce75a209ed5c46a9dbdaa",
+      "sourceBytes": 202804,
+      "bytes": 47136,
+      "width": 640,
+      "height": 640
+    },
+    "704-ch214-white-bg-1.jpg": {
+      "path": "images/63c428e7f18e347d.webp",
+      "sha256": "63c428e7f18e347d741a11205a2e8c696a9248ed4306e4a35fb14bd695a1a3bc",
+      "sourceBytes": 185171,
+      "bytes": 27370,
+      "width": 640,
+      "height": 640
+    },
+    "958-p030-white-bg-1.png": {
+      "path": "images/44dc237ae9b28bd6.webp",
+      "sha256": "44dc237ae9b28bd63cfc46d8e5c5baba87c52ca32b82351327f2743c466e9740",
+      "sourceBytes": 1738731,
+      "bytes": 57958,
+      "width": 640,
+      "height": 640
+    },
+    "738-ch144-white-bg-1.jpg": {
+      "path": "images/33b33f9e038a692a.webp",
+      "sha256": "33b33f9e038a692ab3c2abd8c3d1f5023b640aeda9c2934179641df6a11f25f0",
+      "sourceBytes": 263927,
+      "bytes": 59222,
+      "width": 640,
+      "height": 640
+    },
+    "862-ch008-white-bg-1.jpg": {
+      "path": "images/a30867fc0e824f87.webp",
+      "sha256": "a30867fc0e824f87de59abc57c4a5c5df33dcf91f06e37484b1cdb026a10cd35",
+      "sourceBytes": 116103,
+      "bytes": 19232,
+      "width": 640,
+      "height": 640
+    },
+    "996-p110-white-bg-1.png": {
+      "path": "images/54d66be154a083d4.webp",
+      "sha256": "54d66be154a083d440bb967afd58bd1cef0899932e39d4be763591a3518f138d",
+      "sourceBytes": 1449599,
+      "bytes": 34156,
+      "width": 640,
+      "height": 640
+    },
+    "1070-p091-white-bg-1.png": {
+      "path": "images/3835fce8d1e8ec31.webp",
+      "sha256": "3835fce8d1e8ec31f445f04d0a8166f11b9729c13d7e61938c4bba9262ae18b5",
+      "sourceBytes": 1185450,
+      "bytes": 24410,
+      "width": 640,
+      "height": 640
+    },
+    "630-ch243-white-bg-1.jpg": {
+      "path": "images/f4398b2c512f60af.webp",
+      "sha256": "f4398b2c512f60af475355e974eb77afb817528dcc01252f70ea6fd5cf22c440",
+      "sourceBytes": 185755,
+      "bytes": 35858,
+      "width": 640,
+      "height": 640
+    },
+    "990-ch169-white-bg-1.jpg": {
+      "path": "images/f7a211afff14eee9.webp",
+      "sha256": "f7a211afff14eee9589416a61ef0da6202d7dbaa302148f7450bc6b4104b8118",
+      "sourceBytes": 249916,
+      "bytes": 58280,
+      "width": 640,
+      "height": 640
+    },
+    "730-p074-white-bg-1.png": {
+      "path": "images/70fedbdda06038db.webp",
+      "sha256": "70fedbdda06038db625e97af4bc3a8e89a486edfd3641f8808520463a5603c91",
+      "sourceBytes": 1577221,
+      "bytes": 37506,
+      "width": 640,
+      "height": 640
+    },
+    "984-ch284-white-bg-1.jpg": {
+      "path": "images/abf07076a06615b8.webp",
+      "sha256": "abf07076a06615b86a2d22197c4290b48a246e44f3969f6740d2227a6a697a6e",
+      "sourceBytes": 242765,
+      "bytes": 52346,
+      "width": 640,
+      "height": 640
+    },
+    "1276-3D_LATINO-mini-crispy__milk_edinichka.png.png": {
+      "path": "images/cecde1ed8a0e6f05.webp",
+      "sha256": "cecde1ed8a0e6f0563aa1460fc15177e95a5d6a8d659a5737399c2b9aae16889",
+      "sourceBytes": 3439018,
+      "bytes": 35584,
+      "width": 640,
+      "height": 640
+    },
+    "556-ch217-white-bg-1.jpg": {
+      "path": "images/c178d026f9f0aa85.webp",
+      "sha256": "c178d026f9f0aa857ff744fd8b3120f918affbebb9aff56209227de8e8b2a56e",
+      "sourceBytes": 215461,
+      "bytes": 35322,
+      "width": 640,
+      "height": 640
+    },
+    "770-ch354-white-bg-1.jpg": {
+      "path": "images/0ca9f48380dda1f2.webp",
+      "sha256": "0ca9f48380dda1f25044345869dffca3c815ae908018f50578016ebd2b6b20fe",
+      "sourceBytes": 148473,
+      "bytes": 28366,
+      "width": 640,
+      "height": 640
+    },
+    "1224-Coffee-Joy-Italian-Moment-Coffee-Biscuits-–-702-g-1.png": {
+      "path": "images/7cdb6fd5f0f4764b.webp",
+      "sha256": "7cdb6fd5f0f4764bb45c698eecdcf1226ef66242d35814fc9b4445ae3e6ea949",
+      "sourceBytes": 1773507,
+      "bytes": 56342,
+      "width": 640,
+      "height": 640
+    },
+    "1032-ch311-white-bg-1.jpg": {
+      "path": "images/47e07992cb2ca65b.webp",
+      "sha256": "47e07992cb2ca65beeee4764b01161e159c367d7752108f51ab8c51e386ed7cd",
+      "sourceBytes": 172995,
+      "bytes": 33070,
+      "width": 640,
+      "height": 640
+    },
+    "926-ch346-white-bg-1.jpg": {
+      "path": "images/70eb1f8a96f2488e.webp",
+      "sha256": "70eb1f8a96f2488e99e8686b154d0cd4c9d9c7b0ae036a7f1953f688999768d8",
+      "sourceBytes": 219452,
+      "bytes": 48636,
+      "width": 640,
+      "height": 640
+    },
+    "744-ch215-white-bg-1.jpg": {
+      "path": "images/fed28a4cf60c8d6b.webp",
+      "sha256": "fed28a4cf60c8d6b39fa1bb9bdc82b90228a50d5fb556566724bf3393a9513ba",
+      "sourceBytes": 276912,
+      "bytes": 44556,
+      "width": 640,
+      "height": 640
+    },
+    "606-ch197-white-bg-1.jpg": {
+      "path": "images/8344eb43585f8c94.webp",
+      "sha256": "8344eb43585f8c946beea6cb0cb8d1ad0d1581c2cb6e4553e7525f23f42dd264",
+      "sourceBytes": 203035,
+      "bytes": 29256,
+      "width": 640,
+      "height": 640
+    },
+    "608-ch176-white-bg-1.jpg": {
+      "path": "images/578cc89006436bdf.webp",
+      "sha256": "578cc89006436bdf5fe131042f29a5bd9949599e2a2d2bf8ccc57bd363215bf5",
+      "sourceBytes": 313534,
+      "bytes": 54826,
+      "width": 640,
+      "height": 640
+    },
+    "966-p077-white-bg-1.png": {
+      "path": "images/2fb197d83d23b726.webp",
+      "sha256": "2fb197d83d23b7267d37047682b8c3835e8561b17e129f378d37b0f1e0528be1",
+      "sourceBytes": 1256392,
+      "bytes": 29262,
+      "width": 640,
+      "height": 640
+    },
+    "540-ch135-white-bg-1.jpg": {
+      "path": "images/cbd0aa4d48fca2e9.webp",
+      "sha256": "cbd0aa4d48fca2e942fce5e48be3a26fca31ba4b6b5dfe81d4b1472742e7ec8c",
+      "sourceBytes": 248782,
+      "bytes": 61068,
+      "width": 640,
+      "height": 640
+    },
+    "948-ch220-white-bg-1.jpg": {
+      "path": "images/c543a8faa25ceecb.webp",
+      "sha256": "c543a8faa25ceecbcc0ce334fa484c93b1590171b3bce51f93205e8cd42980e1",
+      "sourceBytes": 243986,
+      "bytes": 35302,
+      "width": 640,
+      "height": 640
+    },
+    "880-ch298-white-bg-1.jpg": {
+      "path": "images/513f791fc7aa6194.webp",
+      "sha256": "513f791fc7aa61948d6d73f4969ebdb6ecc7c91322487c0b61b2df3ada4bdf86",
+      "sourceBytes": 229224,
+      "bytes": 47984,
+      "width": 640,
+      "height": 640
+    },
+    "1116-p070-white-bg-1.png": {
+      "path": "images/0bc17de3b52303d0.webp",
+      "sha256": "0bc17de3b52303d018b8320378bc52bdfd032f7108ce1fdb665cb4ad3c6c50bc",
+      "sourceBytes": 982721,
+      "bytes": 14194,
+      "width": 640,
+      "height": 640
+    },
+    "1118-p004-white-bg-1.png": {
+      "path": "images/68ea6655d09c25fb.webp",
+      "sha256": "68ea6655d09c25fb11ffcef8dfc505ac4fdf2b2d7e7529fc4c89c856dd9e748a",
+      "sourceBytes": 1440867,
+      "bytes": 29098,
+      "width": 640,
+      "height": 640
+    },
+    "976-ch317-white-bg-1.jpg": {
+      "path": "images/8bee8235701f5c87.webp",
+      "sha256": "8bee8235701f5c87981f1c28c778649db1bcaa4e785a126168b423a780a89cbe",
+      "sourceBytes": 156051,
+      "bytes": 28724,
+      "width": 640,
+      "height": 640
+    },
+    "800-p002-white-bg-1.png": {
+      "path": "images/0d2387dddd5d75a1.webp",
+      "sha256": "0d2387dddd5d75a1e00e868ff72126d7ae9757bb08aba5b09a9beed6f84b7867",
+      "sourceBytes": 1684736,
+      "bytes": 51222,
+      "width": 640,
+      "height": 640
+    },
+    "1132-ch059-white-bg-1.jpg": {
+      "path": "images/a41a35afa0f40323.webp",
+      "sha256": "a41a35afa0f403238081ccf24e492a3f5cc1d91dd79f0325fae38c12940a9210",
+      "sourceBytes": 248669,
+      "bytes": 61666,
+      "width": 640,
+      "height": 640
+    },
+    "792-ch360-white-bg-1.jpg": {
+      "path": "images/244ef76b26cd72bc.webp",
+      "sha256": "244ef76b26cd72bce9886e02c3c7bf5be729f679be97874a5e4daf4a0d6f178c",
+      "sourceBytes": 159566,
+      "bytes": 31154,
+      "width": 640,
+      "height": 640
+    },
+    "720-ch289-white-bg-1.jpg": {
+      "path": "images/95433142c910b866.webp",
+      "sha256": "95433142c910b8662f0ce9b5fda6738426bfe41fc5484fdc197c68f01c8e9077",
+      "sourceBytes": 189051,
+      "bytes": 36814,
+      "width": 640,
+      "height": 640
+    },
+    "1062-ch091-white-bg-1.jpg": {
+      "path": "images/1afa6c990202077e.webp",
+      "sha256": "1afa6c990202077e453eb2fb35a6ae315dff59dd84d376a0c6d0396d5211eddc",
+      "sourceBytes": 107977,
+      "bytes": 19248,
+      "width": 640,
+      "height": 640
+    },
+    "1114-p089-white-bg-1.png": {
+      "path": "images/f55b901fa6920674.webp",
+      "sha256": "f55b901fa6920674552a40c346c325b1785335a1c78698518ca0d45d0a183228",
+      "sourceBytes": 1054957,
+      "bytes": 16080,
+      "width": 640,
+      "height": 640
+    },
+    "632-ch044-white-bg-1.jpg": {
+      "path": "images/1841715b6579f587.webp",
+      "sha256": "1841715b6579f5877bd683326ca910235f3133356f17983149336ef9929dadc2",
+      "sourceBytes": 177886,
+      "bytes": 36198,
+      "width": 640,
+      "height": 640
+    },
+    "758-ch315-white-bg-1.jpg": {
+      "path": "images/066a785c9489494a.webp",
+      "sha256": "066a785c9489494a226b974093b49937d202a033b7c82b43554cfde11553f66b",
+      "sourceBytes": 297273,
+      "bytes": 73896,
+      "width": 640,
+      "height": 640
+    },
+    "1174-ch250-white-bg-1.jpg": {
+      "path": "images/3c78dbcb73a0ed46.webp",
+      "sha256": "3c78dbcb73a0ed4616a8e59c4441003e012b856f29e22aca892388441778b7dc",
+      "sourceBytes": 201811,
+      "bytes": 46894,
+      "width": 640,
+      "height": 640
+    },
+    "824-ch036-white-bg-1.jpg": {
+      "path": "images/755bc7f6de64d66a.webp",
+      "sha256": "755bc7f6de64d66a1e77803c7317681a8e874cce93b3438a82a3397ea9d1c64e",
+      "sourceBytes": 222786,
+      "bytes": 47760,
+      "width": 640,
+      "height": 640
+    },
+    "972-ch268-white-bg-1.jpg": {
+      "path": "images/c1f8e34b76de2c48.webp",
+      "sha256": "c1f8e34b76de2c48a727941354146453afb0b5a4472490876b5bef4f27881bb2",
+      "sourceBytes": 146231,
+      "bytes": 24806,
+      "width": 640,
+      "height": 640
+    },
+    "864-ch148-white-bg-1.jpg": {
+      "path": "images/8aa6f39d648f1cf0.webp",
+      "sha256": "8aa6f39d648f1cf0243a18d0df51b25212c75919def898a4a7a566d2faf635f7",
+      "sourceBytes": 105527,
+      "bytes": 17172,
+      "width": 640,
+      "height": 640
+    },
+    "1002-p026-white-bg-1.png": {
+      "path": "images/6d4eecb2f409adff.webp",
+      "sha256": "6d4eecb2f409adffcba6235ad4780a50f40250526e14cc784fa1ebbb8f7f5cad",
+      "sourceBytes": 1704344,
+      "bytes": 44720,
+      "width": 640,
+      "height": 640
+    },
+    "1178-ch128-white-bg-1.jpg": {
+      "path": "images/c22b868c198d6789.webp",
+      "sha256": "c22b868c198d67893fc9b78222377c05245f72bb29a510e8e887147fd462ca7a",
+      "sourceBytes": 264813,
+      "bytes": 63942,
+      "width": 640,
+      "height": 640
+    },
+    "1026-ch242-white-bg-1.jpg": {
+      "path": "images/98e28968deaa207f.webp",
+      "sha256": "98e28968deaa207fac4d122d07d953b64b825c11d69e50dc3366d2d810eb2bea",
+      "sourceBytes": 170388,
+      "bytes": 33858,
+      "width": 640,
+      "height": 640
+    },
+    "986-ch069-white-bg-1.jpg": {
+      "path": "images/d536317d21d34af1.webp",
+      "sha256": "d536317d21d34af1eb1146a18fbd6e81edcc91c107501fb14dd8ac841c59a977",
+      "sourceBytes": 281359,
+      "bytes": 65658,
+      "width": 640,
+      "height": 640
+    },
+    "732-p100-white-bg-1.png": {
+      "path": "images/c43bddda94b4334b.webp",
+      "sha256": "c43bddda94b4334b7db06f17dc8e85a65a5d9fdf358d7a5a3e697f0558926647",
+      "sourceBytes": 1879609,
+      "bytes": 64004,
+      "width": 640,
+      "height": 640
+    },
+    "756-ch047-white-bg-1.jpg": {
+      "path": "images/3a0eedf6399e5b25.webp",
+      "sha256": "3a0eedf6399e5b25e55f6e6d53dc00db0b5f03e626b81e5c722d519edd003de7",
+      "sourceBytes": 327448,
+      "bytes": 85420,
+      "width": 640,
+      "height": 640
+    },
+    "1072-p060-white-bg-1.png": {
+      "path": "images/1c85982b82a50fe4.webp",
+      "sha256": "1c85982b82a50fe4955ae8fcb5e5fd0a639641b0c30386ba5808ce3259a9cea5",
+      "sourceBytes": 1251965,
+      "bytes": 22910,
+      "width": 640,
+      "height": 640
+    },
+    "1280-3D-XXXL_cocoa.png": {
+      "path": "images/d97a01d941c94e4e.webp",
+      "sha256": "d97a01d941c94e4eb7f76d6a3919eda0dc09b99e21cb72e84a4cc073904733ce",
+      "sourceBytes": 2142174,
+      "bytes": 25120,
+      "width": 640,
+      "height": 312
+    },
+    "872-ch292-white-bg-1.jpg": {
+      "path": "images/5aa6bc984483f43b.webp",
+      "sha256": "5aa6bc984483f43b9f1dedab5be839d7ec9ebeaafe831342025bd00bd9a2da8f",
+      "sourceBytes": 209830,
+      "bytes": 42814,
+      "width": 640,
+      "height": 640
+    },
+    "614-ch172-white-bg-1.jpg": {
+      "path": "images/39585e867014092c.webp",
+      "sha256": "39585e867014092ccdebd2ab9ddb80c00e292fc9bb03330d1a7ea6b4b5906ff3",
+      "sourceBytes": 186193,
+      "bytes": 41284,
+      "width": 640,
+      "height": 640
+    },
+    "1176-ch027-white-bg-1.jpg": {
+      "path": "images/854c3b7f916c0774.webp",
+      "sha256": "854c3b7f916c077478dc99cf9f9478bac0d48617e7661ff35d1eec70429a7d3e",
+      "sourceBytes": 267639,
+      "bytes": 61914,
+      "width": 640,
+      "height": 640
+    },
+    "878-ch158-white-bg-1.jpg": {
+      "path": "images/09ddac821c05cd29.webp",
+      "sha256": "09ddac821c05cd290c99409c11cc2a027ad3d332c66c8b456470577b2fdf82a5",
+      "sourceBytes": 221503,
+      "bytes": 48614,
+      "width": 640,
+      "height": 640
+    },
+    "662-p027-white-bg-1.png": {
+      "path": "images/39522e594e3cec33.webp",
+      "sha256": "39522e594e3cec33250012c95132f00410c3fb35d34c48309f1fa78671bd42fc",
+      "sourceBytes": 1787745,
+      "bytes": 44972,
+      "width": 640,
+      "height": 640
+    },
+    "600-ch275-white-bg-1.jpg": {
+      "path": "images/20b63c638b9a9416.webp",
+      "sha256": "20b63c638b9a94160cbb318cef08c6d47915418433327df644ee11468e67ab24",
+      "sourceBytes": 173774,
+      "bytes": 34892,
+      "width": 640,
+      "height": 640
+    },
+    "796-p084-white-bg-1.png": {
+      "path": "images/b440f0dbdb275d69.webp",
+      "sha256": "b440f0dbdb275d69c9a16cd61f8743aca5194dd9cf9648e6962b35b3d56086d5",
+      "sourceBytes": 1895606,
+      "bytes": 48918,
+      "width": 640,
+      "height": 640
+    },
+    "838-ch130-white-bg-1.jpg": {
+      "path": "images/b0eff969c4a1351b.webp",
+      "sha256": "b0eff969c4a1351b56d2d51db29fc6f14e5b92432bb17b39545b435714b6bff8",
+      "sourceBytes": 121048,
+      "bytes": 18200,
+      "width": 640,
+      "height": 640
+    }
+  }
+}

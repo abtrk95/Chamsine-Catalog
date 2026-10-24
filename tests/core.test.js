@@ -1,0 +1,14 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { normalize,sanitizeCart,summarize,buildTextOrder,money,cartKey } from '../assets/core.js';
+const data=JSON.parse(fs.readFileSync(new URL('../data/products.json',import.meta.url)));
+test('all supplied products imported with unique stable IDs',()=>{assert.equal(data.products.length,229);assert.equal(new Set(data.products.map(p=>p.id)).size,229);});
+test('prices stay exact in integer øre, including requested updates',()=>{const prices=Object.fromEntries(data.products.map(p=>[p.id,p.priceCents]));assert.equal(prices.CH329,4500);assert.equal(prices.P012,72500);assert.equal(prices.P033,7000);assert.equal(prices.P102,1500);assert.equal(prices.CH156,4500);assert.equal(prices.LAT001,null);assert.equal(prices.CH363,575);});
+test('no invented missing prices or SKUs',()=>{assert.equal(data.products.filter(p=>p.priceCents===null).length,17);assert.equal(data.products.filter(p=>p.sku===null).length,6);});
+test('all image paths resolve',()=>{for(const p of data.products)assert.ok(fs.existsSync(new URL('../'+p.image,import.meta.url)),p.id);});
+test('Arabic search normalizes diacritics, alef and Arabic digits',()=>{assert.equal(normalize('أَرُز ٣٠٠ غ'),'ارز 300 غ');assert.equal(normalize('حلاوة'),'حلاوه');assert.equal(normalize('græskarkerner'), 'graeskarkerner');});
+test('untrusted saved cart is validated and bounded',()=>{const p=data.products[0];const cart=sanitizeCart([{id:p.id,quantity:4,priceCents:1},{id:p.id,quantity:2000},{id:'absent',quantity:1},{id:p.id,quantity:-1},{id:p.id,quantity:1.5},null],data.products);assert.equal(cart.size,1);assert.equal(cart.get(cartKey(p.id)).quantity,999);assert.equal('priceCents' in cart.get(cartKey(p.id)),false);});
+test('variants never merge into one cart row',()=>{const p=data.products.find(p=>p.id==='P037');const cart=sanitizeCart([{id:p.id,option:p.options[0],quantity:2},{id:p.id,option:p.options[1],quantity:3},{id:p.id,option:'invented',quantity:4}],data.products);assert.equal(cart.size,2);});
+test('unknown prices are excluded, never treated as free',()=>{const items=[{product:{priceCents:1250},quantity:3},{product:{priceCents:null},quantity:2}];assert.deepEqual(summarize(items),{units:5,totalCents:3750,unknown:1});assert.equal(money(null),'السعر عند الطلب');});
+test('text fallback separates fields instead of mixed-direction arithmetic',()=>{const text=buildTextOrder([{product:data.products[0],quantity:2,option:''}],new Date('2026-10-24T12:00:00'));assert.ok(text.includes('الكمية: 2'));assert.ok(text.includes('CH111'));assert.ok(!text.includes('×'));assert.ok(!text.includes('اسم العميل'));assert.ok(text.includes('25,00 kr'));});

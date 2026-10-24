@@ -1,0 +1,1405 @@
+{
+  "CH111": {
+    "sourceName": "Chamsine Ka'ak sesambrødstænger 300 gr",
+    "name": "كعك شمسين بالسمسم 300 غ",
+    "category": "bakery",
+    "options": []
+  },
+  "CH117": {
+    "sourceName": "Chamsine bukkehornsfrø",
+    "name": "حلبة شمسين",
+    "category": "nuts",
+    "options": []
+  },
+  "P058": {
+    "sourceName": "Chamsine cracker mix",
+    "name": "خلطة مقرمشات شمسين",
+    "category": "nuts",
+    "options": []
+  },
+  "CH135": {
+    "sourceName": "Chamsine ekstra blandede nødder 250 gr",
+    "name": "مكسرات مشكلة إكسترا شمسين 250 غ",
+    "category": "nuts",
+    "options": []
+  },
+  "CH212": {
+    "sourceName": "Chamsine græskarkerner 300 gr",
+    "name": "بزر يقطين شمسين 300 غ",
+    "category": "nuts",
+    "options": []
+  },
+  "CH213": {
+    "sourceName": "Chamsine hvide græskarkerner 800 gr",
+    "name": "بزر يقطين أبيض شمسين 800 غ",
+    "category": "nuts",
+    "options": []
+  },
+  "CH260": {
+    "sourceName": "Chamsine melonfrø 300",
+    "name": "بزر شمام شمسين 300 غ",
+    "category": "nuts",
+    "options": []
+  },
+  "CH256": {
+    "sourceName": "Chamsine nigellafrø / sorte kommen",
+    "name": "حبة البركة شمسين",
+    "category": "nuts",
+    "options": []
+  },
+  "CH325": {
+    "sourceName": "Chamsine solsikkefrø 250",
+    "name": "بزر دوار الشمس شمسين 250 غ",
+    "category": "nuts",
+    "options": []
+  },
+  "CH037": {
+    "sourceName": "Chamsine sorte vandmelonfrø 300 gr",
+    "name": "بزر بطيخ أسود شمسين 300 غ",
+    "category": "nuts",
+    "options": []
+  },
+  "CH217": {
+    "sourceName": "Chamsine super-melonfrø 300 gr",
+    "name": "بزر شمام سوبر شمسين 300 غ",
+    "category": "nuts",
+    "options": []
+  },
+  "P102": {
+    "sourceName": "Ekstra røde kerner 300 g",
+    "name": "بزر أحمر إكسترا 300 غ",
+    "category": "nuts",
+    "options": []
+  },
+  "P010": {
+    "sourceName": "Cappuccino coffee 20x25g",
+    "name": "قهوة كابتشينو 20 × 25 غ",
+    "category": "coffee",
+    "options": []
+  },
+  "CH329": {
+    "sourceName": "Torabika Cappuccino 20x25g",
+    "name": "كابتشينو تورابيكا 20 × 25 غ",
+    "category": "coffee",
+    "options": []
+  },
+  "CH004": {
+    "sourceName": "Torabika Cappuccino uden tilsat sukker 20x12,5",
+    "name": "كابتشينو تورابيكا بدون سكر مضاف 20 × 12.5 غ",
+    "category": "coffee",
+    "options": []
+  },
+  "CH364": {
+    "sourceName": "Torabika Macchiato espresso og mælk",
+    "name": "ماكياتو تورابيكا — إسبريسو وحليب",
+    "category": "coffee",
+    "options": []
+  },
+  "P092": {
+    "sourceName": "Abbas maamoul, indpakket, 32 g",
+    "name": "معمول عباس مغلف 32 غ",
+    "category": "desserts",
+    "options": []
+  },
+  "CH339": {
+    "sourceName": "Chamsine Amarin Barazek-småkager",
+    "name": "برازق أمارين بالسمسم",
+    "category": "desserts",
+    "options": []
+  },
+  "CH040": {
+    "sourceName": "Chamsine Amarin blandede småkager",
+    "name": "بسكويت أمارين مشكل",
+    "category": "desserts",
+    "options": []
+  },
+  "CH275": {
+    "sourceName": "Chamsine Amarin blandede søde sager / baklava 350 gr",
+    "name": "حلويات عربية مشكلة وبقلاوة أمارين 350 غ",
+    "category": "desserts",
+    "options": []
+  },
+  "CH197": {
+    "sourceName": "Chamsine Amarin Maamoul med dadler, æske",
+    "name": "معمول أمارين بالتمر — علبة",
+    "category": "desserts",
+    "options": []
+  },
+  "CH176": {
+    "sourceName": "Chamsine Amarin Maamoul, bakke",
+    "name": "معمول أمارين — صينية",
+    "category": "desserts",
+    "options": []
+  },
+  "CH206": {
+    "sourceName": "Chamsine ananasgelé",
+    "name": "جيلي شمسين بالأناناس",
+    "category": "desserts",
+    "options": []
+  },
+  "CH172": {
+    "sourceName": "Chamsine blåbærgelé",
+    "name": "جيلي شمسين بالتوت الأزرق",
+    "category": "desserts",
+    "options": []
+  },
+  "CH065": {
+    "sourceName": "Chamsine cocktailgelé",
+    "name": "جيلي شمسين بالكوكتيل",
+    "category": "desserts",
+    "options": []
+  },
+  "CH351": {
+    "sourceName": "Chamsine custardpulver med chokoladesmag",
+    "name": "مسحوق كاسترد شمسين بالشوكولاتة",
+    "category": "desserts",
+    "options": []
+  },
+  "CH221": {
+    "sourceName": "Chamsine custardpulver med jordbærsmag",
+    "name": "مسحوق كاسترد شمسين بالفراولة",
+    "category": "desserts",
+    "options": []
+  },
+  "CH302": {
+    "sourceName": "Chamsine custardpulver med vaniljesmag",
+    "name": "مسحوق كاسترد شمسين بالفانيليا",
+    "category": "desserts",
+    "options": []
+  },
+  "CH168": {
+    "sourceName": "Chamsine ferskengelé",
+    "name": "جيلي شمسين بالخوخ",
+    "category": "desserts",
+    "options": []
+  },
+  "CH270": {
+    "sourceName": "Chamsine flormelis",
+    "name": "سكر بودرة شمسين",
+    "category": "desserts",
+    "options": []
+  },
+  "CH007": {
+    "sourceName": "Chamsine gelé med jordbær- og banansmag",
+    "name": "جيلي شمسين بالفراولة والموز",
+    "category": "desserts",
+    "options": []
+  },
+  "CH243": {
+    "sourceName": "Chamsine Ghraybeh-småkager med pistacie",
+    "name": "غريبة أمارين بالفستق",
+    "category": "desserts",
+    "options": []
+  },
+  "CH044": {
+    "sourceName": "Chamsine jordbærgelé",
+    "name": "جيلي شمسين بالفراولة",
+    "category": "desserts",
+    "options": []
+  },
+  "CH124": {
+    "sourceName": "Chamsine kirsebærgelé",
+    "name": "جيلي شمسين بالكرز",
+    "category": "desserts",
+    "options": []
+  },
+  "CH118": {
+    "sourceName": "Chamsine sesamsmåkager / Barazek",
+    "name": "برازق شمسين بالسمسم",
+    "category": "desserts",
+    "options": []
+  },
+  "P037": {
+    "sourceName": "Chantillycreme, chokolade, jordbær og vanilje",
+    "name": "كريمة شانتيه",
+    "category": "desserts",
+    "options": [
+      "شوكولاتة",
+      "فراولة",
+      "فانيليا"
+    ]
+  },
+  "P027": {
+    "sourceName": "Club gelé 12 stk., 70 g pr. stk.",
+    "name": "جيلي كلوب 12 قطعة × 70 غ",
+    "category": "desserts",
+    "options": []
+  },
+  "CH156": {
+    "sourceName": "Coffee Joy instant-kaffekiks",
+    "name": "بسكويت كوفي جوي بالقهوة",
+    "category": "desserts",
+    "options": []
+  },
+  "P085": {
+    "sourceName": "Gelé",
+    "name": "جيلي",
+    "category": "desserts",
+    "options": []
+  },
+  "P018": {
+    "sourceName": "Halva 350 g med pistacie",
+    "name": "حلاوة طحينية بالفستق 350 غ",
+    "category": "desserts",
+    "options": []
+  },
+  "P039": {
+    "sourceName": "Halva 700 g med pistacie",
+    "name": "حلاوة طحينية بالفستق 700 غ",
+    "category": "desserts",
+    "options": []
+  },
+  "P069": {
+    "sourceName": "Kashtalieh 400 g × 24",
+    "name": "قشطلية 400 غ × 24",
+    "category": "desserts",
+    "options": []
+  },
+  "CH210": {
+    "sourceName": "Khafif Dance Cocoa kakaocremekiks",
+    "name": "بسكويت خفيف دانس بكريمة الكاكاو",
+    "category": "desserts",
+    "options": []
+  },
+  "P066": {
+    "sourceName": "Loly Lolo",
+    "name": "لولي لولو",
+    "category": "desserts",
+    "options": []
+  },
+  "P008": {
+    "sourceName": "Maamoul med dadler 40 g",
+    "name": "معمول بالتمر 40 غ",
+    "category": "desserts",
+    "options": []
+  },
+  "P056": {
+    "sourceName": "Majsstivelse 200 g × 24",
+    "name": "نشا الذرة 200 غ × 24",
+    "category": "desserts",
+    "options": []
+  },
+  "P094": {
+    "sourceName": "Petit four med chokolade",
+    "name": "بيتي فور بالشوكولاتة",
+    "category": "desserts",
+    "options": []
+  },
+  "P082": {
+    "sourceName": "Shamsin luqmat al-qadi-mix 400 g",
+    "name": "خلطة لقمة القاضي شمسين 400 غ",
+    "category": "desserts",
+    "options": []
+  },
+  "P098": {
+    "sourceName": "Shamsin sfouf-blanding 500 g",
+    "name": "خلطة الصفوف شمسين 500 غ",
+    "category": "desserts",
+    "options": []
+  },
+  "CH363": {
+    "sourceName": "Al Rabih hummus med tahin, kartoner",
+    "name": "حمص بالطحينة الربيع — كراتين",
+    "category": "canned",
+    "options": []
+  },
+  "CH193": {
+    "sourceName": "Chamsine aubergine med tahin / mutabbal på dåse",
+    "name": "متبل باذنجان بالطحينة شمسين — معلب",
+    "category": "canned",
+    "options": []
+  },
+  "CH230": {
+    "sourceName": "Chamsine ful medames på dåse",
+    "name": "فول مدمس شمسين — معلب",
+    "category": "canned",
+    "options": []
+  },
+  "CH300": {
+    "sourceName": "Chamsine fyldte grønne peberfrugter på dåse",
+    "name": "فلفل أخضر محشي شمسين — معلب",
+    "category": "canned",
+    "options": []
+  },
+  "CH214": {
+    "sourceName": "Chamsine fyldte vinblade i glas",
+    "name": "ورق عنب محشي شمسين — مرطبان",
+    "category": "canned",
+    "options": []
+  },
+  "CH343": {
+    "sourceName": "Chamsine fyldte vinblade på dåse",
+    "name": "ورق عنب محشي شمسين — معلب",
+    "category": "canned",
+    "options": []
+  },
+  "CH170": {
+    "sourceName": "Chamsine hummus med tahin på dåse",
+    "name": "حمص بالطحينة شمسين — معلب",
+    "category": "canned",
+    "options": []
+  },
+  "CH202": {
+    "sourceName": "Chamsine kogte bønner med kikærter på dåse",
+    "name": "فول مطبوخ مع الحمص شمسين — معلب",
+    "category": "canned",
+    "options": []
+  },
+  "CH104": {
+    "sourceName": "Chamsine Mousabbaha med tahin på dåse",
+    "name": "مسبحة بالطحينة شمسين — معلب",
+    "category": "canned",
+    "options": []
+  },
+  "CH312": {
+    "sourceName": "Chamsine skiveskårne syltede agurker på dåse",
+    "name": "خيار مخلل شرائح شمسين — معلب",
+    "category": "canned",
+    "options": []
+  },
+  "CH289": {
+    "sourceName": "Chamsine tomatpuré på dåse",
+    "name": "معجون طماطم شمسين — معلب",
+    "category": "canned",
+    "options": []
+  },
+  "P029": {
+    "sourceName": "Fyldte kålblade 400 g × 24",
+    "name": "ملفوف محشي 400 غ × 24",
+    "category": "canned",
+    "options": []
+  },
+  "P068": {
+    "sourceName": "Fyldte løg 400 g × 24",
+    "name": "بصل محشي 400 غ × 24",
+    "category": "canned",
+    "options": []
+  },
+  "P023": {
+    "sourceName": "Fyldte tomater 400 g × 24",
+    "name": "طماطم محشية 400 غ × 24",
+    "category": "canned",
+    "options": []
+  },
+  "P034": {
+    "sourceName": "Fyldte vinblade med jalapeño 400 g",
+    "name": "ورق عنب محشي بالهالبينو 400 غ",
+    "category": "canned",
+    "options": []
+  },
+  "P074": {
+    "sourceName": "Kogte kikærter, dåse 800 g",
+    "name": "حمص مسلوق — معلب 800 غ",
+    "category": "canned",
+    "options": []
+  },
+  "P100": {
+    "sourceName": "Tun, stærk og mild",
+    "name": "تونة",
+    "category": "canned",
+    "options": [
+      "حارة",
+      "عادية"
+    ]
+  },
+  "CH039": {
+    "sourceName": "Chamsine afskallede hestebønner xx",
+    "name": "فول مقشور شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH144": {
+    "sourceName": "Chamsine brun/fin bulgur",
+    "name": "برغل بني ناعم شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH038": {
+    "sourceName": "Chamsine fin semulje",
+    "name": "سميد ناعم شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH123": {
+    "sourceName": "Chamsine grov semulje",
+    "name": "سميد خشن شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH215": {
+    "sourceName": "Chamsine grønne hele linser",
+    "name": "عدس أخضر حب شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH251": {
+    "sourceName": "Chamsine gul bulgur",
+    "name": "برغل أصفر شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH328": {
+    "sourceName": "Chamsine gul bulgur / semulje",
+    "name": "برغل أصفر / سميد شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH022": {
+    "sourceName": "Chamsine hele brune linser",
+    "name": "عدس بني حب شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH114": {
+    "sourceName": "Chamsine hvide bønner",
+    "name": "فاصولياء بيضاء شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH047": {
+    "sourceName": "Chamsine jumbo-hvide bønner",
+    "name": "فاصولياء بيضاء جامبو شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH315": {
+    "sourceName": "Chamsine kikærter",
+    "name": "حمص حب شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH357": {
+    "sourceName": "Chamsine medium semulje",
+    "name": "سميد متوسط شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH106": {
+    "sourceName": "Chamsine medium/grov semulje",
+    "name": "سميد متوسط / خشن شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH048": {
+    "sourceName": "Chamsine perlecouscous / Moghrabieh",
+    "name": "مغربية شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH160": {
+    "sourceName": "Chamsine popcornmajs",
+    "name": "ذرة فشار شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH354": {
+    "sourceName": "Chamsine rismel / rispulver",
+    "name": "طحين الأرز شمسين",
+    "category": "grains",
+    "options": []
+  },
+  "CH295": {
+    "sourceName": "Chamsine ristet grøn hvede / Freekeh 800 gr",
+    "name": "فريكة شمسين 800 غ",
+    "category": "grains",
+    "options": []
+  },
+  "CH314": {
+    "sourceName": "Chamsine tørrede hestebønner 800 gr",
+    "name": "فول يابس شمسين 800 غ",
+    "category": "grains",
+    "options": []
+  },
+  "P061": {
+    "sourceName": "Gul Bahar ris 4,5 kg",
+    "name": "أرز غول بهار 4.5 كغ",
+    "category": "grains",
+    "options": []
+  },
+  "CH032": {
+    "sourceName": "Kalemar The Rice basmatiris 1000 gr",
+    "name": "أرز بسمتي كاليمار 1 كغ",
+    "category": "grains",
+    "options": []
+  },
+  "CH360": {
+    "sourceName": "Louro Camolino mellemkornede ris 5 KL",
+    "name": "أرز لورو كامولينو متوسط الحبة 5 كغ",
+    "category": "grains",
+    "options": []
+  },
+  "P084": {
+    "sourceName": "Semulje grov, mellem og fin 400 gr",
+    "name": "سميد 400 غ",
+    "category": "grains",
+    "options": [
+      "خشن",
+      "متوسط",
+      "ناعم"
+    ]
+  },
+  "P002": {
+    "sourceName": "Shamsin ris 5 kg",
+    "name": "أرز شمسين 5 كغ",
+    "category": "grains",
+    "options": []
+  },
+  "P024": {
+    "sourceName": "Blandede krydderier, alle typer, plastglas 300 g",
+    "name": "بهارات مشكلة — عبوة بلاستيكية 300 غ",
+    "category": "spices",
+    "options": []
+  },
+  "CH154": {
+    "sourceName": "Chamsine citronsyre, stor beholder",
+    "name": "ملح الليمون شمسين — عبوة كبيرة",
+    "category": "spices",
+    "options": []
+  },
+  "CH126": {
+    "sourceName": "Chamsine Crispy mild paneringsmix til kylling",
+    "name": "خلطة كريسبي شمسين للدجاج — عادية",
+    "category": "spices",
+    "options": []
+  },
+  "CH041": {
+    "sourceName": "Chamsine Crispy stærk paneringsmix til kylling",
+    "name": "خلطة كريسبي شمسين للدجاج — حارة",
+    "category": "spices",
+    "options": []
+  },
+  "CH034": {
+    "sourceName": "Chamsine falafelkrydderi",
+    "name": "بهارات فلافل شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH036": {
+    "sourceName": "Chamsine groft sort peber",
+    "name": "فلفل أسود مجروش شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH269": {
+    "sourceName": "Chamsine grøn timian / ekstra za'atar 400 gr",
+    "name": "زعتر أخضر إكسترا شمسين 400 غ",
+    "category": "spices",
+    "options": []
+  },
+  "CH025": {
+    "sourceName": "Chamsine gurkemejepulver",
+    "name": "كركم مطحون شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH188": {
+    "sourceName": "Chamsine hvid peber",
+    "name": "فلفل أبيض شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH280": {
+    "sourceName": "Chamsine hvid peber, stor beholder",
+    "name": "فلفل أبيض شمسين — عبوة كبيرة",
+    "category": "spices",
+    "options": []
+  },
+  "CH130": {
+    "sourceName": "Chamsine hvidløgspulver",
+    "name": "ثوم بودرة شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH163": {
+    "sourceName": "Chamsine ingefærpulver",
+    "name": "زنجبيل مطحون شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH208": {
+    "sourceName": "Chamsine Kabseh-krydderi",
+    "name": "بهارات كبسة شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH008": {
+    "sourceName": "Chamsine kyllingekrydderi",
+    "name": "بهارات دجاج شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH148": {
+    "sourceName": "Chamsine kyllingekrydderi",
+    "name": "بهارات دجاج شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH309": {
+    "sourceName": "Chamsine løgpulver",
+    "name": "بصل بودرة شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH100": {
+    "sourceName": "Chamsine Maggy-krydderipulver",
+    "name": "مسحوق بهارات ماجي شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH292": {
+    "sourceName": "Chamsine Mandi-krydderi",
+    "name": "بهارات مندي شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH158": {
+    "sourceName": "Chamsine mild/sød karry, stor beholder",
+    "name": "كاري عادي شمسين — عبوة كبيرة",
+    "category": "spices",
+    "options": []
+  },
+  "CH298": {
+    "sourceName": "Chamsine Moghrabieh-krydderi",
+    "name": "بهارات مغربية شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH185": {
+    "sourceName": "Chamsine paprikapulver, stor beholder",
+    "name": "بابريكا شمسين — عبوة كبيرة",
+    "category": "spices",
+    "options": []
+  },
+  "CH290": {
+    "sourceName": "Chamsine rød timian / za'atarblanding 400 gr",
+    "name": "زعتر أحمر شمسين 400 غ",
+    "category": "spices",
+    "options": []
+  },
+  "CH068": {
+    "sourceName": "Chamsine rødt chilipulver",
+    "name": "فلفل أحمر حار مطحون شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH062": {
+    "sourceName": "Chamsine shawarma-kyllingekrydderi, stor beholder",
+    "name": "بهارات شاورما الدجاج شمسين — عبوة كبيرة",
+    "category": "spices",
+    "options": []
+  },
+  "CH078": {
+    "sourceName": "Chamsine shawarma-kødkrydderi",
+    "name": "بهارات شاورما اللحم شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH235": {
+    "sourceName": "Chamsine stødt kanel",
+    "name": "قرفة مطحونة شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH161": {
+    "sourceName": "Chamsine stødt koriander",
+    "name": "كزبرة مطحونة شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH162": {
+    "sourceName": "Chamsine stødt mahaleb",
+    "name": "محلب مطحون شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH195": {
+    "sourceName": "Chamsine stødt nellike",
+    "name": "قرنفل مطحون شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH090": {
+    "sourceName": "Chamsine stødt sort peber",
+    "name": "فلفل أسود مطحون شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH346": {
+    "sourceName": "Chamsine stødt sort peber, stor beholder",
+    "name": "فلفل أسود مطحون شمسين — عبوة كبيرة",
+    "category": "spices",
+    "options": []
+  },
+  "CH060": {
+    "sourceName": "Chamsine stødt spidskommen",
+    "name": "كمون مطحون شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH012": {
+    "sourceName": "Chamsine stødt sumak",
+    "name": "سماق مطحون شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH196": {
+    "sourceName": "Chamsine syv-krydderiblanding",
+    "name": "سبع بهارات شمسين",
+    "category": "spices",
+    "options": []
+  },
+  "CH262": {
+    "sourceName": "Chamsine Taouk-krydderi, hvid, stor beholder",
+    "name": "بهارات طاووق بيضاء شمسين — عبوة كبيرة",
+    "category": "spices",
+    "options": []
+  },
+  "CH220": {
+    "sourceName": "Chamsine Taouk-krydderi, rød/stærk, stor beholder",
+    "name": "بهارات طاووق حمراء حارة شمسين — عبوة كبيرة",
+    "category": "spices",
+    "options": []
+  },
+  "CH305": {
+    "sourceName": "Chamsine Taouk-krydderi, stor beholder",
+    "name": "بهارات طاووق شمسين — عبوة كبيرة",
+    "category": "spices",
+    "options": []
+  },
+  "CH194": {
+    "sourceName": "Chamsine timian med granatæblemelasse / za'atar 400 gr",
+    "name": "زعتر بدبس الرمان شمسين 400 غ",
+    "category": "spices",
+    "options": []
+  },
+  "CH361": {
+    "sourceName": "Dilla karrypulver",
+    "name": "كاري ديلا",
+    "category": "spices",
+    "options": []
+  },
+  "CH308": {
+    "sourceName": "Dilla stærkt karrypulver",
+    "name": "كاري ديلا حار",
+    "category": "spices",
+    "options": []
+  },
+  "P030": {
+    "sourceName": "Ekstra syrisk falafel med plastform 400 gr",
+    "name": "فلافل سورية إكسترا مع قالب بلاستيكي 400 غ",
+    "category": "spices",
+    "options": []
+  },
+  "P075": {
+    "sourceName": "Sort peber, hel, grov og fin, plastboks 150 g × 24",
+    "name": "فلفل أسود 150 غ × 24",
+    "category": "spices",
+    "options": [
+      "حب",
+      "مجروش",
+      "ناعم"
+    ]
+  },
+  "P077": {
+    "sourceName": "Syv krydderier, shawarma-krydderi til kød og kylling, 200 g × 24",
+    "name": "خلطة بهارات 200 غ × 24",
+    "category": "spices",
+    "options": [
+      "سبع بهارات",
+      "شاورما اللحم",
+      "شاورما الدجاج"
+    ]
+  },
+  "CH268": {
+    "sourceName": "Coco Chamsine kokoskul 3 KL",
+    "name": "فحم جوز الهند كوكو شمسين 3 كغ",
+    "category": "charcoal",
+    "options": []
+  },
+  "P111": {
+    "sourceName": "Premium trækul 1 kg",
+    "name": "فحم ممتاز 1 كغ",
+    "category": "charcoal",
+    "options": []
+  },
+  "CH317": {
+    "sourceName": "Chamsine auberginemarmelade 800 gr",
+    "name": "مربى الباذنجان شمسين 800 غ",
+    "category": "jam",
+    "options": []
+  },
+  "CH150": {
+    "sourceName": "Chamsine brombær-/morbærblomstpålæg 900 gr",
+    "name": "مربى التوت شمسين 900 غ",
+    "category": "jam",
+    "options": []
+  },
+  "CH093": {
+    "sourceName": "Chamsine daddelmasse 900 gr",
+    "name": "عجينة تمر شمسين 900 غ",
+    "category": "jam",
+    "options": []
+  },
+  "CH147": {
+    "sourceName": "Chamsine dadler i æske 400 gr",
+    "name": "تمر شمسين — علبة 400 غ",
+    "category": "jam",
+    "options": []
+  },
+  "CH284": {
+    "sourceName": "Chamsine figen- og nøddepålæg 800 gr",
+    "name": "مربى التين والمكسرات شمسين 800 غ",
+    "category": "jam",
+    "options": []
+  },
+  "CH069": {
+    "sourceName": "Chamsine luksus-Khudari-dadler",
+    "name": "تمر خضري فاخر شمسين",
+    "category": "jam",
+    "options": []
+  },
+  "CH264": {
+    "sourceName": "Chamsine rosenmarmelade 900 gr",
+    "name": "مربى الورد شمسين 900 غ",
+    "category": "jam",
+    "options": []
+  },
+  "CH169": {
+    "sourceName": "Crystal Chattra Extra tamarindblok 400 gr",
+    "name": "تمر هندي كريستال شاترا إكسترا 400 غ",
+    "category": "jam",
+    "options": []
+  },
+  "P055": {
+    "sourceName": "Hele figner i marmelade 800 g",
+    "name": "مربى تين حب 800 غ",
+    "category": "jam",
+    "options": []
+  },
+  "P112": {
+    "sourceName": "Jordbærmarmelade i plastbøtte 1,5 kg",
+    "name": "مربى الفراولة — عبوة بلاستيكية 1.5 كغ",
+    "category": "jam",
+    "options": []
+  },
+  "P110": {
+    "sourceName": "Kirsebærmarmelade 1,5 kg og abrikosmarmelade 1,5 kg",
+    "name": "مربى 1.5 كغ",
+    "category": "jam",
+    "options": [
+      "كرز",
+      "مشمش"
+    ]
+  },
+  "P045": {
+    "sourceName": "Morbærmarmelade i plastbøtte 1,5 kg",
+    "name": "مربى التوت — عبوة بلاستيكية 1.5 كغ",
+    "category": "jam",
+    "options": []
+  },
+  "P041": {
+    "sourceName": "Morbærmarmelade i plastbøtte 900 g",
+    "name": "مربى التوت — عبوة بلاستيكية 900 غ",
+    "category": "jam",
+    "options": []
+  },
+  "P026": {
+    "sourceName": "Moset figenmarmelade i plastbøtte 1,5 kg",
+    "name": "مربى التين المهروس — عبوة بلاستيكية 1.5 كغ",
+    "category": "jam",
+    "options": []
+  },
+  "P071": {
+    "sourceName": "Rosenmarmelade i plastbøtte 1,5 kg",
+    "name": "مربى الورد — عبوة بلاستيكية 1.5 كغ",
+    "category": "jam",
+    "options": []
+  },
+  "P093": {
+    "sourceName": "Ekstra jomfruolivenolie 1 liter",
+    "name": "زيت زيتون بكر ممتاز 1 لتر",
+    "category": "oil",
+    "options": []
+  },
+  "P064": {
+    "sourceName": "Ekstra jomfruolivenolie 3 liter",
+    "name": "زيت زيتون بكر ممتاز 3 لتر",
+    "category": "oil",
+    "options": []
+  },
+  "P032": {
+    "sourceName": "Aleppo-oliven med syrisk citron 660 g",
+    "name": "زيتون حلبي بالليمون السوري 660 غ",
+    "category": "pickles",
+    "options": []
+  },
+  "P088": {
+    "sourceName": "Artiskok 1000 g",
+    "name": "أرضي شوكي 1 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "P067": {
+    "sourceName": "Artiskok 2750 g",
+    "name": "أرضي شوكي 2.75 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH070": {
+    "sourceName": "Chamsine artiskokker i glas 660 gr",
+    "name": "أرضي شوكي شمسين — مرطبان 660 غ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH244": {
+    "sourceName": "Chamsine blandede pickles1000 gr",
+    "name": "مخلل مشكل شمسين 1 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH082": {
+    "sourceName": "Chamsine blandede pickles, stort glas 2600 gr",
+    "name": "مخلل مشكل شمسين — مرطبان كبير 2.6 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH242": {
+    "sourceName": "Chamsine blandede syltede chilipebre 2750 gr",
+    "name": "فلفل حار مخلل مشكل شمسين 2.75 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH276": {
+    "sourceName": "Chamsine grillede auberginer i glas",
+    "name": "باذنجان مشوي شمسين — مرطبان",
+    "category": "pickles",
+    "options": []
+  },
+  "CH099": {
+    "sourceName": "Chamsine grønne oliven xx",
+    "name": "زيتون أخضر شمسين",
+    "category": "pickles",
+    "options": []
+  },
+  "CH311": {
+    "sourceName": "Chamsine grønne oliven xx",
+    "name": "زيتون أخضر شمسين",
+    "category": "pickles",
+    "options": []
+  },
+  "CH013": {
+    "sourceName": "Chamsine grønne oliven i saltlage 1000 gr",
+    "name": "زيتون أخضر شمسين بالمحلول الملحي 1 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH236": {
+    "sourceName": "Chamsine grønne oliven, Salkini-stil 660 gr",
+    "name": "زيتون أخضر سلقيني شمسين 660 غ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH057": {
+    "sourceName": "Chamsine lupinbønner i saltlage 660 gr",
+    "name": "ترمس شمسين بالمحلول الملحي 660 غ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH257": {
+    "sourceName": "Chamsine Makdous, fyldt aubergine i olie 660 gr",
+    "name": "مكدوس شمسين بالزيت 660 غ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH307": {
+    "sourceName": "Chamsine Makdous, fyldt aubergine i olie 1000 gr",
+    "name": "مكدوس شمسين بالزيت 1 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH321": {
+    "sourceName": "Chamsine Makdous, fyldt aubergine, stort plastglas 2600 gr",
+    "name": "مكدوس شمسين — عبوة كبيرة 2.6 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH200": {
+    "sourceName": "Chamsine skiveskåret syltet jalapeño 660 gr",
+    "name": "هالبينو مخلل شرائح شمسين 660 غ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH133": {
+    "sourceName": "Chamsine syltede agurker 660 gr",
+    "name": "خيار مخلل شمسين 660 غ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH246": {
+    "sourceName": "Chamsine syltede agurker 2800 gr",
+    "name": "خيار مخلل شمسين 2.8 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH016": {
+    "sourceName": "Chamsine syltede grønne peberfrugter 660 gr",
+    "name": "فلفل أخضر مخلل شمسين 660 غ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH091": {
+    "sourceName": "Chamsine syltede majroer, stort plastglas 2600 gr",
+    "name": "لفت مخلل شمسين — عبوة كبيرة 2.6 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH183": {
+    "sourceName": "Chamsine vinblade i saltlage 2800 gr",
+    "name": "ورق عنب شمسين بالمحلول الملحي 2.8 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "P101": {
+    "sourceName": "Ekstra sorte oliven 1000 g",
+    "name": "زيتون أسود إكسترا 1 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "P035": {
+    "sourceName": "Grillet aubergine 1000 g",
+    "name": "باذنجان مشوي 1 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "P091": {
+    "sourceName": "Grillet aubergine 2800 g",
+    "name": "باذنجان مشوي 2.8 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "P060": {
+    "sourceName": "Haurani-peber 1 kg + 1000",
+    "name": "فلفل حوراني 1 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "P015": {
+    "sourceName": "Mexicansk peber 1 kg",
+    "name": "فلفل مكسيكي 1 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "P059": {
+    "sourceName": "Originale Selevini-oliven 3 kg",
+    "name": "زيتون سلقيني أصلي 3 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "P025": {
+    "sourceName": "Syltede majroer 1000 g",
+    "name": "لفت مخلل 1 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "P040": {
+    "sourceName": "Syltede majroer 2800 g",
+    "name": "لفت مخلل 2.8 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "P028": {
+    "sourceName": "Syltede majroer 660 g",
+    "name": "لفت مخلل 660 غ",
+    "category": "pickles",
+    "options": []
+  },
+  "P080": {
+    "sourceName": "Syriske syltede agurker 1 kg × 12",
+    "name": "خيار مخلل سوري 1 كغ × 12",
+    "category": "pickles",
+    "options": []
+  },
+  "P096": {
+    "sourceName": "Vinblade 1000 g",
+    "name": "ورق عنب 1 كغ",
+    "category": "pickles",
+    "options": []
+  },
+  "CH204": {
+    "sourceName": "Chamsine citronsafterstatning 1 L",
+    "name": "بديل عصير الليمون شمسين 1 لتر",
+    "category": "sauces",
+    "options": []
+  },
+  "CH138": {
+    "sourceName": "Chamsine daddelsirup 400 gr",
+    "name": "دبس التمر شمسين 400 غ",
+    "category": "sauces",
+    "options": []
+  },
+  "CH155": {
+    "sourceName": "Chamsine daddelsirup 400 gr",
+    "name": "دبس التمر شمسين 400 غ",
+    "category": "sauces",
+    "options": []
+  },
+  "CH105": {
+    "sourceName": "Chamsine granatæblemelasse 750 gr",
+    "name": "دبس الرمان شمسين 750 غ",
+    "category": "sauces",
+    "options": []
+  },
+  "CH359": {
+    "sourceName": "Chamsine rosenvand 250 m m",
+    "name": "ماء الورد شمسين 250 مل",
+    "category": "sauces",
+    "options": []
+  },
+  "CH086": {
+    "sourceName": "Chamsine rød peberpasta 660 gr",
+    "name": "معجون الفلفل الأحمر شمسين 660 غ",
+    "category": "sauces",
+    "options": []
+  },
+  "CH143": {
+    "sourceName": "Chamsine rød peberpasta i glas 660 gr",
+    "name": "معجون الفلفل الأحمر شمسين — مرطبان 660 غ",
+    "category": "sauces",
+    "options": []
+  },
+  "CH365": {
+    "sourceName": "Chamsine rød peberpasta i glas 1000 gr",
+    "name": "معجون الفلفل الأحمر شمسين — مرطبان 1 كغ",
+    "category": "sauces",
+    "options": []
+  },
+  "CH237": {
+    "sourceName": "Chamsine æbleeddike 1L",
+    "name": "خل التفاح شمسين 1 لتر",
+    "category": "sauces",
+    "options": []
+  },
+  "P089": {
+    "sourceName": "Granatæblesirup 300 ml",
+    "name": "شراب الرمان 300 مل",
+    "category": "sauces",
+    "options": []
+  },
+  "P070": {
+    "sourceName": "Granatæblesirup 250 M",
+    "name": "شراب الرمان 250 مل",
+    "category": "sauces",
+    "options": []
+  },
+  "P004": {
+    "sourceName": "Peberpasta, stærk/mild, glas 1000 g",
+    "name": "معجون الفلفل — مرطبان 1 كغ",
+    "category": "sauces",
+    "options": [
+      "حار",
+      "عادي"
+    ]
+  },
+  "CH055": {
+    "sourceName": "Yamama citronsafterstatning 1 L",
+    "name": "بديل عصير الليمون يمامة 1 لتر",
+    "category": "sauces",
+    "options": []
+  },
+  "CH053": {
+    "sourceName": "Yamama granatæblemelasse 750 g",
+    "name": "دبس الرمان يمامة 750 غ",
+    "category": "sauces",
+    "options": []
+  },
+  "CH171": {
+    "sourceName": "Yamama granatæblemelasse, stor dunk 2055 g",
+    "name": "دبس الرمان يمامة — عبوة كبيرة 2055 غ",
+    "category": "sauces",
+    "options": []
+  },
+  "CH297": {
+    "sourceName": "Yamama hvid eddike 1 L",
+    "name": "خل أبيض يمامة 1 لتر",
+    "category": "sauces",
+    "options": []
+  },
+  "CH316": {
+    "sourceName": "Chamsine bløde vingummier 30 stk",
+    "name": "حلوى جيلاتينية شمسين 30 قطعة",
+    "category": "snacks",
+    "options": []
+  },
+  "CH014": {
+    "sourceName": "Chamsine crackerblanding 350 g",
+    "name": "خلطة مقرمشات شمسين 350 غ",
+    "category": "snacks",
+    "options": []
+  },
+  "CH059": {
+    "sourceName": "Chamsine mini-majssnacks, assorterede smage",
+    "name": "مقرمشات ذرة صغيرة شمسين — نكهات مشكلة",
+    "category": "snacks",
+    "options": []
+  },
+  "P054": {
+    "sourceName": "Ekstra snackblanding 250 g",
+    "name": "خلطة مقرمشات إكسترا 250 غ",
+    "category": "snacks",
+    "options": []
+  },
+  "CH203": {
+    "sourceName": "Chamsine sesamfrø",
+    "name": "سمسم شمسين",
+    "category": "tahini",
+    "options": []
+  },
+  "CH073": {
+    "sourceName": "Chamsine tahin 400g",
+    "name": "طحينة شمسين 400 غ",
+    "category": "tahini",
+    "options": []
+  },
+  "P012": {
+    "sourceName": "Tahin 18 kg, ren sudanesisk sesam",
+    "name": "طحينة من سمسم سوداني صافي 18 كغ",
+    "category": "tahini",
+    "options": []
+  },
+  "P033": {
+    "sourceName": "Tahin 2 kg, ren sudanesisk sesam",
+    "name": "طحينة من سمسم سوداني صافي 2 كغ",
+    "category": "tahini",
+    "options": []
+  },
+  "P043": {
+    "sourceName": "Tahin, ren sudanesisk sesam 800 g",
+    "name": "طحينة من سمسم سوداني صافي 800 غ",
+    "category": "tahini",
+    "options": []
+  },
+  "CH250": {
+    "sourceName": "Chamsine tørret basilikum",
+    "name": "ريحان مجفف شمسين",
+    "category": "herbs",
+    "options": []
+  },
+  "CH027": {
+    "sourceName": "Chamsine tørret citronmelisse",
+    "name": "مليسة مجففة شمسين",
+    "category": "herbs",
+    "options": []
+  },
+  "CH128": {
+    "sourceName": "Chamsine tørret merian",
+    "name": "مردقوش مجفف شمسين",
+    "category": "herbs",
+    "options": []
+  },
+  "CH211": {
+    "sourceName": "Chamsine tørret molokhia / katost",
+    "name": "ملوخية مجففة شمسين",
+    "category": "herbs",
+    "options": []
+  },
+  "P086": {
+    "sourceName": "Molokhia 400 g",
+    "name": "ملوخية 400 غ",
+    "category": "herbs",
+    "options": []
+  },
+  "P095": {
+    "sourceName": "Syrisk urtete 100 g, salvie, citronmelisse og blandede urter",
+    "name": "أعشاب سورية 100 غ",
+    "category": "herbs",
+    "options": [
+      "ميرمية",
+      "مليسة",
+      "زهورات مشكلة"
+    ]
+  },
+  "item-216": {
+    "sourceName": "Tora Bika Brown Coffee 3-i-1 500 g",
+    "name": "قهوة تورابيكا براون 3 في 1 — 500 غ",
+    "category": "coffee",
+    "options": []
+  },
+  "item-217": {
+    "sourceName": "Tora Bika Creamy Latte 600 g",
+    "name": "تورابيكا كريمي لاتيه 600 غ",
+    "category": "coffee",
+    "options": []
+  },
+  "item-218": {
+    "sourceName": "Danisa Traditional Butter Cookies 454 g",
+    "name": "بسكويت زبدة دانيسا 454 غ",
+    "category": "desserts",
+    "options": []
+  },
+  "item-219": {
+    "sourceName": "Chamsine blandede individuelt indpakkede småkager",
+    "name": "بسكويت شمسين مشكل مغلف فرديًا",
+    "category": "desserts",
+    "options": []
+  },
+  "item-220": {
+    "sourceName": "Chamsine Amarin Susamlı Hurmalı – sesamkager med dadler",
+    "name": "حلويات أمارين بالسمسم والتمر",
+    "category": "desserts",
+    "options": []
+  },
+  "item-221": {
+    "sourceName": "Chamsine Amarin Çörekotlu Hurmalı – sesamkager med dadelfyld og nigellafrø",
+    "name": "حلويات أمارين بالتمر والسمسم وحبة البركة",
+    "category": "desserts",
+    "options": []
+  },
+  "LAT001": {
+    "sourceName": "Latino Crispy vaffelkiks – Super Cocoa",
+    "name": "ويفر لاتينو كريسبي — سوبر كاكاو",
+    "category": "snacks",
+    "options": []
+  },
+  "LAT002": {
+    "sourceName": "Latino Crispy vaffelkiks – Milky Cream",
+    "name": "ويفر لاتينو كريسبي — كريمة الحليب",
+    "category": "snacks",
+    "options": []
+  },
+  "LAT003": {
+    "sourceName": "Latino Daily kakaovaffel 70 g",
+    "name": "ويفر لاتينو ديلي بالكاكاو 70 غ",
+    "category": "snacks",
+    "options": []
+  },
+  "LAT004": {
+    "sourceName": "Latino Daily vaniljevaffel 70 g",
+    "name": "ويفر لاتينو ديلي بالفانيليا 70 غ",
+    "category": "snacks",
+    "options": []
+  },
+  "LAT005": {
+    "sourceName": "Latino Crispy vaffelkiks med kakaocreme 1 kg",
+    "name": "ويفر لاتينو كريسبي بكريمة الكاكاو 1 كغ",
+    "category": "snacks",
+    "options": []
+  },
+  "LAT006": {
+    "sourceName": "Latino XXXL kakaovaffel",
+    "name": "ويفر لاتينو XXXL بالكاكاو",
+    "category": "snacks",
+    "options": []
+  },
+  "LAT007": {
+    "sourceName": "Latino XXXL hasselnøddevaffel",
+    "name": "ويفر لاتينو XXXL بالبندق",
+    "category": "snacks",
+    "options": []
+  },
+  "LAT008": {
+    "sourceName": "Latino Darling jordnøddevaffel 50 g",
+    "name": "ويفر لاتينو دارلينغ بالفول السوداني 50 غ",
+    "category": "snacks",
+    "options": []
+  }
+}
